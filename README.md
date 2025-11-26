@@ -1,38 +1,80 @@
 # TCG Market Türkiye
 
-Bu proje, Türkiye'deki TCG (Trading Card Game) satıcılarını listeyen bir Next.js uygulamasıdır.
+![TCG Market Türkiye Banner](https://via.placeholder.com/1200x300/0f172a/8b5cf6?text=TCG+Market+T%C3%BCrkiye)
 
-## Kurulum
+[![Vercel Deploy](https://deploy-badge.vercel.app/vercel/tcg-market-tr)](https://tcg-market-tr.vercel.app/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-1. Bağımlılıkları yükleyin:
-   ```bash
-   npm install
-   ```
+Türkiye'deki TCG (Trading Card Game) koleksiyoncuları için kapsamlı satıcı rehberi. Pokemon, One Piece, Magic: The Gathering ve daha fazlası için güvenilir satıcıları bulun.
 
-2. Geliştirme sunucusunu başlatın:
-   ```bash
-   npm run dev
-   ```
+🔗 **Canlı Site:** [https://tcg-market-tr.vercel.app/](https://tcg-market-tr.vercel.app/)
 
-3. Tarayıcınızda [http://localhost:3000](http://localhost:3000) adresine gidin.
+## 🌟 Özellikler
 
-## Deployment
+- **Geniş Satıcı Ağı:** Türkiye genelindeki TCG satıcılarının güncel listesi.
+- **Detaylı Filtreleme:** Oyuna (Pokemon, One Piece, MTG vb.) ve dile (İngilizce, Japonca vb.) göre filtreleme.
+- **Canlı Veri:** Google Sheets entegrasyonu sayesinde anlık güncellenen veriler.
+- **Responsive Tasarım:** Mobil, tablet ve masaüstü cihazlarla tam uyumlu modern arayüz.
 
-### Vercel
+## 🚀 Kurulum
 
-1. Push your code to a Git repository (GitHub, GitLab, Bitbucket).
-2. Import the project into Vercel.
-3. In the "Configure Project" step, add the following **Environment Variable**:
-   - Name: `GOOGLE_SHEET_CSV_URL`
-   - Value: `https://docs.google.com/spreadsheets/d/YOUR_SHEET_ID/export?format=csv&gid=0` (Use your actual Google Sheet CSV export URL)
-4. Click **Deploy**.
+Projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları izleyin:
 
-## Özellikler
+### Gereksinimler
 
-- **Satıcı Listesi**: Google Sheets verilerinden çekilen satıcılar.
-- **Filtreleme**: Sol menüden oyun ve dil bazlı filtreleme yapabilirsiniz.
-- **Premium Tasarım**: Modern, karanlık mod arayüzü.
+- Node.js 18+
+- npm veya yarn
 
-## Veri Güncelleme
+### Adımlar
 
-Veriler `public/sellers.csv` dosyasında tutulmaktadır. Bu dosyayı güncelleyerek siteyi güncelleyebilirsiniz.
+1.  Depoyu klonlayın:
+    ```bash
+    git clone https://github.com/kullaniciadi/tcg-market-tr.git
+    cd tcg-market-tr
+    ```
+
+2.  Bağımlılıkları yükleyin:
+    ```bash
+    npm install
+    ```
+
+3.  Ortam değişkenlerini ayarlayın:
+    - `.env.example` dosyasının adını `.env.local` olarak değiştirin.
+    - `GOOGLE_SHEET_CSV_URL` değerini kendi Google Sheet CSV linkinizle güncelleyin.
+
+4.  Geliştirme sunucusunu başlatın:
+    ```bash
+    npm run dev
+    ```
+
+5.  Tarayıcınızda [http://localhost:3000](http://localhost:3000) adresine gidin.
+
+## 📦 Deployment (Vercel)
+
+Bu proje Vercel üzerinde çalışmak üzere optimize edilmiştir.
+
+1.  Projenizi GitHub'a yükleyin.
+2.  Vercel'de yeni bir proje oluşturun ve GitHub deponuzu seçin.
+3.  **Environment Variables** kısmına aşağıdaki değişkeni ekleyin:
+    - `GOOGLE_SHEET_CSV_URL`: Google Sheet CSV export linkiniz.
+4.  **Deploy** butonuna tıklayın.
+
+## 🤝 Katkıda Bulunma
+
+Bu proje topluluk odaklıdır. Katkıda bulunmak isterseniz:
+
+1.  Bu depoyu forklayın.
+2.  Yeni bir branch oluşturun (`git checkout -b feature/yeni-ozellik`).
+3.  Değişikliklerinizi yapın ve commit leyin (`git commit -m 'Yeni özellik eklendi'`).
+4.  Branch'inizi pushlayın (`git push origin feature/yeni-ozellik`).
+5.  Bir Pull Request oluşturun.
+
+## 📄 Lisans
+
+Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için `LICENSE` dosyasına bakabilirsiniz.
+
+---
+
+<p align="center">
+  Made with ❤️ for the TCG Community
+</p>
