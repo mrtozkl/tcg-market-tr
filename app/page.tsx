@@ -11,7 +11,7 @@ export default async function Home({
 }: {
     searchParams: { [key: string]: string | string[] | undefined };
 }) {
-    const allSellers = await getSellers();
+    const { sellers: allSellers, metadata } = await getSellers();
 
     const filteredSellers = allSellers.filter((seller) => {
         // Iterate over all search params
@@ -49,7 +49,7 @@ export default async function Home({
                     </div>
                 </div>
             </div>
-            <Footer />
+            <Footer metadata={metadata} />
         </main>
     );
 }

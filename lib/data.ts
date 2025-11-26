@@ -26,10 +26,24 @@ const BOOLEAN_MAP: Record<string, boolean> = {
 
 const GOOGLE_SHEET_CSV_URL = process.env.GOOGLE_SHEET_CSV_URL;
 
-export async function getSellers(): Promise<Seller[]> {
+export interface SiteMetadata {
+    lastUpdate: string;
+    disclaimers: string[];
+    donationLink?: string;
+}
+
+export interface SellersData {
+    sellers: Seller[];
+    metadata: SiteMetadata;
+}
+
+export async function getSellers(): Promise<SellersData> {
     if (!GOOGLE_SHEET_CSV_URL) {
         console.error('GOOGLE_SHEET_CSV_URL environment variable is not set');
-        return [];
+        return {
+            sellers: [],
+            metadata: { lastUpdate: '', disclaimers: [] }
+        };
     }
 
     try {
@@ -46,27 +60,59 @@ export async function getSellers(): Promise<Seller[]> {
             skipEmptyLines: true,
         });
 
-        return data
-            .filter((row: any) => row['Sitesi'] && row['Sitesi'].trim() !== '') // Filter out rows without a website (footer/disclaimer rows)
-            .map((row: any) => ({
-                name: row['Column 1'],
-                website: row['Sitesi'],
-                location: row['Dukkani'],
-                pokemon_en: BOOLEAN_MAP[row['Pokemon Ingilizce']] || false,
-                pokemon_jp: BOOLEAN_MAP[row['Pokemon Japonca']] || false,
-                pokemon_kr: BOOLEAN_MAP[row['Pokemon Korece']] || false,
-                pokemon_cn: BOOLEAN_MAP[row['Pokemon Cince']] || false,
-                onepiece_en: BOOLEAN_MAP[row['One Piece Ingilizce']] || false,
-                onepiece_jp: BOOLEAN_MAP[row['One Piece Japonca']] || false,
-                mtg: BOOLEAN_MAP[row['Magic: The Gathering']] || false,
-                riftbound_en: BOOLEAN_MAP[row['Riftbound Ingilizce']] || false,
-                riftbound_cn: BOOLEAN_MAP[row['Riftbound Cince']] || false,
-                lorcana: BOOLEAN_MAP[row['Lorcana']] || false,
-                topps: BOOLEAN_MAP[row['TOPPS']] || false,
-                yugioh: BOOLEAN_MAP[row['Yu-Gi-Oh!']] || false,
-            }));
+        const sellers: Seller[] = [];
+        const metadata: SiteMetadata = {
+            lastUpdate: '',
+            disclaimers: [],
+        };
+
+        data.forEach((row: any) => {
+            const col1 = row['Column 1'];
+
+            // Check for metadata rows
+            if (col1) {
+                if (col1.startsWith('Bu liste zaman zaman güncellenecektir')) {
+                    metadata.lastUpdate = col1;
+                    return;
+                }
+                if (col1.startsWith('Listede bulunan hiçbir firma') || col1.startsWith('Liste siralamasi tamamiyle')) {
+                    metadata.disclaimers.push(col1);
+                    return;
+                }
+                if (col1.startsWith('Bu listeyi hazirlayanlara kahve')) {
+                    metadata.donationLink = row['Pokemon Japonca']; // The link is in the 3rd column (index 2) based on CSV structure
+                    return;
+                }
+            }
+
+            // Normal seller row
+            if (row['Sitesi'] && row['Sitesi'].trim() !== '') {
+                sellers.push({
+                    name: row['Column 1'],
+                    website: row['Sitesi'],
+                    location: row['Dukkani'],
+                    pokemon_en: BOOLEAN_MAP[row['Pokemon Ingilizce']] || false,
+                    pokemon_jp: BOOLEAN_MAP[row['Pokemon Japonca']] || false,
+                    pokemon_kr: BOOLEAN_MAP[row['Pokemon Korece']] || false,
+                    pokemon_cn: BOOLEAN_MAP[row['Pokemon Cince']] || false,
+                    onepiece_en: BOOLEAN_MAP[row['One Piece Ingilizce']] || false,
+                    onepiece_jp: BOOLEAN_MAP[row['One Piece Japonca']] || false,
+                    mtg: BOOLEAN_MAP[row['Magic: The Gathering']] || false,
+                    riftbound_en: BOOLEAN_MAP[row['Riftbound Ingilizce']] || false,
+                    riftbound_cn: BOOLEAN_MAP[row['Riftbound Cince']] || false,
+                    lorcana: BOOLEAN_MAP[row['Lorcana']] || false,
+                    topps: BOOLEAN_MAP[row['TOPPS']] || false,
+                    yugioh: BOOLEAN_MAP[row['Yu-Gi-Oh!']] || false,
+                });
+            }
+        });
+
+        return { sellers, metadata };
     } catch (error) {
         console.error('Error fetching sellers:', error);
-        return [];
+        return {
+            sellers: [],
+            metadata: { lastUpdate: '', disclaimers: [] }
+        };
     }
 }
