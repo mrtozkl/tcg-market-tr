@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink, Github } from 'lucide-react';
 
 export default function Footer() {
     return (
@@ -39,7 +39,18 @@ export default function Footer() {
                 </div>
             </div>
             <div className="footer-bottom">
-                <p>&copy; {new Date().getFullYear()} TCG Market Türkiye. Topluluk için yapılmıştır.</p>
+                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem' }}>
+                    <p>&copy; {new Date().getFullYear()} TCG Market Türkiye. Topluluk için yapılmıştır.</p>
+                    <a
+                        href="https://github.com/mrtozkl/tcg-market-tr"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="footer-link"
+                        style={{ fontSize: '0.9rem', opacity: 0.8 }}
+                    >
+                        <Github size={16} /> GitHub'da İncele
+                    </a>
+                </div>
             </div>
         </footer>
     );
