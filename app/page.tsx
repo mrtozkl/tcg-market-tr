@@ -6,6 +6,8 @@ import Header from '@/components/Header';
 
 import Footer from '@/components/Footer';
 
+export const dynamic = 'force-dynamic';
+
 export default async function Home({
     searchParams,
 }: {
