@@ -13,6 +13,7 @@ export default async function Home({
 }) {
     const { sellers: allSellers, metadata } = await getSellers();
 
+
     const filteredSellers = allSellers.filter((seller) => {
         // Iterate over all search params
         for (const [key, value] of Object.entries(searchParams)) {

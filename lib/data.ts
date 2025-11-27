@@ -18,11 +18,13 @@ export interface Seller {
     yugioh: boolean;
 }
 
-const BOOLEAN_MAP: Record<string, boolean> = {
-    'Evet': true,
-    'Hayir': false,
-    '?': false, // Treat unknown as false for now
-};
+const TRUTHY_VALUES = ['evet', 'yes', 'true', '1', 'var'];
+
+function parseBoolean(value: string | undefined): boolean {
+    if (!value) return false;
+    const normalized = value.trim().toLowerCase();
+    return TRUTHY_VALUES.includes(normalized);
+}
 
 const GOOGLE_SHEET_CSV_URL = process.env.GOOGLE_SHEET_CSV_URL;
 
@@ -91,18 +93,18 @@ export async function getSellers(): Promise<SellersData> {
                     name: row['Column 1'],
                     website: row['Sitesi'],
                     location: row['Dukkani'],
-                    pokemon_en: BOOLEAN_MAP[row['Pokemon Ingilizce']] || false,
-                    pokemon_jp: BOOLEAN_MAP[row['Pokemon Japonca']] || false,
-                    pokemon_kr: BOOLEAN_MAP[row['Pokemon Korece']] || false,
-                    pokemon_cn: BOOLEAN_MAP[row['Pokemon Cince']] || false,
-                    onepiece_en: BOOLEAN_MAP[row['One Piece Ingilizce']] || false,
-                    onepiece_jp: BOOLEAN_MAP[row['One Piece Japonca']] || false,
-                    mtg: BOOLEAN_MAP[row['Magic: The Gathering']] || false,
-                    riftbound_en: BOOLEAN_MAP[row['Riftbound Ingilizce']] || false,
-                    riftbound_cn: BOOLEAN_MAP[row['Riftbound Cince']] || false,
-                    lorcana: BOOLEAN_MAP[row['Lorcana']] || false,
-                    topps: BOOLEAN_MAP[row['TOPPS']] || false,
-                    yugioh: BOOLEAN_MAP[row['Yu-Gi-Oh!']] || false,
+                    pokemon_en: parseBoolean(row['Pokemon Ingilizce']),
+                    pokemon_jp: parseBoolean(row['Pokemon Japonca']),
+                    pokemon_kr: parseBoolean(row['Pokemon Korece']),
+                    pokemon_cn: parseBoolean(row['Pokemon Cince']),
+                    onepiece_en: parseBoolean(row['One Piece Ingilizce']),
+                    onepiece_jp: parseBoolean(row['One Piece Japonca']),
+                    mtg: parseBoolean(row['Magic: The Gathering']),
+                    riftbound_en: parseBoolean(row['Riftbound Ingilizce']),
+                    riftbound_cn: parseBoolean(row['Riftbound Cince']),
+                    lorcana: parseBoolean(row['Lorcana']),
+                    topps: parseBoolean(row['TOPPS']),
+                    yugioh: parseBoolean(row['Yu-Gi-Oh!']),
                 });
             }
         });
