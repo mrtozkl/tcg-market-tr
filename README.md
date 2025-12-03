@@ -5,76 +5,103 @@
 [![Vercel Deploy](https://deploy-badge.vercel.app/vercel/tcg-market-tr)](https://tcg-market-tr.vercel.app/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Türkiye'deki TCG (Trading Card Game) koleksiyoncuları için kapsamlı satıcı rehberi. Pokemon, One Piece, Magic: The Gathering ve daha fazlası için güvenilir satıcıları bulun.
+Türkiye'deki TCG (Trading Card Game) koleksiyoncuları için kapsamlı pazar yeri ve satıcı rehberi. Pokemon, One Piece, Magic: The Gathering ve daha fazlası için en uygun fiyatları bulun.
 
 🔗 **Canlı Site:** [https://tcg-market-tr.vercel.app/](https://tcg-market-tr.vercel.app/)
 
 ## 🌟 Özellikler
 
-- **Geniş Satıcı Ağı:** Türkiye genelindeki TCG satıcılarının güncel listesi.
-- **Detaylı Filtreleme:** Oyuna (Pokemon, One Piece, MTG vb.) ve dile (İngilizce, Japonca vb.) göre filtreleme.
-- **Canlı Veri:** Google Sheets entegrasyonu sayesinde anlık güncellenen veriler.
-- **Responsive Tasarım:** Mobil, tablet ve masaüstü cihazlarla tam uyumlu modern arayüz.
+- **Otomatik Fiyat Takibi:** 10+ farklı satıcıdan (Goblin, Overgame, Pegasus, vb.) günlük fiyat ve stok verisi çeker.
+- **Geniş Veritabanı:** 4000+ kart ve ürün verisi.
+- **Akıllı Arama:** Kart adına, oyuna veya satıcıya göre anlık arama.
+- **En Ucuz Fiyat:** Aynı kartı satan satıcıları karşılaştırarak en uygun fiyatı gösterir.
+- **Responsive Tasarım:** Mobil ve masaüstü uyumlu modern arayüz.
+
+## 🛍️ Desteklenen Satıcılar
+
+Proje aşağıdaki satıcılardan veri çekmektedir:
+
+- **Goblin Store** (Pokemon, MTG, One Piece)
+- **Overgame** (Pokemon, MTG)
+- **Pegasus Oyuncak** (Pokemon, MTG, One Piece)
+- **Leno Cards** (Pokemon)
+- **Gameland** (Pokemon)
+- **Gizala** (Pokemon)
+- **Kollektit** (Pokemon)
+- **Card Dunyasi** (Pokemon)
+- **Tizy Cards** (Pokemon, MTG)
+- **Card House** (Pokemon, MTG)
+- **Mythos Cards** (Çeşitli)
+- **Gorilla Custom Cards** (Pokemon, MTG)
 
 ## 🚀 Kurulum
 
-Projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları izleyin:
+Projeyi yerel ortamınızda çalıştırmak için:
 
 ### Gereksinimler
 
 - Node.js 18+
-- npm veya yarn
+- PostgreSQL Veritabanı
 
 ### Adımlar
 
-1.  Depoyu klonlayın:
+1.  **Depoyu Klonlayın:**
     ```bash
     git clone https://github.com/kullaniciadi/tcg-market-tr.git
     cd tcg-market-tr
     ```
 
-2.  Bağımlılıkları yükleyin:
+2.  **Bağımlılıkları Yükleyin:**
     ```bash
     npm install
     ```
 
-3.  Ortam değişkenlerini ayarlayın:
-    - `.env.example` dosyasının adını `.env.local` olarak değiştirin.
-    - `GOOGLE_SHEET_CSV_URL` değerini kendi Google Sheet CSV linkinizle güncelleyin.
+3.  **Ortam Değişkenlerini Ayarlayın:**
+    `.env.local` dosyası oluşturun ve aşağıdaki değişkenleri ekleyin:
+    ```env
+    POSTGRES_URL="postgres://user:password@host:port/database?sslmode=require"
+    GOOGLE_SHEET_CSV_URL="google_sheet_csv_url"
+    ```
 
-4.  Geliştirme sunucusunu başlatın:
+4.  **Veritabanını Hazırlayın:**
+    Tabloları oluşturmak için migration scriptini çalıştırın:
+    ```bash
+    npx tsx scripts/migrate.ts
+    ```
+
+5.  **Uygulamayı Başlatın:**
     ```bash
     npm run dev
     ```
 
-5.  Tarayıcınızda [http://localhost:3000](http://localhost:3000) adresine gidin.
+## 🕷️ Scraper Kullanımı
+
+Veri çekme işlemleri `scripts/` klasöründeki scriptler ile yapılır.
+
+```bash
+# Örnek: Goblin Store verilerini çek
+npx tsx scripts/load-goblin.ts
+
+# Örnek: Tüm cron job mantığını çalıştır
+npx tsx scripts/run-cron.ts
+```
+
+Detaylı bilgi için [scripts/README.md](scripts/README.md) dosyasına bakabilirsiniz.
 
 ## 📦 Deployment (Vercel)
 
-Bu proje Vercel üzerinde çalışmak üzere optimize edilmiştir.
+Bu proje Vercel üzerinde çalışmaya hazırdır. Detaylı deployment rehberi için **[DEPLOY.md](DEPLOY.md)** dosyasını inceleyin.
 
-1.  Projenizi GitHub'a yükleyin.
-2.  Vercel'de yeni bir proje oluşturun ve GitHub deponuzu seçin.
-3.  **Environment Variables** kısmına aşağıdaki değişkeni ekleyin:
-    - `GOOGLE_SHEET_CSV_URL`: Google Sheet CSV export linkiniz.
-4.  **Deploy** butonuna tıklayın.
+**Önemli Not:** Puppeteer tabanlı scraperlar (Goblin, Tizy vb.) Vercel üzerinde doğrudan çalışmaz. Bu scraperları yerel makinenizde veya bir VPS üzerinde zamanlanmış görev (cron job) olarak çalıştırmanız önerilir.
 
 ## 🤝 Katkıda Bulunma
 
-Bu proje topluluk odaklıdır. Katkıda bulunmak isterseniz:
-
-1.  Bu depoyu forklayın.
-2.  Yeni bir branch oluşturun (`git checkout -b feature/yeni-ozellik`).
-3.  Değişikliklerinizi yapın ve commit leyin (`git commit -m 'Yeni özellik eklendi'`).
-4.  Branch'inizi pushlayın (`git push origin feature/yeni-ozellik`).
-5.  Bir Pull Request oluşturun.
+1.  Forklayın
+2.  Branch oluşturun (`git checkout -b feature/yeni-ozellik`)
+3.  Commit atın (`git commit -m 'Yeni özellik: X'`)
+4.  Pushlayın (`git push origin feature/yeni-ozellik`)
+5.  Pull Request açın
 
 ## 📄 Lisans
 
-Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için `LICENSE` dosyasına bakabilirsiniz.
-
----
-
-<p align="center">
-  Made with ❤️ for the TCG Community
-</p>
+MIT License

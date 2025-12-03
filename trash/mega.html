@@ -1,0 +1,1190 @@
+<!DOCTYPE html><html lang="tr"><head><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><meta name='viewport' content='width=device-width, user-scalable=yes'><link rel="preconnect" href="https://percdn.com/"/><link rel="dns-prefetch" href="https://percdn.com/"/><link rel="icon" href="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdFOVU1NG5hQT09/l/favicon-76352140-sw317sh316.webp" /><link rel="stylesheet" type="text/css" href="https://www.megacollectable.com/template/smart/default/assets/plugins/bootstrap.soft.min.css?v=1661412851" /><link rel="stylesheet" type="text/css" href="https://www.megacollectable.com/template/smart/default/assets/style.min.css?v=1755125904" /><title>Pokemon</title><meta name="description" content="" /><link href="https://www.megacollectable.com/pokemon" rel="canonical" /><meta property="og:title" content="Pokemon" /><meta property="og:site_name" content="megacollectable.com" /><meta property="og:type" content="product" /><meta property="og:url" content="https://www.megacollectable.com/pokemon?list=stoktakiler" /><meta property="og:keywords" content="" /><meta property="og:description" content="" /><meta name="twitter:card" content="product"><meta name="twitter:title" content="Pokemon"><meta name="twitter:site" content="https://www.megacollectable.com/pokemon?list=stoktakiler"><meta name="twitter:description" content=""><script> 
+function initializeSwipe(block) {
+    const items = block.querySelectorAll('.item');
+    if (items.length === 0) return; 
+    if (block.dataset.initialized === "true") return;
+    block.dataset.initialized = "true";
+
+    items[0].classList.add('active');
+
+    if (items.length > 1) {
+        let index = 0;
+        setInterval(() => {
+            items[index].classList.remove('active');
+            index = (index + 1) % items.length;
+            items[index].classList.add('active');
+        }, 3000);
+    }
+}
+
+function observeSwipeBlocks() {
+    // ilk gelenler
+    document.querySelectorAll('.swipe-promotext').forEach(initializeSwipe);
+
+    // Sonradan gelenleri izle
+    const observer = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+            mutation.addedNodes.forEach((node) => {
+                if (!(node instanceof HTMLElement)) return;
+
+                // Eğer yeni gelen bir swipe-promotext içeriyorsa initialize et
+                if (node.classList?.contains('swipe-promotext')) {
+                    initializeSwipe(node);
+                }
+
+                // Ya da içinde swipe-promotext barındırıyorsa
+                node.querySelectorAll?.('.swipe-promotext').forEach(initializeSwipe);
+            });
+        });
+    });
+
+    observer.observe(document.body, {
+        childList: true,
+        subtree: true
+    });
+}
+
+    //console.log("Bulunan item sayısı:", items.length);
+    //console.log("Aktif eleman:", items[index]);
+
+document.addEventListener('DOMContentLoaded', observeSwipeBlocks);
+</script><style type="text/css">
+            .sidebar-menu-type-2 {
+            z-index: 10;
+            padding: 60px 20px 60px 20px;
+        }
+                body {
+            font-family: 'Age Digital One';
+        }
+        @font-face {
+            font-family: 'Age Digital One';
+            src: url('https://www.megacollectable.com/theme/agesoftxmegac/assets/fonts/euclid/euclid-circular-a-light.woff2?v=1756279722') format('woff2'),
+                 url('https://www.megacollectable.com/theme/agesoftxmegac/assets/fonts/euclid/euclid-circular-a-light.otf?v=1756279722') format('truetype');
+            font-weight: 300;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Age Digital One';
+            src: url('https://www.megacollectable.com/theme/agesoftxmegac/assets/fonts/euclid/euclid-circular-a-regular.woff2?v=1756279722') format('woff2'),
+                 url('https://www.megacollectable.com/theme/agesoftxmegac/assets/fonts/euclid/euclid-circular-a-regular.otf?v=1756279722') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Age Digital One';
+            src: url('https://www.megacollectable.com/theme/agesoftxmegac/assets/fonts/euclid/euclid-circular-a-medium.woff2?v=1756279722') format('woff2'),
+                 url('https://www.megacollectable.com/theme/agesoftxmegac/assets/fonts/euclid/euclid-circular-a-medium.otf?v=1756279722') format('truetype');
+            font-weight: 500;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Age Digital One';
+            src: url('https://www.megacollectable.com/theme/agesoftxmegac/assets/fonts/euclid/euclid-circular-a-semibold.woff2?v=1756279722') format('woff2'),
+                 url('https://www.megacollectable.com/theme/agesoftxmegac/assets/fonts/euclid/euclid-circular-a-semibold.otf?v=1756279722') format('truetype');
+            font-weight: 600;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Age Digital One';
+            src: url('https://www.megacollectable.com/theme/agesoftxmegac/assets/fonts/euclid/euclid-circular-a-bold.woff2?v=1756279722') format('woff2'),
+                 url('https://www.megacollectable.com/theme/agesoftxmegac/assets/fonts/euclid/euclid-circular-a-bold.otf?v=1756279722') format('truetype');
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
+    </style><style type="text/css">
+        :root{
+            --body-bg:#ffffff;
+            --menu-bg-color: ;
+            --menu-color: ;
+            --menu-color-hover: ;
+            --main-color: #000000;
+            --main-color2: #d93f31;
+            --header-top-color: ;
+            --header-top-color-hover: ;
+            --add-cart-list: #ffffff;
+            --add-cart-list-hover: #ffffff;
+            --add-cart-list-bg: #000000;
+            --add-cart-list-bg-hover: #404040;
+            --buy-now: #fafafa;
+            --buy-now-bg: #d93e30;
+            --buy-now-hover: #ffffff;
+            --buy-now-bg-hover: #d93526;
+            --add-cart-detail:#ffffff;
+            --add-cart-detail-bg:#030303;
+            --add-cart-detail-hover:#ffffff;
+            --add-cart-detail-bg-hover:#383838;
+            --complete-payment:#ffffff;
+            --complete-payment-bg:#4dc761;
+            --complete-payment-hover:#ffffff;
+            --complete-payment-bg-hover:#3aa14b;
+            --transition-time: .4s ease-out;
+        };
+    </style><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5 user-scalable=no"><meta name="theme-color" content="#000000"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/><link rel="stylesheet" type="text/css" href="https://www.megacollectable.com/theme/agesoftxmegac/assets/style.css?v=1759156993"/><link rel="stylesheet" type="text/css" href="https://www.megacollectable.com/theme/agesoftxmegac/assets/default.css?v=1758529649"/><link rel="stylesheet" type="text/css" href="https://www.megacollectable.com/theme/agesoftxmegac/assets/custom.css?v=1761806865"/><style type="text/css">
+                            @media(min-width:1240px){
+                .container, .container-sm, .container-md, .container-lg, .container-xl {
+                    max-width: 1380px !important;
+                    width: 97%;
+                }
+            }
+            </style><script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Website","url":"https:\/\/www.megacollectable.com","name":"MEGA COLLECTABLE MÜZAYEDECİLİK VE KOLEKSİYONCULUK LİMİTED ŞİRKETİ","potentialAction":{"@type":"SearchAction","target":"https:\/\/www.megacollectable.com\/arama?k={search_term_string}","query-input":"required name=search_term_string"}}</script><script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Store","name":"MEGA COLLECTABLE MÜZAYEDECİLİK VE KOLEKSİYONCULUK LİMİTED ŞİRKETİ","url":"https:\/\/www.megacollectable.com","logo":"https:\/\/percdn.com\/f\/412059\/cG96WmFtNG0vcUp3ZUdFOVU1NG5hQT09\/l\/logo-26324730-sw596sh212.webp","image":"https:\/\/percdn.com\/f\/412059\/cG96WmFtNG0vcUp3ZUdFOVU1NG5hQT09\/l\/logo-26324730-sw596sh212.webp","address":"MOLLA FENARİ MAH. KÜÇÜKYILDIZ HANI SK. EDA HAN NO: 1 İÇ KAPI NO: 203 FATİH\/ İSTANBUL"}</script><script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"CollectionPage","name":"Pokemon","description":"","url":"https:\/\/www.megacollectable.com\/pokemon"}</script><meta name="facebook-domain-verification" content="rjfu2189zbiub2vgoyzi7279fmaokc" /><!-- Global site tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-8DYY71BGL2"></script><script>
+                var google_tag_defined = true;
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                                                                gtag('config', 'G-8DYY71BGL2');
+                                                                gtag('config', 'AW-17662388767');
+                            </script><!-- Facebook Pixel Code --><script>
+                    !function(f,b,e,v,n,t,s)
+                    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+                        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+                        n.queue=[];t=b.createElement(e);t.async=!0;
+                        t.src=v;s=b.getElementsByTagName(e)[0];
+                        s.parentNode.insertBefore(t,s)}(window, document,'script',
+                        'https://connect.facebook.net/en_US/fbevents.js');
+                    fbq('init', '851849610858838');
+                    fbq('track', 'PageView',{});
+                </script><!-- End Facebook Pixel Code --></head><body class="categories-body "><section class="pattern-group pattern-group-t-0 pattern-group-p-categories "><div class="no-container"><div class="pattern-group-body"><div class="p-g-b-c-wrapper"><div class="p-g-b-c-inner"><div class="p-g-mod p-g-mod-t-28 p-g-mod-header  p-g-mod-trans   "><div class="p-g-mod-body  p-g-mod-body-p-0  "><header class="desktop" itemscope itemtype="https://schema.org/WPHeader"><section class="h-center"><div class="container"><div class="row"><div class="col-md-2"><div class="logo header-area first"><a href="https://www.megacollectable.com" aria-label="header logo buton"><img src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdFOVU1NG5hQT09/l/logo-26324730-sw596sh212.webp" alt="header logo"/></a></div></div><div class="col-md-5"><div class="header-area center"><section class="menu"><div class="container"><div class="row"><div class="col-md-12"><div class="mega-menu"><ul class="navbar-nav"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="https://www.megacollectable.com/pokemon" id="mega-menu-1" data-parent-id="1" role="button"><img src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdFOVU1NG5hQT09/c/pokemon-23738269-sw160sh100.webp" class="subtitle-img" alt="" /><span class="under-category">Pokemon</span></a><div class="dropdown-menu" aria-labelledby="mega-menu-1"><div class="mega-menu-container"><div class="container-fluid" ><div class="row"><div class="col-md-12"><div class="row h-100"><div class="col"><div class="sub-cat"><a class="sub-title" data-parent-id="1" data-id="16" href="https://www.megacollectable.com/single-cards"><span class="under-category">Single Cards</span></a><ul></ul></div><div class="sub-cat"><a class="sub-title" data-parent-id="1" data-id="22" href="https://www.megacollectable.com/pokemon-funism-figur-3272"><span class="under-category">Pokemon Funism Figür</span></a><ul></ul></div></div><div class="col"><div class="sub-cat"><a class="sub-title" data-parent-id="1" data-id="13" href="https://www.megacollectable.com/single-pack"><span class="under-category">Single Pack</span></a><ul></ul></div></div><div class="col"><div class="sub-cat"><a class="sub-title" data-parent-id="1" data-id="14" href="https://www.megacollectable.com/sealed-products"><span class="under-category">Sealed Products</span></a><ul></ul></div></div></div></div></div></div></div></div></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="https://www.megacollectable.com/riftbound" id="mega-menu-7" data-parent-id="7" role="button"><img src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdFOVU1NG5hQT09/c/riftbound-49903635-sw160sh100.webp" class="subtitle-img" alt="" /><span class="under-category">Riftbound</span></a><div class="dropdown-menu" aria-labelledby="mega-menu-7"><div class="mega-menu-container"><div class="container-fluid" ><div class="row"><div class="col-md-12"><div class="row h-100"><div class="col"><div class="sub-cat"><a class="sub-title" data-parent-id="7" data-id="19" href="https://www.megacollectable.com/single-cards-1028"><span class="under-category">Single Cards</span></a><ul></ul></div></div><div class="col"><div class="sub-cat"><a class="sub-title" data-parent-id="7" data-id="20" href="https://www.megacollectable.com/single-pack-4127"><span class="under-category">Single Pack</span></a><ul></ul></div></div><div class="col"><div class="sub-cat"><a class="sub-title" data-parent-id="7" data-id="21" href="https://www.megacollectable.com/sealed-product"><span class="under-category">Sealed Products</span></a><ul></ul></div></div></div></div></div></div></div></div></li><li class="nav-item "><a class="nav-link dropdown-toggle" href="https://www.megacollectable.com/star-wars-unlimited" id="mega-menu-8" data-parent-id="8" role="button"><img src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdFOVU1NG5hQT09/c/star-wars-unlimited-90380155-sw160sh100.webp" class="subtitle-img" alt="" /><span class="under-category">Star Wars Unlimited</span></a></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="https://www.megacollectable.com/diger-markalar" id="mega-menu-9" data-parent-id="9" role="button"><img src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdFOVU1NG5hQT09/c/diger-markalar-27289255-sw160sh100.webp" class="subtitle-img" alt="" /><span class="under-category">Diğer Markalar</span></a><div class="dropdown-menu" aria-labelledby="mega-menu-9"><div class="mega-menu-container"><div class="container-fluid" ><div class="row"><div class="col-md-12"><div class="row h-100"><div class="col"><div class="sub-cat"><a class="sub-title" data-parent-id="9" data-id="10" href="https://www.megacollectable.com/naruto"><img src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGdUhzOG5hTHNQYmNFPQ/c/naruto-56308315-sw160sh100.webp" class="subtitle-img" alt="" /></a><ul></ul></div><div class="sub-cat"><a class="sub-title" data-parent-id="9" data-id="24" href="https://www.megacollectable.com/attack-on-titan-1752"><span class="under-category">Union Arena</span></a><ul></ul></div></div><div class="col"><div class="sub-cat"><a class="sub-title" data-parent-id="9" data-id="11" href="https://www.megacollectable.com/transformers"><img src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGdUhzOG5hTHNQYmNFPQ/c/transformers-21637775-sw160sh100.webp" class="subtitle-img" alt="" /></a><ul></ul></div><div class="sub-cat"><a class="sub-title" data-parent-id="9" data-id="23" href="https://www.megacollectable.com/aksesuar"><span class="under-category">Aksesuar</span></a><ul></ul></div></div><div class="col"><div class="sub-cat"><a class="sub-title" data-parent-id="9" data-id="12" href="https://www.megacollectable.com/funko"><img src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGdUhzOG5hTHNQYmNFPQ/c/funko-89403330-sw160sh100.webp" class="subtitle-img" alt="" /></a><ul></ul></div></div></div></div></div></div></div></div></li></ul></div></div></div></div></section></div></div><div class="col-md-5"><div class="header-area last"><div class="header-bar"><div class="search"><form action="https://www.megacollectable.com/arama" method="get" data-choose-action="redirect" aria-label="Site genel arama" data-smart-product-search-image><div class="input-box"><input type="text" name="k" class="form-control" placeholder="Ne Aramak İstediniz?" /></div><button type="submit" class="btn btn-orange btn-send"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/magnifying-glass-.svg?v=1756279720" alt="Ara"/></button></form></div><a href="/uye-giris" class="bar-link bar-user"><div class="icon"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/mc-user-header.svg?v=1758118578" alt="Kullanıcı"/></div><div class="text-side"><span class="sign-in">Giriş Yap</span><span class="sign-up">Üye Ol</span></div></a><div class="dropdown header-cart-hover"><a class="bar-link bar-cart" href="https://www.megacollectable.com/sepet" id="console-menu-3" role="button"><div class="icon"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/mc-shopping-cart.svg?v=1758119693" alt="Sepet"/><span class="count" data-cart-quantity>0</span></div><div class="text-side"><span class="basket">Sepetim</span><span class="price">0,00 TL</span></div></a><div class="dropdown-menu" aria-labelledby="console-menu-3"><div class="top-header"><span class="title">
+                                            Sepetim
+                                            <span class="count2" data-cart-quantity>0</span><span class="count2-description">Ürün</span></span></div><div class="products" data-cart-products></div><div class="summary" data-cart-summary></div></div></div></div></div></div></div></div></section></header><header class="mobile" itemscope itemtype="https://schema.org/WPHeader"><div class="hmobil-center"><div class="op-black"></div><div class="left"><a href="javascript:;" class="icon-group ml-1 btn-sidebar-menu"><img
+                    src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mobilsidebar-icon.svg?v=1756279720"
+                    data-active-src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mobilsidebar-carpi.svg?v=1756279720"
+                    id="sidebarIcon"                    alt="Mobil Menü"></a></div><div class="center"><div class="logo"><a href="https://www.megacollectable.com" aria-label="header mobil buton"><img src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdFOVU1NG5hQT09/l/logo-26324730-sw596sh212.webp" alt="header logo"/></a></div></div><div class="right"><a href="javascript:;" class="icon-group btn-sidebar-menu mobile-search-button"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/magnifying-glass-.svg?v=1756279720" alt="Ara"/></a><a href="/uye-giris" class="icon-group"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/mc-user-header.svg?v=1758118578" alt="Kullanıcı"/></a><a href="https://www.megacollectable.com/sepet" class="icon-group"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/mc-shopping-cart.svg?v=1758119693" alt="Sepet"/><span class="count-badge" data-cart-quantity>0</span></a></div><div class="clearfix"></div></div></header><nav class="sidebar-menu-type-2"><div class="scrollbar"><section class="mobile-search"><form action="https://www.megacollectable.com/arama" method="get" data-choose-action="redirect" data-smart-mobile-product-search-image><div class="input-box"><input type="text" name="k" class="form-control" placeholder="Aramak istediğin ürünü yaz, kolayca bul!" /></div><button type="submit" class="btn btn-orange btn-send"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/magnifying-glass-.svg?v=1756279720"></button></form><div class="clearfix"></div></section><div class="categories"><ul><li class="sc-1"><a href="javascript:;" class="btn-categories-show" data-id="1"><span class="name float-left">Pokemon</span><span class="icon float-right"><i class="coreicon-down-open-mini"></i></span></a><ul class="multi categories-list-1"><li><a href="https://www.megacollectable.com/pokemon"><span class="name float-left">Tüm Pokemon Ürünleri</span></a></li><li class="sc-16"><a href="https://www.megacollectable.com/single-cards"><span class="name float-left">Single Cards</span></a></li><li class="sc-22"><a href="https://www.megacollectable.com/pokemon-funism-figur-3272"><span class="name float-left">Pokemon Funism Figür</span></a></li><li class="sc-13"><a href="https://www.megacollectable.com/single-pack"><span class="name float-left">Single Pack</span></a></li><li class="sc-14"><a href="https://www.megacollectable.com/sealed-products"><span class="name float-left">Sealed Products</span></a></li></ul></li><li class="sc-7"><a href="javascript:;" class="btn-categories-show" data-id="7"><span class="name float-left">Riftbound</span><span class="icon float-right"><i class="coreicon-down-open-mini"></i></span></a><ul class="multi categories-list-7"><li><a href="https://www.megacollectable.com/riftbound"><span class="name float-left">Tüm Riftbound Ürünleri</span></a></li><li class="sc-19"><a href="https://www.megacollectable.com/single-cards-1028"><span class="name float-left">Single Cards</span></a></li><li class="sc-20"><a href="https://www.megacollectable.com/single-pack-4127"><span class="name float-left">Single Pack</span></a></li><li class="sc-21"><a href="https://www.megacollectable.com/sealed-product"><span class="name float-left">Sealed Products</span></a></li></ul></li><li class="sc-8"><a href="https://www.megacollectable.com/star-wars-unlimited"><span class="name float-left">Star Wars Unlimited</span></a></li><li class="sc-9"><a href="javascript:;" class="btn-categories-show" data-id="9"><span class="name float-left">Diğer Markalar</span><span class="icon float-right"><i class="coreicon-down-open-mini"></i></span></a><ul class="multi categories-list-9"><li><a href="https://www.megacollectable.com/diger-markalar"><span class="name float-left">Tüm Diğer Markalar Ürünleri</span></a></li><li class="sc-10"><a href="https://www.megacollectable.com/naruto"><span class="name float-left">Naruto</span></a></li><li class="sc-24"><a href="https://www.megacollectable.com/attack-on-titan-1752"><span class="name float-left">Union Arena</span></a></li><li class="sc-11"><a href="https://www.megacollectable.com/transformers"><span class="name float-left">Transformers</span></a></li><li class="sc-23"><a href="https://www.megacollectable.com/aksesuar"><span class="name float-left">Aksesuar</span></a></li><li class="sc-12"><a href="https://www.megacollectable.com/funko"><span class="name float-left">Funko</span></a></li></ul></li></ul></div><div class="mobil-area-title">
+            YARDIM MERKEZİ
+        </div><div class="mobil-area-2"><a href="/uye-giris"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/user-lightdef.svg?v=1756279720">
+                                    Giriş Yap
+                            </a><a href="https://www.megacollectable.com/hesabim/favori-listem"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/heart-lightdef.svg?v=1756279720">
+                Favorilerim
+            </a><a href="https://www.megacollectable.com/siparis-takip"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/barcode-lightdef.svg?v=1756279720">
+                Sipariş Takip
+            </a><a href="https://www.megacollectable.com/sss"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/question-mark-lightdef.svg?v=1756279720">
+                S.S.S
+            </a></div></div></nav><div class="mobile-header-space"></div></div></div></div></div></div></div></section><section class="pattern-group pattern-group-t-0 pattern-group-p-categories "><div class="container"><div class="pattern-group-body"><div class="row"><div class="col-list col-0 d-none col-sm-0 d-sm-none col-md-12 d-md-block col-lg-12 d-lg-block col-xl-12 d-xl-block p-g-b-c-0"><div class="p-g-b-c-wrapper"><div class="p-g-b-c-inner"><div class="p-g-mod p-g-mod-t-19 p-g-mod-breadcrumb  p-g-mod-trans   "><div class="p-g-mod-body  p-g-mod-body-p-0  "><nav aria-label="breadcrumb" class="breadcrumb-wrapper"><ol class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList"><li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="https://www.megacollectable.com"><span itemprop='name'>Ana Sayfa</span><meta itemprop="position" content="1" /></a></li><li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="https://www.megacollectable.com/pokemon"><span itemprop='name'>Pokemon</span><meta itemprop="position" content="2" /></a></li></ol></nav></div></div></div></div></div></div></div></div></section><section class="pattern-group pattern-group-t-0 pattern-group-p-categories "><div class="container"><div class="pattern-group-body"><div class="row"><div class="col-list col-0 d-none col-sm-0 d-sm-none col-md-0 d-md-none col-lg-3 d-lg-block col-xl-3 d-xl-block p-g-b-c-0"><div class="p-g-b-c-wrapper"><div class="p-g-b-c-inner"><div class="p-g-mod p-g-mod-t-35 p-g-mod-t-cat-filter   "><div class="p-g-mod-body  "><div class="text-center"><div class="spinner-border text-secondary" role="status"><span class="sr-only">Yükleniyor...</span></div></div></div></div><div class="p-g-mod p-g-mod-t-21 p-g-mod-t-cat-filter   p-g-mod-t-cat-display-0"><div class="p-g-mod-header  p-g-mod-header-p-0 "><div class="p-g-m-h-info"><div class="p-g-m-h-i-title">
+                            Alt Kategoriler
+                        </div></div></div><div class="p-g-mod-body  p-g-mod-body-p-0  "><div class="category-filter-list cat-display-type-0" data-smart-cat-filter="sub-categories"></div></div></div><div class="p-g-mod p-g-mod-t-22 p-g-mod-t-cat-filter   p-g-mod-t-cat-display-0"><div class="p-g-mod-header  p-g-mod-header-p-0 "><div class="p-g-m-h-info"><div class="p-g-m-h-i-title">
+                            Markalar
+                        </div></div></div><div class="p-g-mod-body  p-g-mod-body-p-0  "><div class="category-filter-list" data-smart-cat-filter="brands"></div></div></div><div class="p-g-mod p-g-mod-t-23 p-g-mod-t-cat-filter   p-g-mod-t-cat-display-0"><div class="p-g-mod-header  p-g-mod-header-p-0 "><div class="p-g-m-h-info"><div class="p-g-m-h-i-title">
+                            Nitelikler
+                        </div></div></div><div class="p-g-mod-body  p-g-mod-body-p-0  "><div class="category-filter-list" data-smart-cat-filter="attributes"></div></div></div><div class="p-g-mod p-g-mod-t-24 p-g-mod-t-cat-filter   p-g-mod-t-cat-display-0"><div class="p-g-mod-header  p-g-mod-header-p-0 "><div class="p-g-m-h-info"><div class="p-g-m-h-i-title">
+                            Fiyat Aralıkları
+                        </div></div></div><div class="p-g-mod-body  p-g-mod-body-p-0  "><div class="category-price-inputs" data-smart-cat-filter="price-inputs"><input class="form-control number-input" name="smart-cat-min-price"
+               data-smart-cat-search="1" placeholder="En Az"
+               value="" /><span class="seperator">-</span><input class="form-control number-input" name="smart-cat-max-price"
+               data-smart-cat-search="1" placeholder="En Çok"
+               value=""/><button class="btn" type="button" data-smart-cat-price-button><i class="fas fa-arrow-right"></i></button></div><div class="category-filter-list" data-smart-cat-filter="price-ranges"></div></div></div><div class="p-g-mod p-g-mod-t-25 p-g-mod-t-cat-filter   p-g-mod-t-cat-display-0"><div class="p-g-mod-header  p-g-mod-header-p-0 "><div class="p-g-m-h-info"><div class="p-g-m-h-i-title">
+                            Listeleme
+                        </div></div></div><div class="p-g-mod-body  p-g-mod-body-p-0  "><div class="category-filter-list"><div class="list-wrap" data-simplebar data-simplebar-auto-hide="false"><ul class="list"><li><div class="lag-checkbox"><input id="cat-filter-list-stoktakiler" name="smart-cat-list" value="stoktakiler" data-smart-cat-search="1" type="radio" checked data-checked><label for="cat-filter-list-stoktakiler">Sadece stoktakileri göster</label><span></span></div></li><li><div class="lag-checkbox"><input id="cat-filter-list-uk" name="smart-cat-list" value="uk" data-smart-cat-search="1" type="radio" ><label for="cat-filter-list-uk">Ücretsiz Kargo</label><span></span></div></li></ul></div></div></div></div><div class="p-g-mod p-g-mod-t-26    p-g-mod-t-cat-display-0"><div class="p-g-mod-body  p-g-mod-body-p-0  "><div class="buttons"><a href="https://www.megacollectable.com/pokemon" class="btn btn-secondary">
+            Seçimleri Temizle
+        </a><a onclick="removeShowClass()" class="btn-close-filter d-none d-md-block"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/x-circle.svg?v=1756279720"></a><a onclick="removeShowClassMobile()" class="btn-close-filter d-block d-md-none"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/x-circle.svg?v=1756279720"></a></div><script>
+        function removeShowClass() {
+            var opBlack = document.querySelector('.op-black-2.show');
+            if (opBlack) {
+                opBlack.classList.remove('show');
+            }
+            var kategoriFiltre = document.querySelector('.kategori-filtre.show');
+            if (kategoriFiltre) {
+                kategoriFiltre.classList.remove('show');
+            }
+        }
+    </script><script>
+        function removeShowClassMobile(){
+            const popupElemnt = document.querySelector('.cat-responsive-popup');
+            
+            if (popupElemnt) {
+                popupElemnt.classList.add('d-none')
+            }
+        }
+    </script></div></div></div></div></div><div class="col-list col-12 d-block col-sm-12 d-sm-block col-md-12 d-md-block col-lg-9 d-lg-block col-xl-9 d-xl-block p-g-b-c-1"><div class="p-g-b-c-wrapper"><div class="p-g-b-c-inner"><div class="p-g-mod p-g-mod-t-20 p-g-mod-pagination   "><div class="p-g-mod-header "><div class="p-g-m-h-info"><h1 class="p-g-m-h-i-title">
+                            Pokemon
+                    </h1></div></div><div class="p-g-mod-body  p-g-mod-body-p-0  "><div class="d-none d-lg-block"><div class="category-filter-order"><div class="list-wrap"><ul class="list"><li><select class="form-control form-select category-filter-order-desktop"
+                                onchange="catFilterOrder(this)"><option  selected value="en-yeniler">En yeniler</option><option   value="cok-satanlar">En çok satanlar</option><option   value="a-z">Ürün adı (A-Z)</option><option   value="z-a">Ürün adı (Z-A)</option><option   value="en-dusuk-fiyat">En düşük fiyat</option><option   value="en-yuksek-fiyat">En yüksek fiyat</option><option   value="en-cok-oylanan">En çok oylananlar</option></select><li class="category-filter-order-mobile"><div class="lag-checkbox"><input id="cat-filter-order-en-yeniler" name="smart-cat-siralama" value="en-yeniler" data-search-value="en-yeniler" data-smart-cat-search="1" type="radio" checked><label for="cat-filter-order-en-yeniler">En yeniler</label></div></li><li class="category-filter-order-mobile"><div class="lag-checkbox"><input id="cat-filter-order-cok-satanlar" name="smart-cat-siralama" value="cok-satanlar" data-search-value="cok-satanlar" data-smart-cat-search="1" type="radio" ><label for="cat-filter-order-cok-satanlar">En çok satanlar</label></div></li><li class="category-filter-order-mobile"><div class="lag-checkbox"><input id="cat-filter-order-a-z" name="smart-cat-siralama" value="a-z" data-search-value="a-z" data-smart-cat-search="1" type="radio" ><label for="cat-filter-order-a-z">Ürün adı (A-Z)</label></div></li><li class="category-filter-order-mobile"><div class="lag-checkbox"><input id="cat-filter-order-z-a" name="smart-cat-siralama" value="z-a" data-search-value="z-a" data-smart-cat-search="1" type="radio" ><label for="cat-filter-order-z-a">Ürün adı (Z-A)</label></div></li><li class="category-filter-order-mobile"><div class="lag-checkbox"><input id="cat-filter-order-en-dusuk-fiyat" name="smart-cat-siralama" value="en-dusuk-fiyat" data-search-value="en-dusuk-fiyat" data-smart-cat-search="1" type="radio" ><label for="cat-filter-order-en-dusuk-fiyat">En düşük fiyat</label></div></li><li class="category-filter-order-mobile"><div class="lag-checkbox"><input id="cat-filter-order-en-yuksek-fiyat" name="smart-cat-siralama" value="en-yuksek-fiyat" data-search-value="en-yuksek-fiyat" data-smart-cat-search="1" type="radio" ><label for="cat-filter-order-en-yuksek-fiyat">En yüksek fiyat</label></div></li><li class="category-filter-order-mobile"><div class="lag-checkbox"><input id="cat-filter-order-en-cok-oylanan" name="smart-cat-siralama" value="en-cok-oylanan" data-search-value="en-cok-oylanan" data-smart-cat-search="1" type="radio" ><label for="cat-filter-order-en-cok-oylanan">En çok oylananlar</label></div></li></li></ul></div></div></div><div class="d-block d-sm-block d-md-block d-lg-none"><div class="cat-responsive-buttons"><div class="btn-group"><button class="btn btn-outline-dark" onclick="showSmartCategoryPopup('filter')">Filtreleme</button><button class="btn btn-outline-dark" onclick="showSmartCategoryPopup('order')">Sıralama</button></div></div><div class="cat-responsive-popup d-none"><div class="c-r-p-content"></div><div class="c-r-p-bar"></div></div></div><div class="row"><div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-list-p-v-1"><div class="card-product"><div class="card-product-inner"><div class="age-kart-product-favourite" data-favourite-product-id="5946"><a href="javascript:;" class="add-favorite d-block"
+        onclick="userProductFavourite('add', 5946, 'product')" aria-label="kart favori ekle"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/product-empty-heart.svg?v=1758267296"></a><a href="javascript:;" class="remove-favorite d-none"
+        onclick="userProductFavourite('remove', 5946, 'product')" aria-label="kart favori cikar"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/product-fill-heart.svg?v=1758267303"></a></div><div class="image-wrapper"><div class="image"><div id="product-card-carousel-custom-module-code-137-5946" class="carousel"><div class="carousel-outer"><div class="carousel-inner"><div class="carousel-item active"><a href="https://www.megacollectable.com/scarlet-and-violet-journey-together-elite-trainer-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/scarlet-and-violet-journey-together-elite-trainer-box-33853599-sw2560sh2439.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/scarlet-and-violet-journey-together-elite-trainer-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/scarlet-and-violet-journey-together-elite-trainer-box-31041257-sw2000sh1644.webp" alt="" ></a></div></div><a class="carousel-control-prev" href="#product-card-carousel-custom-module-code-137-5946" role="button" data-slide="prev"><i class="fa fa-chevron-left"></i></a><a class="carousel-control-next" href="#product-card-carousel-custom-module-code-137-5946" role="button" data-slide="next"><i class="fa fa-chevron-right"></i></a><ol class="carousel-indicators cardcarousel-indicators"><li data-target="#product-card-carousel-custom-module-code-137-5946" 
+                                            data-slide-to="0" class="active"></li><li data-target="#product-card-carousel-custom-module-code-137-5946" 
+                                            data-slide-to="1" class=""></li></ol></div></div></div></div><a href="https://www.megacollectable.com/scarlet-and-violet-journey-together-elite-trainer-box" class="c-p-i-link" title="Scarlet and Violet Journey Together Elite Trainer Box"><div class="product-card-body"><div class="pcard-title"><div class="product-reviews"><div class="stars"><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span></div><span class="count">0</span></div><div class="brand">
+                                Pokemon
+                            </div><div class="title">Scarlet and Violet Journey Together Elite Trainer Box</div></div><div class="price-group"><div class="prices"><div class="sale-price ">
+                            7.999,00 TL
+                        </div></div></div></div></a><div class="card-bottom"><div class="quantity" data-product-card-quantity="5946"><a href="javascript:;" class="btn btn-minus"
+                        onclick="productQuantityBox(
+                        'decrement',
+                        'div[data-product-card-quantity=\'5946\']'
+                        )"><i class="fas fa-minus"></i></a><input class="form-control" name="quantity" 
+                    data-version="2"
+                    data-decimal="0"
+                    data-min="1"
+                    data-increase="1"
+                    data-initial="1"
+                    value="1"
+                    onkeypress="return productQuantityBox(
+                    'change',
+                    'div[data-product-card-quantity=\'5946\']',
+                    event)"/><a href="javascript:;" class="btn btn-plus"
+                        onclick="productQuantityBox(
+                        'increment',
+                        'div[data-product-card-quantity=\'5946\']'
+                        )"><i class="fas fa-plus"></i></a></div><div class="buttons"><a href="javascript:;" onclick="addCart(5946, 'card')"
+                           class="btn btn-cart ">
+                           Sepete Ekle
+                        </a></div></div></div></div></div><div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-list-p-v-1"><div class="card-product"><div class="card-product-inner"><div class="age-kart-product-favourite" data-favourite-product-id="5945"><a href="javascript:;" class="add-favorite d-block"
+        onclick="userProductFavourite('add', 5945, 'product')" aria-label="kart favori ekle"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/product-empty-heart.svg?v=1758267296"></a><a href="javascript:;" class="remove-favorite d-none"
+        onclick="userProductFavourite('remove', 5945, 'product')" aria-label="kart favori cikar"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/product-fill-heart.svg?v=1758267303"></a></div><div class="image-wrapper"><div class="image"><div id="product-card-carousel-custom-module-code-137-5945" class="carousel"><div class="carousel-outer"><div class="carousel-inner"><div class="carousel-item active"><a href="https://www.megacollectable.com/scarlet-and-violet-temporal-forces-elite-trainer-box-iron-leaves-green-pink"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/scarlet-and-violet-temporal-forces-elite-trainer-box-iron-leaves-green-pink--12335056-sw1920sh1829.webp" alt="" ></a></div></div></div></div></div></div><a href="https://www.megacollectable.com/scarlet-and-violet-temporal-forces-elite-trainer-box-iron-leaves-green-pink" class="c-p-i-link" title="Scarlet and Violet Temporal Forces Elite Trainer Box Iron Leaves (Green &amp; Pink)"><div class="product-card-body"><div class="pcard-title"><div class="product-reviews"><div class="stars"><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span></div><span class="count">0</span></div><div class="brand">
+                                Pokemon
+                            </div><div class="title">Scarlet and Violet Temporal Forces Elite Trainer Box Iron Leaves (Green &amp; Pink)</div></div><div class="price-group"><div class="prices"><div class="sale-price ">
+                            7.999,00 TL
+                        </div></div></div></div></a><div class="card-bottom"><div class="quantity" data-product-card-quantity="5945"><a href="javascript:;" class="btn btn-minus"
+                        onclick="productQuantityBox(
+                        'decrement',
+                        'div[data-product-card-quantity=\'5945\']'
+                        )"><i class="fas fa-minus"></i></a><input class="form-control" name="quantity" 
+                    data-version="2"
+                    data-decimal="0"
+                    data-min="1"
+                    data-increase="1"
+                    data-initial="1"
+                    value="1"
+                    onkeypress="return productQuantityBox(
+                    'change',
+                    'div[data-product-card-quantity=\'5945\']',
+                    event)"/><a href="javascript:;" class="btn btn-plus"
+                        onclick="productQuantityBox(
+                        'increment',
+                        'div[data-product-card-quantity=\'5945\']'
+                        )"><i class="fas fa-plus"></i></a></div><div class="buttons"><a href="javascript:;" onclick="addCart(5945, 'card')"
+                           class="btn btn-cart ">
+                           Sepete Ekle
+                        </a></div></div></div></div></div><div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-list-p-v-1"><div class="card-product"><div class="card-product-inner"><div class="age-kart-product-favourite" data-favourite-product-id="5942"><a href="javascript:;" class="add-favorite d-block"
+        onclick="userProductFavourite('add', 5942, 'product')" aria-label="kart favori ekle"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/product-empty-heart.svg?v=1758267296"></a><a href="javascript:;" class="remove-favorite d-none"
+        onclick="userProductFavourite('remove', 5942, 'product')" aria-label="kart favori cikar"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/product-fill-heart.svg?v=1758267303"></a></div><div class="image-wrapper"><div class="image"><div id="product-card-carousel-custom-module-code-137-5942" class="carousel"><div class="carousel-outer"><div class="carousel-inner"><div class="carousel-item active"><a href="https://www.megacollectable.com/scarlet-and-violet-paradox-rift-elite-trainer-box-iron-valiant-green-pink"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/scarlet-and-violet-paradox-rift-elite-trainer-box-iron-valiant-green-pink--87886850-sw2560sh2440.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/scarlet-and-violet-paradox-rift-elite-trainer-box-iron-valiant-green-pink"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/scarlet-and-violet-paradox-rift-elite-trainer-box-iron-valiant-green-pink--12554213-sw1280sh950.webp" alt="" ></a></div></div><a class="carousel-control-prev" href="#product-card-carousel-custom-module-code-137-5942" role="button" data-slide="prev"><i class="fa fa-chevron-left"></i></a><a class="carousel-control-next" href="#product-card-carousel-custom-module-code-137-5942" role="button" data-slide="next"><i class="fa fa-chevron-right"></i></a><ol class="carousel-indicators cardcarousel-indicators"><li data-target="#product-card-carousel-custom-module-code-137-5942" 
+                                            data-slide-to="0" class="active"></li><li data-target="#product-card-carousel-custom-module-code-137-5942" 
+                                            data-slide-to="1" class=""></li></ol></div></div></div></div><a href="https://www.megacollectable.com/scarlet-and-violet-paradox-rift-elite-trainer-box-iron-valiant-green-pink" class="c-p-i-link" title="Scarlet and Violet Paradox Rift Elite Trainer Box Iron Valiant (Green &amp; Pink)"><div class="product-card-body"><div class="pcard-title"><div class="product-reviews"><div class="stars"><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span></div><span class="count">0</span></div><div class="brand">
+                                Pokemon
+                            </div><div class="title">Scarlet and Violet Paradox Rift Elite Trainer Box Iron Valiant (Green &amp; Pink)</div></div><div class="price-group"><div class="prices"><div class="sale-price ">
+                            7.999,00 TL
+                        </div></div></div></div></a><div class="card-bottom"><div class="quantity" data-product-card-quantity="5942"><a href="javascript:;" class="btn btn-minus"
+                        onclick="productQuantityBox(
+                        'decrement',
+                        'div[data-product-card-quantity=\'5942\']'
+                        )"><i class="fas fa-minus"></i></a><input class="form-control" name="quantity" 
+                    data-version="2"
+                    data-decimal="0"
+                    data-min="1"
+                    data-increase="1"
+                    data-initial="1"
+                    value="1"
+                    onkeypress="return productQuantityBox(
+                    'change',
+                    'div[data-product-card-quantity=\'5942\']',
+                    event)"/><a href="javascript:;" class="btn btn-plus"
+                        onclick="productQuantityBox(
+                        'increment',
+                        'div[data-product-card-quantity=\'5942\']'
+                        )"><i class="fas fa-plus"></i></a></div><div class="buttons"><a href="javascript:;" onclick="addCart(5942, 'card')"
+                           class="btn btn-cart ">
+                           Sepete Ekle
+                        </a></div></div></div></div></div><div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-list-p-v-1"><div class="card-product"><div class="card-product-inner"><div class="age-kart-product-favourite" data-favourite-product-id="5940"><a href="javascript:;" class="add-favorite d-block"
+        onclick="userProductFavourite('add', 5940, 'product')" aria-label="kart favori ekle"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/product-empty-heart.svg?v=1758267296"></a><a href="javascript:;" class="remove-favorite d-none"
+        onclick="userProductFavourite('remove', 5940, 'product')" aria-label="kart favori cikar"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/product-fill-heart.svg?v=1758267303"></a></div><div class="image-wrapper"><div class="image"><div id="product-card-carousel-custom-module-code-137-5940" class="carousel"><div class="carousel-outer"><div class="carousel-inner"><div class="carousel-item active"><a href="https://www.megacollectable.com/pokemon-tcg-scarlet-violet-shrouded-fable-pokemon-center-elite-trainer-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/pokemon-tcg-scarlet-violet-shrouded-fable-pokemon-center-elite-trainer-box-50314338-sw1200sh1200.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/pokemon-tcg-scarlet-violet-shrouded-fable-pokemon-center-elite-trainer-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/pokemon-tcg-scarlet-violet-shrouded-fable-pokemon-center-elite-trainer-box-65498467-sw1200sh1200.webp" alt="" ></a></div></div><a class="carousel-control-prev" href="#product-card-carousel-custom-module-code-137-5940" role="button" data-slide="prev"><i class="fa fa-chevron-left"></i></a><a class="carousel-control-next" href="#product-card-carousel-custom-module-code-137-5940" role="button" data-slide="next"><i class="fa fa-chevron-right"></i></a><ol class="carousel-indicators cardcarousel-indicators"><li data-target="#product-card-carousel-custom-module-code-137-5940" 
+                                            data-slide-to="0" class="active"></li><li data-target="#product-card-carousel-custom-module-code-137-5940" 
+                                            data-slide-to="1" class=""></li></ol></div></div></div></div><a href="https://www.megacollectable.com/pokemon-tcg-scarlet-violet-shrouded-fable-pokemon-center-elite-trainer-box" class="c-p-i-link" title="Pokémon TCG: Scarlet &amp; Violet-Shrouded Fable Pokémon Center Elite Trainer Box"><div class="product-card-body"><div class="pcard-title"><div class="product-reviews"><div class="stars"><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span></div><span class="count">0</span></div><div class="brand">
+                                Pokemon
+                            </div><div class="title">Pokémon TCG: Scarlet &amp; Violet-Shrouded Fable Pokémon Center Elite Trainer Box</div></div><div class="price-group"><div class="prices"><div class="sale-price ">
+                            11.999,00 TL
+                        </div></div></div></div></a><div class="card-bottom"><div class="quantity" data-product-card-quantity="5940"><a href="javascript:;" class="btn btn-minus"
+                        onclick="productQuantityBox(
+                        'decrement',
+                        'div[data-product-card-quantity=\'5940\']'
+                        )"><i class="fas fa-minus"></i></a><input class="form-control" name="quantity" 
+                    data-version="2"
+                    data-decimal="0"
+                    data-min="1"
+                    data-increase="1"
+                    data-initial="1"
+                    value="1"
+                    onkeypress="return productQuantityBox(
+                    'change',
+                    'div[data-product-card-quantity=\'5940\']',
+                    event)"/><a href="javascript:;" class="btn btn-plus"
+                        onclick="productQuantityBox(
+                        'increment',
+                        'div[data-product-card-quantity=\'5940\']'
+                        )"><i class="fas fa-plus"></i></a></div><div class="buttons"><a href="javascript:;" onclick="addCart(5940, 'card')"
+                           class="btn btn-cart ">
+                           Sepete Ekle
+                        </a></div></div></div></div></div><div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-list-p-v-1"><div class="card-product"><div class="card-product-inner"><div class="age-kart-product-favourite" data-favourite-product-id="5938"><a href="javascript:;" class="add-favorite d-block"
+        onclick="userProductFavourite('add', 5938, 'product')" aria-label="kart favori ekle"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/product-empty-heart.svg?v=1758267296"></a><a href="javascript:;" class="remove-favorite d-none"
+        onclick="userProductFavourite('remove', 5938, 'product')" aria-label="kart favori cikar"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/product-fill-heart.svg?v=1758267303"></a></div><div class="image-wrapper"><div class="image"><div id="product-card-carousel-custom-module-code-137-5938" class="carousel"><div class="carousel-outer"><div class="carousel-inner"><div class="carousel-item active"><a href="https://www.megacollectable.com/pokemon-tcg-scarlet-violet-temporal-forces-booster-bundle-6-packs"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/pokemon-tcg-scarlet-violet-temporal-forces-booster-bundle-6-packs--76446693-sw1200sh1200.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/pokemon-tcg-scarlet-violet-temporal-forces-booster-bundle-6-packs"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/pokemon-tcg-scarlet-violet-temporal-forces-booster-bundle-6-packs--46830715-sw1200sh1200.webp" alt="" ></a></div></div><a class="carousel-control-prev" href="#product-card-carousel-custom-module-code-137-5938" role="button" data-slide="prev"><i class="fa fa-chevron-left"></i></a><a class="carousel-control-next" href="#product-card-carousel-custom-module-code-137-5938" role="button" data-slide="next"><i class="fa fa-chevron-right"></i></a><ol class="carousel-indicators cardcarousel-indicators"><li data-target="#product-card-carousel-custom-module-code-137-5938" 
+                                            data-slide-to="0" class="active"></li><li data-target="#product-card-carousel-custom-module-code-137-5938" 
+                                            data-slide-to="1" class=""></li></ol></div></div></div></div><a href="https://www.megacollectable.com/pokemon-tcg-scarlet-violet-temporal-forces-booster-bundle-6-packs" class="c-p-i-link" title="Pokémon TCG: Scarlet &amp; Violet-Temporal Forces Booster Bundle (6 Packs)"><div class="product-card-body"><div class="pcard-title"><div class="product-reviews"><div class="stars"><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span></div><span class="count">0</span></div><div class="brand">
+                                Pokemon
+                            </div><div class="title">Pokémon TCG: Scarlet &amp; Violet-Temporal Forces Booster Bundle (6 Packs)</div></div><div class="price-group"><div class="prices"><div class="sale-price ">
+                            3.999,00 TL
+                        </div></div></div></div></a><div class="card-bottom"><div class="quantity" data-product-card-quantity="5938"><a href="javascript:;" class="btn btn-minus"
+                        onclick="productQuantityBox(
+                        'decrement',
+                        'div[data-product-card-quantity=\'5938\']'
+                        )"><i class="fas fa-minus"></i></a><input class="form-control" name="quantity" 
+                    data-version="2"
+                    data-decimal="0"
+                    data-min="1"
+                    data-increase="1"
+                    data-initial="1"
+                    value="1"
+                    onkeypress="return productQuantityBox(
+                    'change',
+                    'div[data-product-card-quantity=\'5938\']',
+                    event)"/><a href="javascript:;" class="btn btn-plus"
+                        onclick="productQuantityBox(
+                        'increment',
+                        'div[data-product-card-quantity=\'5938\']'
+                        )"><i class="fas fa-plus"></i></a></div><div class="buttons"><a href="javascript:;" onclick="addCart(5938, 'card')"
+                           class="btn btn-cart ">
+                           Sepete Ekle
+                        </a></div></div></div></div></div><div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-list-p-v-1"><div class="card-product"><div class="card-product-inner"><div class="age-kart-product-favourite" data-favourite-product-id="5937"><a href="javascript:;" class="add-favorite d-block"
+        onclick="userProductFavourite('add', 5937, 'product')" aria-label="kart favori ekle"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/product-empty-heart.svg?v=1758267296"></a><a href="javascript:;" class="remove-favorite d-none"
+        onclick="userProductFavourite('remove', 5937, 'product')" aria-label="kart favori cikar"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/product-fill-heart.svg?v=1758267303"></a></div><div class="image-wrapper"><div class="image"><div id="product-card-carousel-custom-module-code-137-5937" class="carousel"><div class="carousel-outer"><div class="carousel-inner"><div class="carousel-item active"><a href="https://www.megacollectable.com/pokemon-tcg-scarlet-violet-shrouded-fable-booster-bundle-6-packs"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/pokemon-tcg-scarlet-violet-shrouded-fable-booster-bundle-6-packs--57800026-sw1200sh1200.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/pokemon-tcg-scarlet-violet-shrouded-fable-booster-bundle-6-packs"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/pokemon-tcg-scarlet-violet-shrouded-fable-booster-bundle-6-packs--90347513-sw1200sh1200.webp" alt="" ></a></div></div><a class="carousel-control-prev" href="#product-card-carousel-custom-module-code-137-5937" role="button" data-slide="prev"><i class="fa fa-chevron-left"></i></a><a class="carousel-control-next" href="#product-card-carousel-custom-module-code-137-5937" role="button" data-slide="next"><i class="fa fa-chevron-right"></i></a><ol class="carousel-indicators cardcarousel-indicators"><li data-target="#product-card-carousel-custom-module-code-137-5937" 
+                                            data-slide-to="0" class="active"></li><li data-target="#product-card-carousel-custom-module-code-137-5937" 
+                                            data-slide-to="1" class=""></li></ol></div></div></div></div><a href="https://www.megacollectable.com/pokemon-tcg-scarlet-violet-shrouded-fable-booster-bundle-6-packs" class="c-p-i-link" title="Pokémon TCG: Scarlet &amp; Violet-Shrouded Fable Booster Bundle (6 Packs)"><div class="product-card-body"><div class="pcard-title"><div class="product-reviews"><div class="stars"><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span></div><span class="count">0</span></div><div class="brand">
+                                Pokemon
+                            </div><div class="title">Pokémon TCG: Scarlet &amp; Violet-Shrouded Fable Booster Bundle (6 Packs)</div></div><div class="price-group"><div class="prices"><div class="sale-price ">
+                            3.499,00 TL
+                        </div></div></div></div></a><div class="card-bottom"><div class="quantity" data-product-card-quantity="5937"><a href="javascript:;" class="btn btn-minus"
+                        onclick="productQuantityBox(
+                        'decrement',
+                        'div[data-product-card-quantity=\'5937\']'
+                        )"><i class="fas fa-minus"></i></a><input class="form-control" name="quantity" 
+                    data-version="2"
+                    data-decimal="0"
+                    data-min="1"
+                    data-increase="1"
+                    data-initial="1"
+                    value="1"
+                    onkeypress="return productQuantityBox(
+                    'change',
+                    'div[data-product-card-quantity=\'5937\']',
+                    event)"/><a href="javascript:;" class="btn btn-plus"
+                        onclick="productQuantityBox(
+                        'increment',
+                        'div[data-product-card-quantity=\'5937\']'
+                        )"><i class="fas fa-plus"></i></a></div><div class="buttons"><a href="javascript:;" onclick="addCart(5937, 'card')"
+                           class="btn btn-cart ">
+                           Sepete Ekle
+                        </a></div></div></div></div></div><div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-list-p-v-1"><div class="card-product"><div class="card-product-inner"><div class="age-kart-product-favourite" data-favourite-product-id="5125"><a href="javascript:;" class="add-favorite d-block"
+        onclick="userProductFavourite('add', 5125, 'product')" aria-label="kart favori ekle"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/product-empty-heart.svg?v=1758267296"></a><a href="javascript:;" class="remove-favorite d-none"
+        onclick="userProductFavourite('remove', 5125, 'product')" aria-label="kart favori cikar"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/product-fill-heart.svg?v=1758267303"></a></div><div class="image-wrapper"><div class="discount-kart">%25</div><div class="image"><div id="product-card-carousel-custom-module-code-137-5125" class="carousel"><div class="carousel-outer"><div class="carousel-inner"><div class="carousel-item active"><a href="https://www.megacollectable.com/chinese-primordial-arts-set-list-cs3b-booster-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-primordial-arts-set-list-cs3b-booster-box-76213912-sw600sh1065.webp" alt="" ></a></div></div></div></div></div></div><a href="https://www.megacollectable.com/chinese-primordial-arts-set-list-cs3b-booster-box" class="c-p-i-link" title="Chinese Primordial Arts Set List CS3B Booster Box (6 Jumbo Pack)"><div class="product-card-body"><div class="pcard-title"><div class="product-reviews"><div class="stars"><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span></div><span class="count">0</span></div><div class="brand">
+                                Pokemon
+                            </div><div class="title">Chinese Primordial Arts Set List CS3B Booster Box (6 Jumbo Pack)</div></div><div class="price-group"><div class="prices"><div class="sale-price dc-p">
+                            2.999,00 TL
+                        </div><div class="list-price">3.999,00 TL</div></div></div></div></a><div class="card-bottom"><div class="quantity" data-product-card-quantity="5125"><a href="javascript:;" class="btn btn-minus"
+                        onclick="productQuantityBox(
+                        'decrement',
+                        'div[data-product-card-quantity=\'5125\']'
+                        )"><i class="fas fa-minus"></i></a><input class="form-control" name="quantity" 
+                    data-version="2"
+                    data-decimal="0"
+                    data-min="1"
+                    data-increase="1"
+                    data-initial="1"
+                    value="1"
+                    onkeypress="return productQuantityBox(
+                    'change',
+                    'div[data-product-card-quantity=\'5125\']',
+                    event)"/><a href="javascript:;" class="btn btn-plus"
+                        onclick="productQuantityBox(
+                        'increment',
+                        'div[data-product-card-quantity=\'5125\']'
+                        )"><i class="fas fa-plus"></i></a></div><div class="buttons"><a href="javascript:;" onclick="addCart(5125, 'card')"
+                           class="btn btn-cart ">
+                           Sepete Ekle
+                        </a></div></div></div></div></div><div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-list-p-v-1"><div class="card-product"><div class="card-product-inner"><div class="age-kart-product-favourite" data-favourite-product-id="5124"><a href="javascript:;" class="add-favorite d-block"
+        onclick="userProductFavourite('add', 5124, 'product')" aria-label="kart favori ekle"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/product-empty-heart.svg?v=1758267296"></a><a href="javascript:;" class="remove-favorite d-none"
+        onclick="userProductFavourite('remove', 5124, 'product')" aria-label="kart favori cikar"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/product-fill-heart.svg?v=1758267303"></a></div><div class="image-wrapper"><div class="discount-kart">%25</div><div class="image"><div id="product-card-carousel-custom-module-code-137-5124" class="carousel"><div class="carousel-outer"><div class="carousel-inner"><div class="carousel-item active"><a href="https://www.megacollectable.com/chinese-primordial-arts-set-list-cs3a-booster-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-primordial-arts-set-list-cs3a-booster-box-36726086-sw600sh1065.webp" alt="" ></a></div></div></div></div></div></div><a href="https://www.megacollectable.com/chinese-primordial-arts-set-list-cs3a-booster-box" class="c-p-i-link" title="Chinese Primordial Arts Set List CS3A Booster Box (6 Jumbo Pack)"><div class="product-card-body"><div class="pcard-title"><div class="product-reviews"><div class="stars"><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span></div><span class="count">0</span></div><div class="brand">
+                                Pokemon
+                            </div><div class="title">Chinese Primordial Arts Set List CS3A Booster Box (6 Jumbo Pack)</div></div><div class="price-group"><div class="prices"><div class="sale-price dc-p">
+                            2.999,00 TL
+                        </div><div class="list-price">3.999,00 TL</div></div></div></div></a><div class="card-bottom"><div class="quantity" data-product-card-quantity="5124"><a href="javascript:;" class="btn btn-minus"
+                        onclick="productQuantityBox(
+                        'decrement',
+                        'div[data-product-card-quantity=\'5124\']'
+                        )"><i class="fas fa-minus"></i></a><input class="form-control" name="quantity" 
+                    data-version="2"
+                    data-decimal="0"
+                    data-min="1"
+                    data-increase="1"
+                    data-initial="1"
+                    value="1"
+                    onkeypress="return productQuantityBox(
+                    'change',
+                    'div[data-product-card-quantity=\'5124\']',
+                    event)"/><a href="javascript:;" class="btn btn-plus"
+                        onclick="productQuantityBox(
+                        'increment',
+                        'div[data-product-card-quantity=\'5124\']'
+                        )"><i class="fas fa-plus"></i></a></div><div class="buttons"><a href="javascript:;" onclick="addCart(5124, 'card')"
+                           class="btn btn-cart ">
+                           Sepete Ekle
+                        </a></div></div></div></div></div><div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-list-p-v-1"><div class="card-product"><div class="card-product-inner"><div class="age-kart-product-favourite" data-favourite-product-id="37"><a href="javascript:;" class="add-favorite d-block"
+        onclick="userProductFavourite('add', 37, 'product')" aria-label="kart favori ekle"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/product-empty-heart.svg?v=1758267296"></a><a href="javascript:;" class="remove-favorite d-none"
+        onclick="userProductFavourite('remove', 37, 'product')" aria-label="kart favori cikar"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/product-fill-heart.svg?v=1758267303"></a></div><div class="image-wrapper"><div class="image"><div id="product-card-carousel-custom-module-code-137-37" class="carousel"><div class="carousel-outer"><div class="carousel-inner"><div class="carousel-item active"><a href="https://www.megacollectable.com/chinese-exclusive-blue-pokeball"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-blue-pokeball-12607216-sw1000sh667.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-exclusive-blue-pokeball"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-blue-pokeball-63927049-sw1000sh667.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-exclusive-blue-pokeball"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-blue-pokeball-31626197-sw868sh1212.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-exclusive-blue-pokeball"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-blue-pokeball-8211260-sw868sh1212.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-exclusive-blue-pokeball"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-blue-pokeball-71392391-sw868sh1212.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-exclusive-blue-pokeball"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-blue-pokeball-25203112-sw868sh1212.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-exclusive-blue-pokeball"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-blue-pokeball-49045742-sw868sh1212.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-exclusive-blue-pokeball"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-blue-pokeball-72384289-sw868sh1212.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-exclusive-blue-pokeball"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-blue-pokeball-58445439-sw868sh1212.webp" alt="" ></a></div></div><a class="carousel-control-prev" href="#product-card-carousel-custom-module-code-137-37" role="button" data-slide="prev"><i class="fa fa-chevron-left"></i></a><a class="carousel-control-next" href="#product-card-carousel-custom-module-code-137-37" role="button" data-slide="next"><i class="fa fa-chevron-right"></i></a></div></div></div></div><a href="https://www.megacollectable.com/chinese-exclusive-blue-pokeball" class="c-p-i-link" title="Chinese Exclusive Blue Pokeball"><div class="product-card-body"><div class="pcard-title"><div class="product-reviews"><div class="stars"><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span></div><span class="count">0</span></div><div class="brand">
+                                Pokemon
+                            </div><div class="title">Chinese Exclusive Blue Pokeball</div></div><div class="price-group"><div class="prices"><div class="sale-price ">
+                            1.999,00 TL
+                        </div></div></div></div></a><div class="card-bottom"><div class="quantity" data-product-card-quantity="37"><a href="javascript:;" class="btn btn-minus"
+                        onclick="productQuantityBox(
+                        'decrement',
+                        'div[data-product-card-quantity=\'37\']'
+                        )"><i class="fas fa-minus"></i></a><input class="form-control" name="quantity" 
+                    data-version="2"
+                    data-decimal="0"
+                    data-min="1"
+                    data-increase="1"
+                    data-initial="1"
+                    value="1"
+                    onkeypress="return productQuantityBox(
+                    'change',
+                    'div[data-product-card-quantity=\'37\']',
+                    event)"/><a href="javascript:;" class="btn btn-plus"
+                        onclick="productQuantityBox(
+                        'increment',
+                        'div[data-product-card-quantity=\'37\']'
+                        )"><i class="fas fa-plus"></i></a></div><div class="buttons"><a href="javascript:;" onclick="addCart(37, 'card')"
+                           class="btn btn-cart ">
+                           Sepete Ekle
+                        </a></div></div></div></div></div><div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-list-p-v-1"><div class="card-product"><div class="card-product-inner"><div class="age-kart-product-favourite" data-favourite-product-id="30"><a href="javascript:;" class="add-favorite d-block"
+        onclick="userProductFavourite('add', 30, 'product')" aria-label="kart favori ekle"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/product-empty-heart.svg?v=1758267296"></a><a href="javascript:;" class="remove-favorite d-none"
+        onclick="userProductFavourite('remove', 30, 'product')" aria-label="kart favori cikar"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/product-fill-heart.svg?v=1758267303"></a></div><div class="image-wrapper"><div class="discount-kart">%20</div><div class="image"><div id="product-card-carousel-custom-module-code-137-30" class="carousel"><div class="carousel-outer"><div class="carousel-inner"><div class="carousel-item active"><a href="https://www.megacollectable.com/chinese-exclusive-pikachu-v-union-display-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-pikachu-v-union-display-gift-box-26428765-sw1000sh667.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-exclusive-pikachu-v-union-display-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-pikachu-v-union-display-gift-box-10963985-sw1000sh1775.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-exclusive-pikachu-v-union-display-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-pikachu-v-union-display-gift-box-10852956-sw1000sh1775.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-exclusive-pikachu-v-union-display-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-pikachu-v-union-display-gift-box-6253225-sw1000sh667.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-exclusive-pikachu-v-union-display-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-pikachu-v-union-display-gift-box-94745285-sw1000sh667.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-exclusive-pikachu-v-union-display-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-pikachu-v-union-display-gift-box-83901447-sw1000sh667.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-exclusive-pikachu-v-union-display-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-pikachu-v-union-display-gift-box-41723981-sw868sh1212.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-exclusive-pikachu-v-union-display-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-pikachu-v-union-display-gift-box-30161533-sw868sh1212.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-exclusive-pikachu-v-union-display-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-pikachu-v-union-display-gift-box-81918627-sw868sh1212.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-exclusive-pikachu-v-union-display-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-pikachu-v-union-display-gift-box-12010432-sw868sh1212.webp" alt="" ></a></div></div><a class="carousel-control-prev" href="#product-card-carousel-custom-module-code-137-30" role="button" data-slide="prev"><i class="fa fa-chevron-left"></i></a><a class="carousel-control-next" href="#product-card-carousel-custom-module-code-137-30" role="button" data-slide="next"><i class="fa fa-chevron-right"></i></a></div></div></div></div><a href="https://www.megacollectable.com/chinese-exclusive-pikachu-v-union-display-gift-box" class="c-p-i-link" title="Chinese Exclusive Pikachu V Union Display Gift Box"><div class="product-card-body"><div class="pcard-title"><div class="product-reviews"><div class="stars"><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span></div><span class="count">0</span></div><div class="brand">
+                                Pokemon
+                            </div><div class="title">Chinese Exclusive Pikachu V Union Display Gift Box</div></div><div class="price-group"><div class="prices"><div class="sale-price dc-p">
+                            1.999,00 TL
+                        </div><div class="list-price">2.499,00 TL</div></div></div></div></a><div class="card-bottom"><div class="quantity" data-product-card-quantity="30"><a href="javascript:;" class="btn btn-minus"
+                        onclick="productQuantityBox(
+                        'decrement',
+                        'div[data-product-card-quantity=\'30\']'
+                        )"><i class="fas fa-minus"></i></a><input class="form-control" name="quantity" 
+                    data-version="2"
+                    data-decimal="0"
+                    data-min="1"
+                    data-increase="1"
+                    data-initial="1"
+                    value="1"
+                    onkeypress="return productQuantityBox(
+                    'change',
+                    'div[data-product-card-quantity=\'30\']',
+                    event)"/><a href="javascript:;" class="btn btn-plus"
+                        onclick="productQuantityBox(
+                        'increment',
+                        'div[data-product-card-quantity=\'30\']'
+                        )"><i class="fas fa-plus"></i></a></div><div class="buttons"><a href="javascript:;" onclick="addCart(30, 'card')"
+                           class="btn btn-cart ">
+                           Sepete Ekle
+                        </a></div></div></div></div></div><div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-list-p-v-1"><div class="card-product"><div class="card-product-inner"><div class="age-kart-product-favourite" data-favourite-product-id="29"><a href="javascript:;" class="add-favorite d-block"
+        onclick="userProductFavourite('add', 29, 'product')" aria-label="kart favori ekle"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/product-empty-heart.svg?v=1758267296"></a><a href="javascript:;" class="remove-favorite d-none"
+        onclick="userProductFavourite('remove', 29, 'product')" aria-label="kart favori cikar"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/product-fill-heart.svg?v=1758267303"></a></div><div class="image-wrapper"><div class="discount-kart">%25</div><div class="image"><div id="product-card-carousel-custom-module-code-137-29" class="carousel"><div class="carousel-outer"><div class="carousel-inner"><div class="carousel-item active"><a href="https://www.megacollectable.com/chinese-exclusive-umbreon-display-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-umbreon-display-gift-box-34097030-sw1000sh667.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-exclusive-umbreon-display-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-umbreon-display-gift-box-57216477-sw1000sh667.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-exclusive-umbreon-display-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-umbreon-display-gift-box-66679141-sw1000sh1775.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-exclusive-umbreon-display-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-umbreon-display-gift-box-17563471-sw1000sh1775.webp" alt="" ></a></div></div><a class="carousel-control-prev" href="#product-card-carousel-custom-module-code-137-29" role="button" data-slide="prev"><i class="fa fa-chevron-left"></i></a><a class="carousel-control-next" href="#product-card-carousel-custom-module-code-137-29" role="button" data-slide="next"><i class="fa fa-chevron-right"></i></a><ol class="carousel-indicators cardcarousel-indicators"><li data-target="#product-card-carousel-custom-module-code-137-29" 
+                                            data-slide-to="0" class="active"></li><li data-target="#product-card-carousel-custom-module-code-137-29" 
+                                            data-slide-to="1" class=""></li><li data-target="#product-card-carousel-custom-module-code-137-29" 
+                                            data-slide-to="2" class=""></li><li data-target="#product-card-carousel-custom-module-code-137-29" 
+                                            data-slide-to="3" class=""></li></ol></div></div></div></div><a href="https://www.megacollectable.com/chinese-exclusive-umbreon-display-gift-box" class="c-p-i-link" title="Chinese Exclusive Umbreon Display Gift Box"><div class="product-card-body"><div class="pcard-title"><div class="product-reviews"><div class="stars"><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span></div><span class="count">0</span></div><div class="brand">
+                                Pokemon
+                            </div><div class="title">Chinese Exclusive Umbreon Display Gift Box</div></div><div class="price-group"><div class="prices"><div class="sale-price dc-p">
+                            1.499,00 TL
+                        </div><div class="list-price">1.999,00 TL</div></div></div></div></a><div class="card-bottom"><div class="quantity" data-product-card-quantity="29"><a href="javascript:;" class="btn btn-minus"
+                        onclick="productQuantityBox(
+                        'decrement',
+                        'div[data-product-card-quantity=\'29\']'
+                        )"><i class="fas fa-minus"></i></a><input class="form-control" name="quantity" 
+                    data-version="2"
+                    data-decimal="0"
+                    data-min="1"
+                    data-increase="1"
+                    data-initial="1"
+                    value="1"
+                    onkeypress="return productQuantityBox(
+                    'change',
+                    'div[data-product-card-quantity=\'29\']',
+                    event)"/><a href="javascript:;" class="btn btn-plus"
+                        onclick="productQuantityBox(
+                        'increment',
+                        'div[data-product-card-quantity=\'29\']'
+                        )"><i class="fas fa-plus"></i></a></div><div class="buttons"><a href="javascript:;" onclick="addCart(29, 'card')"
+                           class="btn btn-cart ">
+                           Sepete Ekle
+                        </a></div></div></div></div></div><div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-list-p-v-1"><div class="card-product"><div class="card-product-inner"><div class="age-kart-product-favourite" data-favourite-product-id="28"><a href="javascript:;" class="add-favorite d-block"
+        onclick="userProductFavourite('add', 28, 'product')" aria-label="kart favori ekle"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/product-empty-heart.svg?v=1758267296"></a><a href="javascript:;" class="remove-favorite d-none"
+        onclick="userProductFavourite('remove', 28, 'product')" aria-label="kart favori cikar"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/product-fill-heart.svg?v=1758267303"></a></div><div class="image-wrapper"><div class="image"><div id="product-card-carousel-custom-module-code-137-28" class="carousel"><div class="carousel-outer"><div class="carousel-inner"><div class="carousel-item active"><a href="https://www.megacollectable.com/chinese-exclusive-mewtwo-binder-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-mewtwo-binder-gift-box-54444217-sw800sh800.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-exclusive-mewtwo-binder-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-mewtwo-binder-gift-box-53233769-sw259sh303.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-exclusive-mewtwo-binder-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-mewtwo-binder-gift-box-93686657-sw868sh1212.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-exclusive-mewtwo-binder-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-mewtwo-binder-gift-box-5879016-sw868sh1212.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-exclusive-mewtwo-binder-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-mewtwo-binder-gift-box-1472442-sw868sh1212.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-exclusive-mewtwo-binder-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-mewtwo-binder-gift-box-75764780-sw868sh1212.webp" alt="" ></a></div></div><a class="carousel-control-prev" href="#product-card-carousel-custom-module-code-137-28" role="button" data-slide="prev"><i class="fa fa-chevron-left"></i></a><a class="carousel-control-next" href="#product-card-carousel-custom-module-code-137-28" role="button" data-slide="next"><i class="fa fa-chevron-right"></i></a><ol class="carousel-indicators cardcarousel-indicators"><li data-target="#product-card-carousel-custom-module-code-137-28" 
+                                            data-slide-to="0" class="active"></li><li data-target="#product-card-carousel-custom-module-code-137-28" 
+                                            data-slide-to="1" class=""></li><li data-target="#product-card-carousel-custom-module-code-137-28" 
+                                            data-slide-to="2" class=""></li><li data-target="#product-card-carousel-custom-module-code-137-28" 
+                                            data-slide-to="3" class=""></li><li data-target="#product-card-carousel-custom-module-code-137-28" 
+                                            data-slide-to="4" class=""></li><li data-target="#product-card-carousel-custom-module-code-137-28" 
+                                            data-slide-to="5" class=""></li></ol></div></div></div></div><a href="https://www.megacollectable.com/chinese-exclusive-mewtwo-binder-gift-box" class="c-p-i-link" title="Chinese Exclusive Mewtwo Binder Gift Box"><div class="product-card-body"><div class="pcard-title"><div class="product-reviews"><div class="stars"><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span></div><span class="count">0</span></div><div class="brand">
+                                Pokemon
+                            </div><div class="title">Chinese Exclusive Mewtwo Binder Gift Box</div></div><div class="price-group"><div class="prices"><div class="sale-price ">
+                            1.999,00 TL
+                        </div></div></div></div></a><div class="card-bottom"><div class="quantity" data-product-card-quantity="28"><a href="javascript:;" class="btn btn-minus"
+                        onclick="productQuantityBox(
+                        'decrement',
+                        'div[data-product-card-quantity=\'28\']'
+                        )"><i class="fas fa-minus"></i></a><input class="form-control" name="quantity" 
+                    data-version="2"
+                    data-decimal="0"
+                    data-min="1"
+                    data-increase="1"
+                    data-initial="1"
+                    value="1"
+                    onkeypress="return productQuantityBox(
+                    'change',
+                    'div[data-product-card-quantity=\'28\']',
+                    event)"/><a href="javascript:;" class="btn btn-plus"
+                        onclick="productQuantityBox(
+                        'increment',
+                        'div[data-product-card-quantity=\'28\']'
+                        )"><i class="fas fa-plus"></i></a></div><div class="buttons"><a href="javascript:;" onclick="addCart(28, 'card')"
+                           class="btn btn-cart ">
+                           Sepete Ekle
+                        </a></div></div></div></div></div><div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-list-p-v-1"><div class="card-product"><div class="card-product-inner"><div class="age-kart-product-favourite" data-favourite-product-id="27"><a href="javascript:;" class="add-favorite d-block"
+        onclick="userProductFavourite('add', 27, 'product')" aria-label="kart favori ekle"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/product-empty-heart.svg?v=1758267296"></a><a href="javascript:;" class="remove-favorite d-none"
+        onclick="userProductFavourite('remove', 27, 'product')" aria-label="kart favori cikar"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/product-fill-heart.svg?v=1758267303"></a></div><div class="image-wrapper"><div class="image"><div id="product-card-carousel-custom-module-code-137-27" class="carousel"><div class="carousel-outer"><div class="carousel-inner"><div class="carousel-item active"><a href="https://www.megacollectable.com/chinese-exclusive-zacian-binder-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-zacian-binder-gift-box-56531365-sw800sh800.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-exclusive-zacian-binder-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-zacian-binder-gift-box-88167534-sw294sh346.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-exclusive-zacian-binder-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-zacian-binder-gift-box-82492170-sw868sh1212.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-exclusive-zacian-binder-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-zacian-binder-gift-box-666968-sw868sh1212.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-exclusive-zacian-binder-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-zacian-binder-gift-box-59140666-sw868sh1212.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-exclusive-zacian-binder-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-zacian-binder-gift-box-89432366-sw868sh1212.webp" alt="" ></a></div></div><a class="carousel-control-prev" href="#product-card-carousel-custom-module-code-137-27" role="button" data-slide="prev"><i class="fa fa-chevron-left"></i></a><a class="carousel-control-next" href="#product-card-carousel-custom-module-code-137-27" role="button" data-slide="next"><i class="fa fa-chevron-right"></i></a><ol class="carousel-indicators cardcarousel-indicators"><li data-target="#product-card-carousel-custom-module-code-137-27" 
+                                            data-slide-to="0" class="active"></li><li data-target="#product-card-carousel-custom-module-code-137-27" 
+                                            data-slide-to="1" class=""></li><li data-target="#product-card-carousel-custom-module-code-137-27" 
+                                            data-slide-to="2" class=""></li><li data-target="#product-card-carousel-custom-module-code-137-27" 
+                                            data-slide-to="3" class=""></li><li data-target="#product-card-carousel-custom-module-code-137-27" 
+                                            data-slide-to="4" class=""></li><li data-target="#product-card-carousel-custom-module-code-137-27" 
+                                            data-slide-to="5" class=""></li></ol></div></div></div></div><a href="https://www.megacollectable.com/chinese-exclusive-zacian-binder-gift-box" class="c-p-i-link" title="Chinese Exclusive Zacian Binder Gift Box"><div class="product-card-body"><div class="pcard-title"><div class="product-reviews"><div class="stars"><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span></div><span class="count">0</span></div><div class="brand">
+                                Pokemon
+                            </div><div class="title">Chinese Exclusive Zacian Binder Gift Box</div></div><div class="price-group"><div class="prices"><div class="sale-price ">
+                            1.999,00 TL
+                        </div></div></div></div></a><div class="card-bottom"><div class="quantity" data-product-card-quantity="27"><a href="javascript:;" class="btn btn-minus"
+                        onclick="productQuantityBox(
+                        'decrement',
+                        'div[data-product-card-quantity=\'27\']'
+                        )"><i class="fas fa-minus"></i></a><input class="form-control" name="quantity" 
+                    data-version="2"
+                    data-decimal="0"
+                    data-min="1"
+                    data-increase="1"
+                    data-initial="1"
+                    value="1"
+                    onkeypress="return productQuantityBox(
+                    'change',
+                    'div[data-product-card-quantity=\'27\']',
+                    event)"/><a href="javascript:;" class="btn btn-plus"
+                        onclick="productQuantityBox(
+                        'increment',
+                        'div[data-product-card-quantity=\'27\']'
+                        )"><i class="fas fa-plus"></i></a></div><div class="buttons"><a href="javascript:;" onclick="addCart(27, 'card')"
+                           class="btn btn-cart ">
+                           Sepete Ekle
+                        </a></div></div></div></div></div><div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-list-p-v-1"><div class="card-product"><div class="card-product-inner"><div class="age-kart-product-favourite" data-favourite-product-id="26"><a href="javascript:;" class="add-favorite d-block"
+        onclick="userProductFavourite('add', 26, 'product')" aria-label="kart favori ekle"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/product-empty-heart.svg?v=1758267296"></a><a href="javascript:;" class="remove-favorite d-none"
+        onclick="userProductFavourite('remove', 26, 'product')" aria-label="kart favori cikar"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/product-fill-heart.svg?v=1758267303"></a></div><div class="image-wrapper"><div class="image"><div id="product-card-carousel-custom-module-code-137-26" class="carousel"><div class="carousel-outer"><div class="carousel-inner"><div class="carousel-item active"><a href="https://www.megacollectable.com/chinese-exclusive-greninja-binder-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-greninja-binder-gift-box-40192914-sw713sh476.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-exclusive-greninja-binder-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-greninja-binder-gift-box-78069523-sw313sh340.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-exclusive-greninja-binder-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-greninja-binder-gift-box-54835892-sw868sh1212.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-exclusive-greninja-binder-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-greninja-binder-gift-box-88343214-sw868sh1212.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-exclusive-greninja-binder-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-greninja-binder-gift-box-53380162-sw868sh1212.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-exclusive-greninja-binder-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-greninja-binder-gift-box-81609865-sw868sh1212.webp" alt="" ></a></div></div><a class="carousel-control-prev" href="#product-card-carousel-custom-module-code-137-26" role="button" data-slide="prev"><i class="fa fa-chevron-left"></i></a><a class="carousel-control-next" href="#product-card-carousel-custom-module-code-137-26" role="button" data-slide="next"><i class="fa fa-chevron-right"></i></a><ol class="carousel-indicators cardcarousel-indicators"><li data-target="#product-card-carousel-custom-module-code-137-26" 
+                                            data-slide-to="0" class="active"></li><li data-target="#product-card-carousel-custom-module-code-137-26" 
+                                            data-slide-to="1" class=""></li><li data-target="#product-card-carousel-custom-module-code-137-26" 
+                                            data-slide-to="2" class=""></li><li data-target="#product-card-carousel-custom-module-code-137-26" 
+                                            data-slide-to="3" class=""></li><li data-target="#product-card-carousel-custom-module-code-137-26" 
+                                            data-slide-to="4" class=""></li><li data-target="#product-card-carousel-custom-module-code-137-26" 
+                                            data-slide-to="5" class=""></li></ol></div></div></div></div><a href="https://www.megacollectable.com/chinese-exclusive-greninja-binder-gift-box" class="c-p-i-link" title="Chinese Exclusive Greninja Binder Gift Box"><div class="product-card-body"><div class="pcard-title"><div class="product-reviews"><div class="stars"><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span></div><span class="count">0</span></div><div class="brand">
+                                Pokemon
+                            </div><div class="title">Chinese Exclusive Greninja Binder Gift Box</div></div><div class="price-group"><div class="prices"><div class="sale-price ">
+                            1.999,00 TL
+                        </div></div></div></div></a><div class="card-bottom"><div class="quantity" data-product-card-quantity="26"><a href="javascript:;" class="btn btn-minus"
+                        onclick="productQuantityBox(
+                        'decrement',
+                        'div[data-product-card-quantity=\'26\']'
+                        )"><i class="fas fa-minus"></i></a><input class="form-control" name="quantity" 
+                    data-version="2"
+                    data-decimal="0"
+                    data-min="1"
+                    data-increase="1"
+                    data-initial="1"
+                    value="1"
+                    onkeypress="return productQuantityBox(
+                    'change',
+                    'div[data-product-card-quantity=\'26\']',
+                    event)"/><a href="javascript:;" class="btn btn-plus"
+                        onclick="productQuantityBox(
+                        'increment',
+                        'div[data-product-card-quantity=\'26\']'
+                        )"><i class="fas fa-plus"></i></a></div><div class="buttons"><a href="javascript:;" onclick="addCart(26, 'card')"
+                           class="btn btn-cart ">
+                           Sepete Ekle
+                        </a></div></div></div></div></div><div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-list-p-v-1"><div class="card-product"><div class="card-product-inner"><div class="age-kart-product-favourite" data-favourite-product-id="25"><a href="javascript:;" class="add-favorite d-block"
+        onclick="userProductFavourite('add', 25, 'product')" aria-label="kart favori ekle"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/product-empty-heart.svg?v=1758267296"></a><a href="javascript:;" class="remove-favorite d-none"
+        onclick="userProductFavourite('remove', 25, 'product')" aria-label="kart favori cikar"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/product-fill-heart.svg?v=1758267303"></a></div><div class="image-wrapper"><div class="discount-kart">%25</div><div class="image"><div id="product-card-carousel-custom-module-code-137-25" class="carousel"><div class="carousel-outer"><div class="carousel-inner"><div class="carousel-item active"><a href="https://www.megacollectable.com/chinese-exclusive-mew-display-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-mew-display-gift-box-23134266-sw1000sh667.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-exclusive-mew-display-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-mew-display-gift-box-78105660-sw1000sh667.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-exclusive-mew-display-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-mew-display-gift-box-71953549-sw1000sh1775.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-exclusive-mew-display-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-mew-display-gift-box-87025185-sw1000sh1775.webp" alt="" ></a></div></div><a class="carousel-control-prev" href="#product-card-carousel-custom-module-code-137-25" role="button" data-slide="prev"><i class="fa fa-chevron-left"></i></a><a class="carousel-control-next" href="#product-card-carousel-custom-module-code-137-25" role="button" data-slide="next"><i class="fa fa-chevron-right"></i></a><ol class="carousel-indicators cardcarousel-indicators"><li data-target="#product-card-carousel-custom-module-code-137-25" 
+                                            data-slide-to="0" class="active"></li><li data-target="#product-card-carousel-custom-module-code-137-25" 
+                                            data-slide-to="1" class=""></li><li data-target="#product-card-carousel-custom-module-code-137-25" 
+                                            data-slide-to="2" class=""></li><li data-target="#product-card-carousel-custom-module-code-137-25" 
+                                            data-slide-to="3" class=""></li></ol></div></div></div></div><a href="https://www.megacollectable.com/chinese-exclusive-mew-display-gift-box" class="c-p-i-link" title="Chinese Exclusive Mew Display Gift Box"><div class="product-card-body"><div class="pcard-title"><div class="product-reviews"><div class="stars"><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span></div><span class="count">0</span></div><div class="brand">
+                                Pokemon
+                            </div><div class="title">Chinese Exclusive Mew Display Gift Box</div></div><div class="price-group"><div class="prices"><div class="sale-price dc-p">
+                            1.499,00 TL
+                        </div><div class="list-price">1.999,00 TL</div></div></div></div></a><div class="card-bottom"><div class="quantity" data-product-card-quantity="25"><a href="javascript:;" class="btn btn-minus"
+                        onclick="productQuantityBox(
+                        'decrement',
+                        'div[data-product-card-quantity=\'25\']'
+                        )"><i class="fas fa-minus"></i></a><input class="form-control" name="quantity" 
+                    data-version="2"
+                    data-decimal="0"
+                    data-min="1"
+                    data-increase="1"
+                    data-initial="1"
+                    value="1"
+                    onkeypress="return productQuantityBox(
+                    'change',
+                    'div[data-product-card-quantity=\'25\']',
+                    event)"/><a href="javascript:;" class="btn btn-plus"
+                        onclick="productQuantityBox(
+                        'increment',
+                        'div[data-product-card-quantity=\'25\']'
+                        )"><i class="fas fa-plus"></i></a></div><div class="buttons"><a href="javascript:;" onclick="addCart(25, 'card')"
+                           class="btn btn-cart ">
+                           Sepete Ekle
+                        </a></div></div></div></div></div><div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-list-p-v-1"><div class="card-product"><div class="card-product-inner"><div class="age-kart-product-favourite" data-favourite-product-id="24"><a href="javascript:;" class="add-favorite d-block"
+        onclick="userProductFavourite('add', 24, 'product')" aria-label="kart favori ekle"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/product-empty-heart.svg?v=1758267296"></a><a href="javascript:;" class="remove-favorite d-none"
+        onclick="userProductFavourite('remove', 24, 'product')" aria-label="kart favori cikar"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/product-fill-heart.svg?v=1758267303"></a></div><div class="image-wrapper"><div class="image"><div id="product-card-carousel-custom-module-code-137-24" class="carousel"><div class="carousel-outer"><div class="carousel-inner"><div class="carousel-item active"><a href="https://www.megacollectable.com/chinese-exclusive-jolteon-vmax-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-jolteon-vmax-gift-box-12576143-sw1000sh667.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-exclusive-jolteon-vmax-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-jolteon-vmax-gift-box-36350086-sw868sh1212.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-exclusive-jolteon-vmax-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-jolteon-vmax-gift-box-1650963-sw868sh1212.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-exclusive-jolteon-vmax-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-jolteon-vmax-gift-box-63402598-sw868sh1212.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-exclusive-jolteon-vmax-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-jolteon-vmax-gift-box-7538647-sw1000sh667.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-exclusive-jolteon-vmax-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-jolteon-vmax-gift-box-69674659-sw1000sh1803.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-exclusive-jolteon-vmax-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-jolteon-vmax-gift-box-68240432-sw1000sh1775.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-exclusive-jolteon-vmax-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-jolteon-vmax-gift-box-71108748-sw1000sh1803.webp" alt="" ></a></div></div><a class="carousel-control-prev" href="#product-card-carousel-custom-module-code-137-24" role="button" data-slide="prev"><i class="fa fa-chevron-left"></i></a><a class="carousel-control-next" href="#product-card-carousel-custom-module-code-137-24" role="button" data-slide="next"><i class="fa fa-chevron-right"></i></a><ol class="carousel-indicators cardcarousel-indicators"><li data-target="#product-card-carousel-custom-module-code-137-24" 
+                                            data-slide-to="0" class="active"></li><li data-target="#product-card-carousel-custom-module-code-137-24" 
+                                            data-slide-to="1" class=""></li><li data-target="#product-card-carousel-custom-module-code-137-24" 
+                                            data-slide-to="2" class=""></li><li data-target="#product-card-carousel-custom-module-code-137-24" 
+                                            data-slide-to="3" class=""></li><li data-target="#product-card-carousel-custom-module-code-137-24" 
+                                            data-slide-to="4" class=""></li><li data-target="#product-card-carousel-custom-module-code-137-24" 
+                                            data-slide-to="5" class=""></li><li data-target="#product-card-carousel-custom-module-code-137-24" 
+                                            data-slide-to="6" class=""></li><li data-target="#product-card-carousel-custom-module-code-137-24" 
+                                            data-slide-to="7" class=""></li></ol></div></div></div></div><a href="https://www.megacollectable.com/chinese-exclusive-jolteon-vmax-gift-box" class="c-p-i-link" title="Chinese Exclusive Jolteon Vmax Gift Box"><div class="product-card-body"><div class="pcard-title"><div class="product-reviews"><div class="stars"><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span></div><span class="count">0</span></div><div class="brand">
+                                Pokemon
+                            </div><div class="title">Chinese Exclusive Jolteon Vmax Gift Box</div></div><div class="price-group"><div class="prices"><div class="sale-price ">
+                            24.999,00 TL
+                        </div></div></div></div></a><div class="card-bottom"><div class="quantity" data-product-card-quantity="24"><a href="javascript:;" class="btn btn-minus"
+                        onclick="productQuantityBox(
+                        'decrement',
+                        'div[data-product-card-quantity=\'24\']'
+                        )"><i class="fas fa-minus"></i></a><input class="form-control" name="quantity" 
+                    data-version="2"
+                    data-decimal="0"
+                    data-min="1"
+                    data-increase="1"
+                    data-initial="1"
+                    value="1"
+                    onkeypress="return productQuantityBox(
+                    'change',
+                    'div[data-product-card-quantity=\'24\']',
+                    event)"/><a href="javascript:;" class="btn btn-plus"
+                        onclick="productQuantityBox(
+                        'increment',
+                        'div[data-product-card-quantity=\'24\']'
+                        )"><i class="fas fa-plus"></i></a></div><div class="buttons"><a href="javascript:;" onclick="addCart(24, 'card')"
+                           class="btn btn-cart ">
+                           Sepete Ekle
+                        </a></div></div></div></div></div><div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-list-p-v-1"><div class="card-product"><div class="card-product-inner"><div class="age-kart-product-favourite" data-favourite-product-id="23"><a href="javascript:;" class="add-favorite d-block"
+        onclick="userProductFavourite('add', 23, 'product')" aria-label="kart favori ekle"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/product-empty-heart.svg?v=1758267296"></a><a href="javascript:;" class="remove-favorite d-none"
+        onclick="userProductFavourite('remove', 23, 'product')" aria-label="kart favori cikar"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/product-fill-heart.svg?v=1758267303"></a></div><div class="image-wrapper"><div class="image"><div id="product-card-carousel-custom-module-code-137-23" class="carousel"><div class="carousel-outer"><div class="carousel-inner"><div class="carousel-item active"><a href="https://www.megacollectable.com/chinese-exclusive-flareon-vmax-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-flareon-vmax-gift-box-11146553-sw1000sh667.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-exclusive-flareon-vmax-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-flareon-vmax-gift-box-47287694-sw868sh1212.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-exclusive-flareon-vmax-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-flareon-vmax-gift-box-67094078-sw868sh1212.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-exclusive-flareon-vmax-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-flareon-vmax-gift-box-60906937-sw868sh1212.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-exclusive-flareon-vmax-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-flareon-vmax-gift-box-2077652-sw1000sh667.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-exclusive-flareon-vmax-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-flareon-vmax-gift-box-65478585-sw1000sh1803.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-exclusive-flareon-vmax-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-flareon-vmax-gift-box-79433389-sw1000sh1803.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-exclusive-flareon-vmax-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-exclusive-flareon-vmax-gift-box-77934899-sw1000sh1775.webp" alt="" ></a></div></div><a class="carousel-control-prev" href="#product-card-carousel-custom-module-code-137-23" role="button" data-slide="prev"><i class="fa fa-chevron-left"></i></a><a class="carousel-control-next" href="#product-card-carousel-custom-module-code-137-23" role="button" data-slide="next"><i class="fa fa-chevron-right"></i></a><ol class="carousel-indicators cardcarousel-indicators"><li data-target="#product-card-carousel-custom-module-code-137-23" 
+                                            data-slide-to="0" class="active"></li><li data-target="#product-card-carousel-custom-module-code-137-23" 
+                                            data-slide-to="1" class=""></li><li data-target="#product-card-carousel-custom-module-code-137-23" 
+                                            data-slide-to="2" class=""></li><li data-target="#product-card-carousel-custom-module-code-137-23" 
+                                            data-slide-to="3" class=""></li><li data-target="#product-card-carousel-custom-module-code-137-23" 
+                                            data-slide-to="4" class=""></li><li data-target="#product-card-carousel-custom-module-code-137-23" 
+                                            data-slide-to="5" class=""></li><li data-target="#product-card-carousel-custom-module-code-137-23" 
+                                            data-slide-to="6" class=""></li><li data-target="#product-card-carousel-custom-module-code-137-23" 
+                                            data-slide-to="7" class=""></li></ol></div></div></div></div><a href="https://www.megacollectable.com/chinese-exclusive-flareon-vmax-gift-box" class="c-p-i-link" title="Chinese Exclusive Flareon Vmax Gift Box"><div class="product-card-body"><div class="pcard-title"><div class="product-reviews"><div class="stars"><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span></div><span class="count">0</span></div><div class="brand">
+                                Pokemon
+                            </div><div class="title">Chinese Exclusive Flareon Vmax Gift Box</div></div><div class="price-group"><div class="prices"><div class="sale-price ">
+                            24.999,00 TL
+                        </div></div></div></div></a><div class="card-bottom"><div class="quantity" data-product-card-quantity="23"><a href="javascript:;" class="btn btn-minus"
+                        onclick="productQuantityBox(
+                        'decrement',
+                        'div[data-product-card-quantity=\'23\']'
+                        )"><i class="fas fa-minus"></i></a><input class="form-control" name="quantity" 
+                    data-version="2"
+                    data-decimal="0"
+                    data-min="1"
+                    data-increase="1"
+                    data-initial="1"
+                    value="1"
+                    onkeypress="return productQuantityBox(
+                    'change',
+                    'div[data-product-card-quantity=\'23\']',
+                    event)"/><a href="javascript:;" class="btn btn-plus"
+                        onclick="productQuantityBox(
+                        'increment',
+                        'div[data-product-card-quantity=\'23\']'
+                        )"><i class="fas fa-plus"></i></a></div><div class="buttons"><a href="javascript:;" onclick="addCart(23, 'card')"
+                           class="btn btn-cart ">
+                           Sepete Ekle
+                        </a></div></div></div></div></div><div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-list-p-v-1"><div class="card-product"><div class="card-product-inner"><div class="age-kart-product-favourite" data-favourite-product-id="21"><a href="javascript:;" class="add-favorite d-block"
+        onclick="userProductFavourite('add', 21, 'product')" aria-label="kart favori ekle"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/product-empty-heart.svg?v=1758267296"></a><a href="javascript:;" class="remove-favorite d-none"
+        onclick="userProductFavourite('remove', 21, 'product')" aria-label="kart favori cikar"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/product-fill-heart.svg?v=1758267303"></a></div><div class="image-wrapper"><div class="discount-kart">%25</div><div class="image"><div id="product-card-carousel-custom-module-code-137-21" class="carousel"><div class="carousel-outer"><div class="carousel-inner"><div class="carousel-item active"><a href="https://www.megacollectable.com/chinese-eevee-blind-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-eevee-blind-box-89519711-sw600sh400.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-eevee-blind-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-eevee-blind-box-479194-sw1000sh667.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-eevee-blind-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-eevee-blind-box-18314185-sw1000sh667.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-eevee-blind-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-eevee-blind-box-89876684-sw1000sh1804.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-eevee-blind-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-eevee-blind-box-155087-sw1000sh1804.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-eevee-blind-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-eevee-blind-box-94616547-sw868sh1212.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-eevee-blind-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-eevee-blind-box-69341489-sw868sh1212.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-eevee-blind-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-eevee-blind-box-23509059-sw868sh1212.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-eevee-blind-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-eevee-blind-box-35353961-sw868sh1212.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-eevee-blind-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-eevee-blind-box-82132184-sw868sh1212.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-eevee-blind-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-eevee-blind-box-47214659-sw868sh1212.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-eevee-blind-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-eevee-blind-box-41686289-sw868sh1212.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-eevee-blind-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-eevee-blind-box-19931927-sw868sh1212.webp" alt="" ></a></div></div><a class="carousel-control-prev" href="#product-card-carousel-custom-module-code-137-21" role="button" data-slide="prev"><i class="fa fa-chevron-left"></i></a><a class="carousel-control-next" href="#product-card-carousel-custom-module-code-137-21" role="button" data-slide="next"><i class="fa fa-chevron-right"></i></a></div></div></div></div><a href="https://www.megacollectable.com/chinese-eevee-blind-box" class="c-p-i-link" title="Chinese Eevee Blind Box"><div class="product-card-body"><div class="pcard-title"><div class="product-reviews"><div class="stars"><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span></div><span class="count">0</span></div><div class="brand">
+                                Pokemon
+                            </div><div class="title">Chinese Eevee Blind Box</div></div><div class="price-group"><div class="prices"><div class="sale-price dc-p">
+                            1.499,00 TL
+                        </div><div class="list-price">1.999,00 TL</div></div></div></div></a><div class="card-bottom"><div class="quantity" data-product-card-quantity="21"><a href="javascript:;" class="btn btn-minus"
+                        onclick="productQuantityBox(
+                        'decrement',
+                        'div[data-product-card-quantity=\'21\']'
+                        )"><i class="fas fa-minus"></i></a><input class="form-control" name="quantity" 
+                    data-version="2"
+                    data-decimal="0"
+                    data-min="1"
+                    data-increase="1"
+                    data-initial="1"
+                    value="1"
+                    onkeypress="return productQuantityBox(
+                    'change',
+                    'div[data-product-card-quantity=\'21\']',
+                    event)"/><a href="javascript:;" class="btn btn-plus"
+                        onclick="productQuantityBox(
+                        'increment',
+                        'div[data-product-card-quantity=\'21\']'
+                        )"><i class="fas fa-plus"></i></a></div><div class="buttons"><a href="javascript:;" onclick="addCart(21, 'card')"
+                           class="btn btn-cart ">
+                           Sepete Ekle
+                        </a></div></div></div></div></div><div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-list-p-v-1"><div class="card-product"><div class="card-product-inner"><div class="age-kart-product-favourite" data-favourite-product-id="20"><a href="javascript:;" class="add-favorite d-block"
+        onclick="userProductFavourite('add', 20, 'product')" aria-label="kart favori ekle"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/product-empty-heart.svg?v=1758267296"></a><a href="javascript:;" class="remove-favorite d-none"
+        onclick="userProductFavourite('remove', 20, 'product')" aria-label="kart favori cikar"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/product-fill-heart.svg?v=1758267303"></a></div><div class="image-wrapper"><div class="discount-kart">%25</div><div class="image"><div id="product-card-carousel-custom-module-code-137-20" class="carousel"><div class="carousel-outer"><div class="carousel-inner"><div class="carousel-item active"><a href="https://www.megacollectable.com/chinese-charizard-blind-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-charizard-blind-box-51421667-sw1000sh667.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-charizard-blind-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-charizard-blind-box-47973182-sw1000sh667.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-charizard-blind-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-charizard-blind-box-72224843-sw1000sh1803.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-charizard-blind-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-charizard-blind-box-48004758-sw1000sh1803.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-charizard-blind-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-charizard-blind-box-91957195-sw868sh1212.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-charizard-blind-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-charizard-blind-box-16906155-sw868sh1212.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-charizard-blind-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-charizard-blind-box-28631491-sw868sh1212.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-charizard-blind-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-charizard-blind-box-86201859-sw868sh1212.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-charizard-blind-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-charizard-blind-box-61808475-sw868sh1212.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-charizard-blind-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-charizard-blind-box-6982338-sw868sh1212.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-charizard-blind-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-charizard-blind-box-25196761-sw868sh1212.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-charizard-blind-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-charizard-blind-box-1879395-sw868sh1212.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-charizard-blind-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-charizard-blind-box-81144560-sw868sh1212.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-charizard-blind-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-charizard-blind-box-1724538-sw868sh1212.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-charizard-blind-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-charizard-blind-box-87270826-sw868sh1212.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/chinese-charizard-blind-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/chinese-charizard-blind-box-78804854-sw868sh1212.webp" alt="" ></a></div></div><a class="carousel-control-prev" href="#product-card-carousel-custom-module-code-137-20" role="button" data-slide="prev"><i class="fa fa-chevron-left"></i></a><a class="carousel-control-next" href="#product-card-carousel-custom-module-code-137-20" role="button" data-slide="next"><i class="fa fa-chevron-right"></i></a></div></div></div></div><a href="https://www.megacollectable.com/chinese-charizard-blind-box" class="c-p-i-link" title="Chinese Charizard Blind Box"><div class="product-card-body"><div class="pcard-title"><div class="product-reviews"><div class="stars"><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span></div><span class="count">0</span></div><div class="brand">
+                                Pokemon
+                            </div><div class="title">Chinese Charizard Blind Box</div></div><div class="price-group"><div class="prices"><div class="sale-price dc-p">
+                            1.499,00 TL
+                        </div><div class="list-price">1.999,00 TL</div></div></div></div></a><div class="card-bottom"><div class="quantity" data-product-card-quantity="20"><a href="javascript:;" class="btn btn-minus"
+                        onclick="productQuantityBox(
+                        'decrement',
+                        'div[data-product-card-quantity=\'20\']'
+                        )"><i class="fas fa-minus"></i></a><input class="form-control" name="quantity" 
+                    data-version="2"
+                    data-decimal="0"
+                    data-min="1"
+                    data-increase="1"
+                    data-initial="1"
+                    value="1"
+                    onkeypress="return productQuantityBox(
+                    'change',
+                    'div[data-product-card-quantity=\'20\']',
+                    event)"/><a href="javascript:;" class="btn btn-plus"
+                        onclick="productQuantityBox(
+                        'increment',
+                        'div[data-product-card-quantity=\'20\']'
+                        )"><i class="fas fa-plus"></i></a></div><div class="buttons"><a href="javascript:;" onclick="addCart(20, 'card')"
+                           class="btn btn-cart ">
+                           Sepete Ekle
+                        </a></div></div></div></div></div><div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-list-p-v-1"><div class="card-product"><div class="card-product-inner"><div class="age-kart-product-favourite" data-favourite-product-id="19"><a href="javascript:;" class="add-favorite d-block"
+        onclick="userProductFavourite('add', 19, 'product')" aria-label="kart favori ekle"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/product-empty-heart.svg?v=1758267296"></a><a href="javascript:;" class="remove-favorite d-none"
+        onclick="userProductFavourite('remove', 19, 'product')" aria-label="kart favori cikar"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/product-fill-heart.svg?v=1758267303"></a></div><div class="image-wrapper"><div class="discount-kart">%10</div><div class="image"><div id="product-card-carousel-custom-module-code-137-19" class="carousel"><div class="carousel-outer"><div class="carousel-inner"><div class="carousel-item active"><a href="https://www.megacollectable.com/charizard-exclusive-chinese-edition-vmax-gift-box-orange"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/charizard-exclusive-chinese-edition-vmax-gift-box-orange-65148614-sw1080sh1080.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/charizard-exclusive-chinese-edition-vmax-gift-box-orange"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/charizard-exclusive-chinese-edition-vmax-gift-box-orange-52886598-sw1000sh563.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/charizard-exclusive-chinese-edition-vmax-gift-box-orange"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/charizard-exclusive-chinese-edition-vmax-gift-box-orange-72932888-sw868sh1212.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/charizard-exclusive-chinese-edition-vmax-gift-box-orange"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/charizard-exclusive-chinese-edition-vmax-gift-box-orange-87854273-sw1000sh1775.webp" alt="" ></a></div></div><a class="carousel-control-prev" href="#product-card-carousel-custom-module-code-137-19" role="button" data-slide="prev"><i class="fa fa-chevron-left"></i></a><a class="carousel-control-next" href="#product-card-carousel-custom-module-code-137-19" role="button" data-slide="next"><i class="fa fa-chevron-right"></i></a><ol class="carousel-indicators cardcarousel-indicators"><li data-target="#product-card-carousel-custom-module-code-137-19" 
+                                            data-slide-to="0" class="active"></li><li data-target="#product-card-carousel-custom-module-code-137-19" 
+                                            data-slide-to="1" class=""></li><li data-target="#product-card-carousel-custom-module-code-137-19" 
+                                            data-slide-to="2" class=""></li><li data-target="#product-card-carousel-custom-module-code-137-19" 
+                                            data-slide-to="3" class=""></li></ol></div></div></div></div><a href="https://www.megacollectable.com/charizard-exclusive-chinese-edition-vmax-gift-box-orange" class="c-p-i-link" title="Charizard Exclusive Chinese Edition Vmax Gift Box Orange"><div class="product-card-body"><div class="pcard-title"><div class="product-reviews"><div class="stars"><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span></div><span class="count">0</span></div><div class="brand">
+                                Pokemon
+                            </div><div class="title">Charizard Exclusive Chinese Edition Vmax Gift Box Orange</div></div><div class="price-group"><div class="prices"><div class="sale-price dc-p">
+                            17.999,00 TL
+                        </div><div class="list-price">19.999,00 TL</div></div></div></div></a><div class="card-bottom"><div class="quantity" data-product-card-quantity="19"><a href="javascript:;" class="btn btn-minus"
+                        onclick="productQuantityBox(
+                        'decrement',
+                        'div[data-product-card-quantity=\'19\']'
+                        )"><i class="fas fa-minus"></i></a><input class="form-control" name="quantity" 
+                    data-version="2"
+                    data-decimal="0"
+                    data-min="1"
+                    data-increase="1"
+                    data-initial="1"
+                    value="1"
+                    onkeypress="return productQuantityBox(
+                    'change',
+                    'div[data-product-card-quantity=\'19\']',
+                    event)"/><a href="javascript:;" class="btn btn-plus"
+                        onclick="productQuantityBox(
+                        'increment',
+                        'div[data-product-card-quantity=\'19\']'
+                        )"><i class="fas fa-plus"></i></a></div><div class="buttons"><a href="javascript:;" onclick="addCart(19, 'card')"
+                           class="btn btn-cart ">
+                           Sepete Ekle
+                        </a></div></div></div></div></div><div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-list-p-v-1"><div class="card-product"><div class="card-product-inner"><div class="age-kart-product-favourite" data-favourite-product-id="18"><a href="javascript:;" class="add-favorite d-block"
+        onclick="userProductFavourite('add', 18, 'product')" aria-label="kart favori ekle"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/product-empty-heart.svg?v=1758267296"></a><a href="javascript:;" class="remove-favorite d-none"
+        onclick="userProductFavourite('remove', 18, 'product')" aria-label="kart favori cikar"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/product-fill-heart.svg?v=1758267303"></a></div><div class="image-wrapper"><div class="discount-kart">%5</div><div class="image"><div id="product-card-carousel-custom-module-code-137-18" class="carousel"><div class="carousel-outer"><div class="carousel-inner"><div class="carousel-item active"><a href="https://www.megacollectable.com/charizard-exclusive-chinese-edition-vmax-gift-box-black"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/charizard-exclusive-chinese-edition-vmax-gift-box-black-16494059-sw1080sh1080.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/charizard-exclusive-chinese-edition-vmax-gift-box-black"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/charizard-exclusive-chinese-edition-vmax-gift-box-black-26023716-sw1000sh563.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/charizard-exclusive-chinese-edition-vmax-gift-box-black"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/charizard-exclusive-chinese-edition-vmax-gift-box-black-36121359-sw868sh1212.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/charizard-exclusive-chinese-edition-vmax-gift-box-black"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/charizard-exclusive-chinese-edition-vmax-gift-box-black-98785926-sw1000sh1775.webp" alt="" ></a></div></div><a class="carousel-control-prev" href="#product-card-carousel-custom-module-code-137-18" role="button" data-slide="prev"><i class="fa fa-chevron-left"></i></a><a class="carousel-control-next" href="#product-card-carousel-custom-module-code-137-18" role="button" data-slide="next"><i class="fa fa-chevron-right"></i></a><ol class="carousel-indicators cardcarousel-indicators"><li data-target="#product-card-carousel-custom-module-code-137-18" 
+                                            data-slide-to="0" class="active"></li><li data-target="#product-card-carousel-custom-module-code-137-18" 
+                                            data-slide-to="1" class=""></li><li data-target="#product-card-carousel-custom-module-code-137-18" 
+                                            data-slide-to="2" class=""></li><li data-target="#product-card-carousel-custom-module-code-137-18" 
+                                            data-slide-to="3" class=""></li></ol></div></div></div></div><a href="https://www.megacollectable.com/charizard-exclusive-chinese-edition-vmax-gift-box-black" class="c-p-i-link" title="Charizard Exclusive Chinese Edition Vmax Gift Box Black"><div class="product-card-body"><div class="pcard-title"><div class="product-reviews"><div class="stars"><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span></div><span class="count">0</span></div><div class="brand">
+                                Pokemon
+                            </div><div class="title">Charizard Exclusive Chinese Edition Vmax Gift Box Black</div></div><div class="price-group"><div class="prices"><div class="sale-price dc-p">
+                            18.999,00 TL
+                        </div><div class="list-price">19.999,00 TL</div></div></div></div></a><div class="card-bottom"><div class="quantity" data-product-card-quantity="18"><a href="javascript:;" class="btn btn-minus"
+                        onclick="productQuantityBox(
+                        'decrement',
+                        'div[data-product-card-quantity=\'18\']'
+                        )"><i class="fas fa-minus"></i></a><input class="form-control" name="quantity" 
+                    data-version="2"
+                    data-decimal="0"
+                    data-min="1"
+                    data-increase="1"
+                    data-initial="1"
+                    value="1"
+                    onkeypress="return productQuantityBox(
+                    'change',
+                    'div[data-product-card-quantity=\'18\']',
+                    event)"/><a href="javascript:;" class="btn btn-plus"
+                        onclick="productQuantityBox(
+                        'increment',
+                        'div[data-product-card-quantity=\'18\']'
+                        )"><i class="fas fa-plus"></i></a></div><div class="buttons"><a href="javascript:;" onclick="addCart(18, 'card')"
+                           class="btn btn-cart ">
+                           Sepete Ekle
+                        </a></div></div></div></div></div><div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-list-p-v-1"><div class="card-product"><div class="card-product-inner"><div class="age-kart-product-favourite" data-favourite-product-id="17"><a href="javascript:;" class="add-favorite d-block"
+        onclick="userProductFavourite('add', 17, 'product')" aria-label="kart favori ekle"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/product-empty-heart.svg?v=1758267296"></a><a href="javascript:;" class="remove-favorite d-none"
+        onclick="userProductFavourite('remove', 17, 'product')" aria-label="kart favori cikar"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/product-fill-heart.svg?v=1758267303"></a></div><div class="image-wrapper"><div class="discount-kart">%10</div><div class="image"><div id="product-card-carousel-custom-module-code-137-17" class="carousel"><div class="carousel-outer"><div class="carousel-inner"><div class="carousel-item active"><a href="https://www.megacollectable.com/151-journey-magnet-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/151-journey-magnet-gift-box-65609785-sw557sh915.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/151-journey-magnet-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/151-journey-magnet-gift-box-15663174-sw1000sh688.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/151-journey-magnet-gift-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/151-journey-magnet-gift-box-25638173-sw1000sh1775.webp" alt="" ></a></div></div><a class="carousel-control-prev" href="#product-card-carousel-custom-module-code-137-17" role="button" data-slide="prev"><i class="fa fa-chevron-left"></i></a><a class="carousel-control-next" href="#product-card-carousel-custom-module-code-137-17" role="button" data-slide="next"><i class="fa fa-chevron-right"></i></a><ol class="carousel-indicators cardcarousel-indicators"><li data-target="#product-card-carousel-custom-module-code-137-17" 
+                                            data-slide-to="0" class="active"></li><li data-target="#product-card-carousel-custom-module-code-137-17" 
+                                            data-slide-to="1" class=""></li><li data-target="#product-card-carousel-custom-module-code-137-17" 
+                                            data-slide-to="2" class=""></li></ol></div></div></div></div><a href="https://www.megacollectable.com/151-journey-magnet-gift-box" class="c-p-i-link" title="151 Journey Magnet Gift Box"><div class="product-card-body"><div class="pcard-title"><div class="product-reviews"><div class="stars"><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span></div><span class="count">0</span></div><div class="brand">
+                                Pokemon
+                            </div><div class="title">151 Journey Magnet Gift Box</div></div><div class="price-group"><div class="prices"><div class="sale-price dc-p">
+                            899,00 TL
+                        </div><div class="list-price">999,00 TL</div></div></div></div></a><div class="card-bottom"><div class="quantity" data-product-card-quantity="17"><a href="javascript:;" class="btn btn-minus"
+                        onclick="productQuantityBox(
+                        'decrement',
+                        'div[data-product-card-quantity=\'17\']'
+                        )"><i class="fas fa-minus"></i></a><input class="form-control" name="quantity" 
+                    data-version="2"
+                    data-decimal="0"
+                    data-min="1"
+                    data-increase="1"
+                    data-initial="1"
+                    value="1"
+                    onkeypress="return productQuantityBox(
+                    'change',
+                    'div[data-product-card-quantity=\'17\']',
+                    event)"/><a href="javascript:;" class="btn btn-plus"
+                        onclick="productQuantityBox(
+                        'increment',
+                        'div[data-product-card-quantity=\'17\']'
+                        )"><i class="fas fa-plus"></i></a></div><div class="buttons"><a href="javascript:;" onclick="addCart(17, 'card')"
+                           class="btn btn-cart ">
+                           Sepete Ekle
+                        </a></div></div></div></div></div><div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-list-p-v-1"><div class="card-product"><div class="card-product-inner"><div class="age-kart-product-favourite" data-favourite-product-id="15"><a href="javascript:;" class="add-favorite d-block"
+        onclick="userProductFavourite('add', 15, 'product')" aria-label="kart favori ekle"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/product-empty-heart.svg?v=1758267296"></a><a href="javascript:;" class="remove-favorite d-none"
+        onclick="userProductFavourite('remove', 15, 'product')" aria-label="kart favori cikar"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/product-fill-heart.svg?v=1758267303"></a></div><div class="image-wrapper"><div class="discount-kart">%20</div><div class="image"><div id="product-card-carousel-custom-module-code-137-15" class="carousel"><div class="carousel-outer"><div class="carousel-inner"><div class="carousel-item active"><a href="https://www.megacollectable.com/dark-crystal-blaze-csv5-slim-booster-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/dark-crystal-blaze-csv5-slim-booster-box-51655324-sw1000sh1775.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/dark-crystal-blaze-csv5-slim-booster-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/dark-crystal-blaze-csv5-slim-booster-box-34029865-sw400sh551.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/dark-crystal-blaze-csv5-slim-booster-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/dark-crystal-blaze-csv5-slim-booster-box-18953273-sw400sh551.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/dark-crystal-blaze-csv5-slim-booster-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/dark-crystal-blaze-csv5-slim-booster-box-87238876-sw400sh551.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/dark-crystal-blaze-csv5-slim-booster-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/dark-crystal-blaze-csv5-slim-booster-box-59515055-sw400sh551.webp" alt="" ></a></div></div><a class="carousel-control-prev" href="#product-card-carousel-custom-module-code-137-15" role="button" data-slide="prev"><i class="fa fa-chevron-left"></i></a><a class="carousel-control-next" href="#product-card-carousel-custom-module-code-137-15" role="button" data-slide="next"><i class="fa fa-chevron-right"></i></a><ol class="carousel-indicators cardcarousel-indicators"><li data-target="#product-card-carousel-custom-module-code-137-15" 
+                                            data-slide-to="0" class="active"></li><li data-target="#product-card-carousel-custom-module-code-137-15" 
+                                            data-slide-to="1" class=""></li><li data-target="#product-card-carousel-custom-module-code-137-15" 
+                                            data-slide-to="2" class=""></li><li data-target="#product-card-carousel-custom-module-code-137-15" 
+                                            data-slide-to="3" class=""></li><li data-target="#product-card-carousel-custom-module-code-137-15" 
+                                            data-slide-to="4" class=""></li></ol></div></div></div></div><a href="https://www.megacollectable.com/dark-crystal-blaze-csv5-slim-booster-box" class="c-p-i-link" title="Chinese Dark Crystal Blaze CSV5 Slim Booster Box (15 Pack)"><div class="product-card-body"><div class="pcard-title"><div class="product-reviews"><div class="stars"><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span></div><span class="count">0</span></div><div class="brand">
+                                Pokemon
+                            </div><div class="title">Chinese Dark Crystal Blaze CSV5 Slim Booster Box (15 Pack)</div></div><div class="price-group"><div class="prices"><div class="sale-price dc-p">
+                            3.999,00 TL
+                        </div><div class="list-price">4.999,00 TL</div></div></div></div></a><div class="card-bottom"><div class="quantity" data-product-card-quantity="15"><a href="javascript:;" class="btn btn-minus"
+                        onclick="productQuantityBox(
+                        'decrement',
+                        'div[data-product-card-quantity=\'15\']'
+                        )"><i class="fas fa-minus"></i></a><input class="form-control" name="quantity" 
+                    data-version="2"
+                    data-decimal="0"
+                    data-min="1"
+                    data-increase="1"
+                    data-initial="1"
+                    value="1"
+                    onkeypress="return productQuantityBox(
+                    'change',
+                    'div[data-product-card-quantity=\'15\']',
+                    event)"/><a href="javascript:;" class="btn btn-plus"
+                        onclick="productQuantityBox(
+                        'increment',
+                        'div[data-product-card-quantity=\'15\']'
+                        )"><i class="fas fa-plus"></i></a></div><div class="buttons"><a href="javascript:;" onclick="addCart(15, 'card')"
+                           class="btn btn-cart ">
+                           Sepete Ekle
+                        </a></div></div></div></div></div><div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-list-p-v-1"><div class="card-product"><div class="card-product-inner"><div class="age-kart-product-favourite" data-favourite-product-id="14"><a href="javascript:;" class="add-favorite d-block"
+        onclick="userProductFavourite('add', 14, 'product')" aria-label="kart favori ekle"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/product-empty-heart.svg?v=1758267296"></a><a href="javascript:;" class="remove-favorite d-none"
+        onclick="userProductFavourite('remove', 14, 'product')" aria-label="kart favori cikar"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/product-fill-heart.svg?v=1758267303"></a></div><div class="image-wrapper"><div class="discount-kart">%25</div><div class="image"><div id="product-card-carousel-custom-module-code-137-14" class="carousel"><div class="carousel-outer"><div class="carousel-inner"><div class="carousel-item active"><a href="https://www.megacollectable.com/reward-round-csv4-slim-booster-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/reward-round-csv4-slim-booster-box-55791659-sw1000sh1775.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/reward-round-csv4-slim-booster-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/reward-round-csv4-slim-booster-box-79382625-sw400sh544.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/reward-round-csv4-slim-booster-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/reward-round-csv4-slim-booster-box-40929888-sw400sh544.webp" alt="" ></a></div><div class="carousel-item "><a href="https://www.megacollectable.com/reward-round-csv4-slim-booster-box"><img class="img-auto " src="https://percdn.com/f/412059/cG96WmFtNG0vcUp3ZUdGckg4OG5icmdQYmNFPQ/p/reward-round-csv4-slim-booster-box-78576592-sw400sh544.webp" alt="" ></a></div></div><a class="carousel-control-prev" href="#product-card-carousel-custom-module-code-137-14" role="button" data-slide="prev"><i class="fa fa-chevron-left"></i></a><a class="carousel-control-next" href="#product-card-carousel-custom-module-code-137-14" role="button" data-slide="next"><i class="fa fa-chevron-right"></i></a><ol class="carousel-indicators cardcarousel-indicators"><li data-target="#product-card-carousel-custom-module-code-137-14" 
+                                            data-slide-to="0" class="active"></li><li data-target="#product-card-carousel-custom-module-code-137-14" 
+                                            data-slide-to="1" class=""></li><li data-target="#product-card-carousel-custom-module-code-137-14" 
+                                            data-slide-to="2" class=""></li><li data-target="#product-card-carousel-custom-module-code-137-14" 
+                                            data-slide-to="3" class=""></li></ol></div></div></div></div><a href="https://www.megacollectable.com/reward-round-csv4-slim-booster-box" class="c-p-i-link" title="Chinese Reward Round CSV4 Slim Booster Box (15 Pack)"><div class="product-card-body"><div class="pcard-title"><div class="product-reviews"><div class="stars"><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span><span class="star "><i class="fa fa-star"></i></span></div><span class="count">0</span></div><div class="brand">
+                                Pokemon
+                            </div><div class="title">Chinese Reward Round CSV4 Slim Booster Box (15 Pack)</div></div><div class="price-group"><div class="prices"><div class="sale-price dc-p">
+                            2.999,00 TL
+                        </div><div class="list-price">3.999,00 TL</div></div></div></div></a><div class="card-bottom"><div class="quantity" data-product-card-quantity="14"><a href="javascript:;" class="btn btn-minus"
+                        onclick="productQuantityBox(
+                        'decrement',
+                        'div[data-product-card-quantity=\'14\']'
+                        )"><i class="fas fa-minus"></i></a><input class="form-control" name="quantity" 
+                    data-version="2"
+                    data-decimal="0"
+                    data-min="1"
+                    data-increase="1"
+                    data-initial="1"
+                    value="1"
+                    onkeypress="return productQuantityBox(
+                    'change',
+                    'div[data-product-card-quantity=\'14\']',
+                    event)"/><a href="javascript:;" class="btn btn-plus"
+                        onclick="productQuantityBox(
+                        'increment',
+                        'div[data-product-card-quantity=\'14\']'
+                        )"><i class="fas fa-plus"></i></a></div><div class="buttons"><a href="javascript:;" onclick="addCart(14, 'card')"
+                           class="btn btn-cart ">
+                           Sepete Ekle
+                        </a></div></div></div></div></div></div><div class="pagination-wrapper"><nav class="pagination-nav"><ul class="pagination"><li class="page-item  active "><a class="page-link" href="javascript:;">1</a></li><li class="page-item "><a class="page-link" href="https://www.megacollectable.com/pokemon?list=stoktakiler&amp;sayfa=2">2</a></li></ul></nav></div></div></div></div></div></div></div></div></div></section><section class="pattern-group pattern-group-t-0 pattern-group-p-categories "><div class="no-container"><div class="pattern-group-body"><div class="p-g-b-c-wrapper"><div class="p-g-b-c-inner"><div class="p-g-mod p-g-mod-t-29 p-g-mod-footer  p-g-mod-trans   "><div class="p-g-mod-body  p-g-mod-body-p-0  "><footer itemscope itemtype="https://schema.org/WPFooter"><div class="bb"><div class="container"><div class="footer-top-area"><div class="row"><div class="col-12 col-lg-4"><div class="footer-left-inline"><div class="footer-left-logo"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/footer-logo.svg?v=1758200589"></div><div class="e-bulten-title">
+                                    E-Bültene Kayıt Ol
+                                </div><div class="e-bulten-text">
+                                    Mega Collectable, sadece ürünlerin satıldığı bir yer değil; koleksiyoncuların bir araya geldiği, tutkularını paylaştığı ve birlikte büyüdüğü samimi bir topluluk olmayı hedeflemektedir.                                </div><div class="e-bulten-form"><form class="newsletter-form" action="" method="post" onsubmit="return emailNewsletter(this)"><input type="email" class="form-control newsletter-input" name="email" placeholder="E-Posta adresinizi yazınız"><button type="submit" class="btn btn-submit">Gönder</button></form></div><div class="social-media-footer"><div class="sm-title">
+                                        Sosyal Media'dan Takip Edin!
+                                    </div><div class="social-media"><a href="https://www.instagram.com/megacollectable" class="ins" target="_blank"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/instagram-logo-footer.svg?v=1758200994"></a></div></div></div></div><div class="col-12 col-lg-8"><div class="footer-right-inline"><div class="row"><div class="col-12 col-lg-4"><div class="block-inline"><div class="title">
+                                                Kurumsal
+                                                <img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/mg-icon-x.svg?v=1758525896" class="x"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/mg-icon-plus.svg?v=1758525890" class="plus"></div><div class="sub-title-area"><div class="item"><a href="/hakkimizda">
+                                                        Hakkımızda
+                                                    </a></div><div class="item"><a href="/iletisim">
+                                                        İletişim
+                                                    </a></div><div class="item"><a href="/uyelik">
+                                                        Destek Merkezi
+                                                    </a></div></div></div></div><div class="col-12 col-lg-4"><div class="block-inline"><div class="title">
+                                                Ürünler
+                                                <img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/mg-icon-x.svg?v=1758525896" class="x"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/mg-icon-plus.svg?v=1758525890" class="plus"></div><div class="sub-title-area"><div class="item"><a href="/pokemon">
+                                                        Pokemon
+                                                    </a></div><div class="item"><a href="league-of-legends-riftbound">
+                                                        League Of Legends Riftbound
+
+                                                    </a></div><div class="item"><a href="/naruto">
+                                                        Naruto
+                                                    </a></div></div></div></div><div class="col-12 col-lg-4"><div class="block-inline"><div class="title">
+                                                Sözleşmeler
+                                                <img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/mg-icon-x.svg?v=1758525896" class="x"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/mg-icon-plus.svg?v=1758525890" class="plus"></div><div class="sub-title-area"><div class="item"><a href="https://www.megacollectable.com/uyelik-kurallari">Üyelik Kuralları</a></div><div class="item"><a href="https://www.megacollectable.com/kvkk-politikasi">KVKK Politikası</a></div><div class="item"><a href="https://www.megacollectable.com/siparis-on-bilgilendirme-kurallari">Sipariş Ön Bilgilendirme Kuralları</a></div><div class="item"><a href="https://www.megacollectable.com/mesafeli-satis-sozlesmesi">Mesafeli Satış Sözleşmesi</a></div><div class="item"><a href="https://www.megacollectable.com/iptal-ve-iade-kosullari">İptal ve İade Koşulları</a></div><div class="item"><a href="https://www.megacollectable.com/cerez-politikasi">Çerez Politikası</a></div><div class="item"><a href="https://www.megacollectable.com/ticari-elektronik-ileti-izni-aydinlatma-metni">Ticari Elektronik İleti İzni Aydınlatma Metni</a></div></div></div></div></div></div><div class="footer-right-inline-bottom"><a href="/uyelik" class="item"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/black-sup-footer.svg?v=1758205483"><div class="text-side"><div class="title">
+                                            Destek Merkezi
+                                        </div><div class="text">
+                                            Şimdi Yardım Alın
+                                        </div></div></a><a href="tel:+908503020240" class="item"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/black-sup-footer.svg?v=1758205483"><div class="text-side"><div class="title">
+                                            Müşteri Hizmetleri
+                                        </div><div class="text">
+                                            +908503020240
+                                        </div></div></a></div></div></div></div></div></div></div><div class="bar"><div class="container"><div class="row"><div class="col-md-4"><div class="cpy" itemprop="copyrightYear">www.megacollactable.com 2025 © All Rights Reserved.</div></div><div class="col-md-8"><div class="right-image"><img src="https://www.megacollectable.com/theme/agesoftxmegac/assets/icons/mc-icons/footer-cc.png?v=1758264155"></div></div></div></div></div></footer></div></div></div></div></div></div></section><script type="text/javascript">
+        var SITE_CONFIG = {
+            mode: 'production',
+            page: 'categories',
+            url: 'https://www.megacollectable.com',
+            baseUrl: 'https://www.megacollectable.com',
+            cartUrl: 'https://www.megacollectable.com/sepet',
+            cartShippingType: 'in_order',
+            paymentUrl: 'https://www.megacollectable.com/odeme',
+            defaultCountry: 'TR',
+            preferredCountries: ["TR"],
+            onlyCountries: ["TR"],
+            userIsLogin: false,
+            userId: 0,
+            lazyLoadEffectTime: '0',
+            token: 'PIXolWS0D0YgHXCFCNTJ042a7362ec0f040300d1191fc7158b4dNpOUpQBAJKoxAOVK6vaqUjqBEYd9hwtecaRADN5aYBqf+worKkuodgGCIjdP9MWZvezFs1kRGTElrm54nS+5k2LkVXSIJ7hXTpmMc7EbPJoSrK',
+            accept: '*/*',
+            currencyDecimal: '2',
+            pageKey: 'bbf34948ad9b1a7d1e6cea03184eeadeD/UHfznynGMmMdSMObWKT57rb8jJ6Ft97SuNIIt6FkSkj85tr4AmFQpQ8E9mkve3TW53SbLOL+99AmULxn9JE3Ff1ZDYgQGjNtQA23QS2zenkGi3oFnE88KCog9vFd64OiQBbPVE5unX2rPMNGTMVIhXPwjQNGTQGN6kpSbmc6+BawpSww/S1/wqL8++SfP/dfJDjp6/5SDaGJGdgYkXVUW3Z+1Htl9gpU21wnw4iiw/EPgJycbHuc1SkjkdngsCxK6ImOG0cyrMqTM48kg9Qaiim32eNhf4+8iAxVk1mWFQ1jRKUdADnVswbPPvy3ICVqvM8o1NgrqQ8fetnfaIpXiJevdwQaL5y/f4Q4eWJbyS3/7KR1SmlreWU2NCjDtbkTBQ/LI=',
+            paymentStep: '0',
+            orderCode: '',
+            contentId: '1',
+            contentTitle: 'Pokemon',
+            contentType: 'category',
+            analytics: {
+                mode: 'production',
+                sessionInterval: '1800',
+                liveVisitInterval: '600',
+                cookieSettings: 'Secure; SameSite=None; path=/;',
+                apiUrl: 'https://analytics.qs-apps.com/',
+                trackingId: '3427901222740',
+                visitorDetails: 'eyJkb21haW4iOiJtZWdhY29sbGVjdGFibGUuY29tIiwiaXNfYm90IjpmYWxzZSwidXNlcl9hZ2VudCI6ImN1cmxcLzguNy4xIiwidXRtX3NvdXJjZSI6ZmFsc2UsInV0bV9tZWRpdW0iOmZhbHNlLCJ1dG1fY2FtcGFpZ24iOmZhbHNlLCJ1dG1fdGVybSI6ZmFsc2UsInV0bV9jb250ZW50IjpmYWxzZSwiY2hhbm5lbCI6MCwidHJhZmZpY19zb3VyY2UiOmZhbHNlLCJzZWFyY2hfa2V5d29yZCI6ZmFsc2UsIm5vdGlmaWNhdGlvbl9jYW1wYWlnbl9jb2RlIjpmYWxzZSwiYWZmaWxpYXRlX2luZmx1ZW5jZXJfY29kZSI6ZmFsc2UsInVzZXJfY29sbGVjdGlvbl9jb2RlIjpmYWxzZX0=',
+                namespace: {
+                    localCurrentSession: 'qanalytcs_session_',
+                    localDailyVisit: 'qanalytcs_uniquev',
+                    localLiveVisits: 'qanalytcs_activities',
+                    localTimeSpent: 'qanalytcs_lstra',
+                    cookieTest: 'qanalytcs_test',
+                    cookieTimeSpent: 'qanalytcs_tts',
+                    cookieScreenWidth: 'qanalytcs_scrnwdth'
+                }
+            },
+            datepicker: {
+                load: false,
+                css: 'https://www.megacollectable.com/template/smart/default/assets/plugins/datepicker/datepicker.css?v=1673397887',
+                js: 'https://www.megacollectable.com/template/smart/default/assets/plugins/datepicker/datepicker.js?v=1673398008',
+            },
+            simplebar: {
+                load: false,
+                js: 'https://www.megacollectable.com/template/smart/default/assets/plugins/simplebar/simplebar.js?v=1673398960',
+            },
+            fancybox: {
+                load: false,
+                js: 'https://www.megacollectable.com/template/smart/default/assets/plugins/fancybox/fancybox.js?v=1673399778',
+            },
+            imageupload: {
+                load: false,
+                js: 'https://www.megacollectable.com/template/smart/default/assets/plugins/imageupload/upload.js?v=1687644019',
+            },
+            croppie: {
+                load: false,
+                css: 'https://www.megacollectable.com/template/smart/default/assets/plugins/croppie/croppie.css?v=1684160415',
+                js: 'https://www.megacollectable.com/template/smart/default/assets/plugins/croppie/croppie.js?v=1684193487',
+                js2: 'https://www.megacollectable.com/template/smart/default/assets/plugins/croppie/exif.js?v=1684160405',
+            },
+            tweenmax: {
+                load: false,
+                js: 'https://www.megacollectable.com/template/smart/default/assets/plugins/tweenmax/TweenMax.min.js?v=1690415568',
+            }
+        };
+        var LANG_HELPER = {"success":"Ba\u015far\u0131l\u0131!","alert":"Uyar\u0131!","error":"Hata!","ok":"Tamam","errorMsg":"\u0130\u015flem ger\u00e7ekle\u015ftirilirken bir hata olu\u015ftu!","login":"Giri\u015f Yap","variantMsg":"Sepete eklemek i\u00e7in l\u00fctfen \"{%x%}\" se\u00e7in.","specialFieldMsg":"Sepete eklemek i\u00e7in l\u00fctfen \"{%x%}\" alan\u0131n\u0131 doldurun.","keepShopping":"Al\u0131\u015fveri\u015fe Devam Et","goCart":"Sepete Git","select":"Se\u00e7in","priceAlertVariantMsg":"Fiyat alarm\u0131 olu\u015fturmak i\u00e7in l\u00fctfen \"{%x%}\" se\u00e7in.","selectProduct":"L\u00fctfen bir \u00fcr\u00fcn se\u00e7in.","copySuccess":"Kopyaland\u0131!","fillInRequiredFields":"L\u00fctfen zorunlu alanlar\u0131 doldurun.","areYouSureToDelete":"Silmek istedi\u011finize emin misin?","cancel":"Vazge\u00e7","deleteIt":"Eminim, Sil!"};
+    </script><script type="text/javascript" src="https://www.megacollectable.com/template/smart/default/assets/plugins/bootstrap.js?v=1723110462" /></script><script type="text/javascript" src="https://www.megacollectable.com/template/smart/default/assets/scripts.min.js?v=1760189817" /></script><link type="text/css" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"><link rel="stylesheet" type="text/css" href="https://www.megacollectable.com/template/smart/default/assets/plugins/bootstrap.helper.min.css?v=1721165315" /><link rel="stylesheet" type="text/css" href="https://www.megacollectable.com/template/smart/default/assets/plugins/fontawesome/css/all.min.css?v=1665957357" /><div class="addons-whatsapp-widget aww-direction-0 aww-size-1 aww-title-0 aww-desktop-1 aww-mobile-1"
+     style="padding: 10px;"><div class="wp-title">
+        Size nasıl yardımcı olabiliriz?
+    </div><a target="_blank" href="https://api.whatsapp.com/send?phone=908503020240&text=Ürünleriniz hakkında detaylı bilgi almak istiyorum"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+             style="enable-background:new 0 0 512 512;" xml:space="preserve"><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="256" x2="512" y2="256"><stop offset="0" style="stop-color:#F9F9F9"></stop><stop offset="1" style="stop-color:#FFFFFF"></stop></linearGradient><path style="fill:url(#SVGID_1_);" d="M0,512l35.31-128C12.359,344.276,0,300.138,0,254.234C0,114.759,114.759,0,255.117,0
+                S512,114.759,512,254.234S395.476,512,255.117,512c-44.138,0-86.51-14.124-124.469-35.31L0,512z"></path><linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="100.2171" y1="477.1111" x2="376.9547" y2="81.8889"><stop offset="0" style="stop-color:#20B038"></stop><stop offset="1" style="stop-color:#60D66A"></stop></linearGradient><path style="fill:url(#SVGID_2_);" d="M137.71,430.786l7.945,4.414c32.662,20.303,70.621,32.662,110.345,32.662
+                c115.641,0,211.862-96.221,211.862-213.628S371.641,44.138,255.117,44.138S44.138,137.71,44.138,254.234
+                c0,40.607,11.476,80.331,32.662,113.876l5.297,7.945l-20.303,74.152L137.71,430.786z"></path><path style="fill:#FEFEFE;" d="M187.145,135.945l-16.772-0.883c-5.297,0-10.593,1.766-14.124,5.297
+                c-7.945,7.062-21.186,20.303-24.717,37.959c-6.179,26.483,3.531,58.262,26.483,90.041s67.09,82.979,144.772,105.048
+                c24.717,7.062,44.138,2.648,60.028-7.062c12.359-7.945,20.303-20.303,22.952-33.545l2.648-12.359
+                c0.883-3.531-0.883-7.945-4.414-9.71l-55.614-25.6c-3.531-1.766-7.945-0.883-10.593,2.648l-22.069,28.248
+                c-1.766,1.766-4.414,2.648-7.062,1.766c-15.007-5.297-65.324-26.483-92.69-79.448c-0.883-2.648-0.883-5.297,0.883-7.062
+                l21.186-23.834c1.766-2.648,2.648-6.179,1.766-8.828l-25.6-57.379C193.324,138.593,190.676,135.945,187.145,135.945"></path></svg></a></div><style type="text/css">
+                @media (min-width: 992px){
+            .addons-whatsapp-widget {
+                margin-bottom: 80px
+            }
+        }
+        
+                @media (max-width: 991px) {
+            .addons-whatsapp-widget {
+                margin-bottom: 70px
+            }
+        }
+            </style><script type="text/javascript">
+    browserAlert("Nereye Gittin? ");
+</script><div class="progress-wrap"><svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102"><path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/></svg></div><div class="overlay d-none"><div class="spinner-border spin" role="status"><span class="sr-only">Yükleniyor...</span></div></div><div class="op-black-2"></div><script type="text/javascript">
+        var swal_alert_timer = 7;
+    </script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script><script type="text/javascript" src="https://www.megacollectable.com/theme/agesoftxmegac/assets/scripts.js?v=1756279720"></script><script type="text/javascript" src="https://www.megacollectable.com/theme/agesoftxmegac/assets/custom.js?v=1758882193"></script><script type="text/javascript" src="https://www.megacollectable.com/theme/agesoftxmegac/assets/default.js?v=1756279720"></script><script type="text/javascript">
+        const CATEGORY_PAGE_DATA = {
+            k: '',
+            url: 'https://www.megacollectable.com/pokemon',
+            filtreleme: '56beaddf35424f047edcad54f6669095xwn80i/uKy6WUHSdoJoFVAuSylx0Y6Mt82tdlMma1hosscHSUAus1dRWiiLMxzGMh1FfjegZiieOE6l0MJwlAJRrxkABT63aXQwJSrvIIB7hJwfB67DKlx0ecJowz6RHtFgTK7iDU9k+N/ooFPl/quHuDb6zneZ0HRzsOTvMEICMIKZQt4j1NMYfeOI6zXWcuLoOGKbmVVJXGMpA7b0xYnp62vHONzgDPrCkn9iRJwvEnx3Nl/NZ/EPxuM4Qv+TjUp9nt8iZ4oOZlK3hI0Q/MbbB3QaS5ZyCWZTmpLUBeIZC8lLPnl2/BjAeXR03WNESDn3UXHLMTxiuHB6LDw2HrpfPJoNcBUCBllVCQ4fkHSvpJ7LAhnCY49neYwqu66pPIWHV1UwPrDn4VkGJJQ5tgYdXJlqz9Wj1tO1SEoagrSkw0auHx5oJxQ0ulrbdVDCJUswVVEfJCjsw1kGI64UhiuzMBXV3b1bo7u79iP4zXZ+bSJKiSFZGCcFk4AcFoLMB3q6z1A8UGhSbxD5Wc+NqMDHou8xGJsP3eXvBJY1Xn3VKsAVdH7Eu89x20yxkKHV0zW5jFvxRLUmLfwMn7eGPuGmsDXbTgDlKgnzYknjdj2OGMqkT5GR8yWmp3QSOh1EGRKo+m8tTvfW3oSQU95iGZI/vwOZwwYMNS+ukyEhLD09sVgnymVq6cP5jG7DN+s0WtPVdKClAc78VPztyQxo0EOzwKUQnD1GpVQdtiaOhZLoqnYryKabDMekY/wioFIBaJ5Kvpoxde88tzOcZ1kHr+Tnfa7wvPfBEGTC0UFn1jmCovRFl/Xu684cUi/WFt4Sw1617PWjY5ZTc3MFvteUzyUfsp0uzOXD2sm6BUD40zoTqAIsefo30G8qaLB3Qcjqmt3UIqXpwj2waILu7Nean77HvUYq5YRAk37iGtF3DV+pBRpzN8UXb+MYYAng0vwVoI0NjpxW2E0B8O72LY/Pe9obDSrl5+ev68iLO72kPkG8mzE/qtu1JV4bD5fCa00U9y67FbYlKZAgcuDFWk4cVC+rmJ6Xc/zly3l5Bv99egqSGF4UVZu77NMlwSMhuO+280CHjuv4MKiWLpugZw9O1z2Q5m9V3HrM7yoUFD6sc6518hhKw7EH2wu0i/dCrCBB4mEgxEHU5ipx1GrRsmMw1pmsQ74F/tZV7pSfFBExPu/dcr2Rop7b0TYjFTz2xNa2XZFGDxSuyunHM+nkcvFpoaupMSkNN7jtBzfNCaZq0r0vPge2fS23wOElWMIINslmU9mrP',
+        };
+        $(function(){
+            smartCategoryFilters(CATEGORY_PAGE_DATA);
+             
+            // Category View
+            if (localStorage.getItem('category-view-type') == 2){
+                categoryViewType(6, 6, 2);
+            }else if (localStorage.getItem('category-view-type') == 4){
+                categoryViewType(4, 4, 3);
+            }else if (localStorage.getItem('category-view-type') == 4){
+                categoryViewType(4, 3, 4);
+            }
+        });
+        
+        function categoryViewType(cls1, cls2, type){
+            $(".p-g-mod-t-20 .col-list-p-v-1").removeClass()
+                .addClass("col-6 col-sm-6 col-md-6 col-lg-"+cls1+" col-xl-"+cls2+" col-list-p-v-1");
+                localStorage.setItem('category-view-type', type);
+        }
+        
+        // Category Active
+        
+        if (localStorage.getItem('category-view-type') == 2){
+            $(".two-view").addClass("active");
+        }else if (localStorage.getItem('category-view-type') == 3){
+            $(".three-view").addClass("active");
+        }else if (localStorage.getItem('category-view-type') == 4){
+            $(".four-view").addClass("active");
+        }
+        
+        $(".two-view").click(function(){
+            $(".product-view-select a").removeClass("active");
+            $(".two-view").addClass("active");
+        });
+        
+        $(".three-view").click(function(){
+            $(".product-view-select a").removeClass("active");
+            $(".three-view").addClass("active");
+        });
+        
+        $(".four-view").click(function(){
+            $(".product-view-select a").removeClass("active");
+            $(".four-view").addClass("active");
+        });
+        
+        function catFilterOrder(element){
+            $("#cat-filter-order-"+$(element).val()).prop('checked', true).click();
+        }
+    </script><style type="text/css">
+            .swal-modal {
+                background: #fff !important;
+                border-radius: 10px !important;
+                padding: 0 !important;
+            }
+            .swal-footer {
+                background: #F1F1F1 !important;
+                border-radius: 0 0 10px 10px;
+                padding: 10px;
+                text-align: center;
+            }
+            .swal-footer .swal-button:focus {
+                box-shadow: none;
+            }
+            .swal-title {
+                font-size: 20px!important;
+                margin-top: 15px!important;
+                margin-bottom: 10px!important;
+            }
+            .swal-text {
+                font-size: 15px!important;
+                font-weight: 500!important;
+                color: #555!important;
+                padding: 0 10px!important;
+            }
+            .swal-icon {
+                margin: 5px auto
+            }
+            .swal-icon--success {
+                color: #fff !important;
+            }
+            .swal-icon--success__ring {
+                background: #a5dc86;
+                z-index: 1
+            }
+            .swal-icon--success__hide-corners {
+                background: transparent;
+            }
+            .swal-icon--success__line {
+                background: #fff;
+            }
+            .swal-icon--error {
+                background: #f27474;
+            }
+            .swal-icon--error__line {
+                background: #fff;
+            }
+        </style><script type="text/javascript">
+
+        $(function(){
+
+                                    
+                                        submitMarketingEvents([{"platform":"google","event_name":"view_item_list","event_id":"","encrypted_data":"","params":{"item_list_id":"1","item_list_name":"Pokemon","items":[{"item_id":"5946","item_name":"Scarlet and Violet Journey Together Elite Trainer Box","item_brand":"Pokemon","price":7999,"index":0,"item_category":"Pokemon","item_category2":"Sealed Products"},{"item_id":"5945","item_name":"Scarlet and Violet Temporal Forces Elite Trainer Box Iron Leaves (Green & Pink)","item_brand":"Pokemon","price":7999,"index":1,"item_category":"Pokemon","item_category2":"Sealed Products"},{"item_id":"5942","item_name":"Scarlet and Violet Paradox Rift Elite Trainer Box Iron Valiant (Green & Pink)","item_brand":"Pokemon","price":7999,"index":2,"item_category":"Pokemon","item_category2":"Sealed Products"},{"item_id":"5940","item_name":"Pok\u00e9mon TCG: Scarlet & Violet-Shrouded Fable Pok\u00e9mon Center Elite Trainer Box","item_brand":"Pokemon","price":11999,"index":3,"item_category":"Pokemon","item_category2":"Sealed Products"},{"item_id":"5938","item_name":"Pok\u00e9mon TCG: Scarlet & Violet-Temporal Forces Booster Bundle (6 Packs)","item_brand":"Pokemon","price":3999,"index":4,"item_category":"Pokemon","item_category2":"Sealed Products"},{"item_id":"5937","item_name":"Pok\u00e9mon TCG: Scarlet & Violet-Shrouded Fable Booster Bundle (6 Packs)","item_brand":"Pokemon","price":3499,"index":5,"item_category":"Pokemon","item_category2":"Sealed Products"},{"item_id":"5125","item_name":"Chinese Primordial Arts Set List CS3B Booster Box (6 Jumbo Pack)","item_brand":"Pokemon","price":2999,"index":6,"item_category":"Pokemon","item_category2":"Sealed Products"},{"item_id":"5124","item_name":"Chinese Primordial Arts Set List CS3A Booster Box (6 Jumbo Pack)","item_brand":"Pokemon","price":2999,"index":7,"item_category":"Pokemon","item_category2":"Sealed Products"},{"item_id":"37","item_name":"Chinese Exclusive Blue Pokeball","item_brand":"Pokemon","price":1999,"index":8,"item_category":"Pokemon","item_category2":"Sealed Products"},{"item_id":"30","item_name":"Chinese Exclusive Pikachu V Union Display Gift Box","item_brand":"Pokemon","price":1999,"index":9,"item_category":"Pokemon","item_category2":"Sealed Products"},{"item_id":"29","item_name":"Chinese Exclusive Umbreon Display Gift Box","item_brand":"Pokemon","price":1499,"index":10,"item_category":"Pokemon","item_category2":"Sealed Products"},{"item_id":"28","item_name":"Chinese Exclusive Mewtwo Binder Gift Box","item_brand":"Pokemon","price":1999,"index":11,"item_category":"Pokemon","item_category2":"Sealed Products"},{"item_id":"27","item_name":"Chinese Exclusive Zacian Binder Gift Box","item_brand":"Pokemon","price":1999,"index":12,"item_category":"Pokemon","item_category2":"Sealed Products"},{"item_id":"26","item_name":"Chinese Exclusive Greninja Binder Gift Box","item_brand":"Pokemon","price":1999,"index":13,"item_category":"Pokemon","item_category2":"Sealed Products"},{"item_id":"25","item_name":"Chinese Exclusive Mew Display Gift Box","item_brand":"Pokemon","price":1499,"index":14,"item_category":"Pokemon","item_category2":"Sealed Products"},{"item_id":"24","item_name":"Chinese Exclusive Jolteon Vmax Gift Box","item_brand":"Pokemon","price":24999,"index":15,"item_category":"Pokemon","item_category2":"Sealed Products"},{"item_id":"23","item_name":"Chinese Exclusive Flareon Vmax Gift Box","item_brand":"Pokemon","price":24999,"index":16,"item_category":"Pokemon","item_category2":"Sealed Products"},{"item_id":"21","item_name":"Chinese Eevee Blind Box","item_brand":"Pokemon","price":1499,"index":17,"item_category":"Pokemon","item_category2":"Sealed Products"},{"item_id":"20","item_name":"Chinese Charizard Blind Box","item_brand":"Pokemon","price":1499,"index":18,"item_category":"Pokemon","item_category2":"Sealed Products"},{"item_id":"19","item_name":"Charizard Exclusive Chinese Edition Vmax Gift Box Orange","item_brand":"Pokemon","price":17999,"index":19,"item_category":"Pokemon","item_category2":"Sealed Products"},{"item_id":"18","item_name":"Charizard Exclusive Chinese Edition Vmax Gift Box Black","item_brand":"Pokemon","price":18999,"index":20,"item_category":"Pokemon","item_category2":"Sealed Products"},{"item_id":"17","item_name":"151 Journey Magnet Gift Box","item_brand":"Pokemon","price":899,"index":21,"item_category":"Pokemon","item_category2":"Sealed Products"},{"item_id":"15","item_name":"Chinese Dark Crystal Blaze CSV5 Slim Booster Box (15 Pack)","item_brand":"Pokemon","price":3999,"index":22,"item_category":"Pokemon","item_category2":"Sealed Products"},{"item_id":"14","item_name":"Chinese Reward Round CSV4 Slim Booster Box (15 Pack)","item_brand":"Pokemon","price":2999,"index":23,"item_category":"Pokemon","item_category2":"Sealed Products"}]}},{"platform":"facebook","event_name":"ViewContent","event_id":"","encrypted_data":"","params":{"content_name":"Pokemon","content_type":"product","content_ids":["5946","5945","5942","5940","5938","5937","5125","5124","37","30","29","28","27","26","25","24","23","21","20","19","18","17","15","14"]}}]);
+            
+                                });
+    </script><style type="text/css">
+            .copyright-933-sec-140 {
+                border-top: 1px solid #eee;
+                display: flex !important;
+                flex-direction: column !important;
+                justify-content: center !important;
+                align-items: center !important;
+                text-align: center !important;
+                color: #333 !important;
+                height: 45px !important;
+                width: 100% !important;
+                font-weight: 500 !important;
+                font-size: 13px !important;
+                background: #fff;
+            }
+
+            .copyright-933-sec-140 a.copyright-933-sec-140-link {
+                color: #333 !important;
+            }
+
+            @media (max-width: 992px){
+                .copyright-933-sec-140 {
+                    font-size: 11px !important;
+                }
+            }
+        </style><section class="copyright-933-sec-140"><div style="font-size: 12px;display: flex;justify-content: center;flex-direction: row;  font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue , sans-serif; align-items: center; border-top:1px solid #e2e2e2; padding-top: 0.7rem; font-weight: 200; margin-bottom: 0.7rem; "><a href="https://agesoft.com.tr" target="_blank"><span class="Logo"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="width:90px;margin-right: .3rem;margin-left: -0.1rem;" viewBox="0 0 89.3 22.13"><defs><style>.cls-1{fill:#3c3c3b;}.cls-2{fill:url(#linear-gradient);}</style><linearGradient id="linear-gradient" x1="30.5" y1="17.19" x2="44.39" y2="9.86" gradientUnits="userSpaceOnUse"><stop offset="0.22" stop-color="#fecb3c"></stop><stop offset="1" stop-color="#e63712"></stop></linearGradient></defs><g id="katman_2" data-name="katman 2"><g id="Layer_1" data-name="Layer 1"><path class="cls-1" d="M12.79,5.25V17.64H10.48v-2a5,5,0,0,1-4.37,2.3C2.56,17.92,0,15.15,0,11.43a6,6,0,0,1,6.11-6.3,5,5,0,0,1,4.37,2.21V5.25Zm-2.4,6.18a3.93,3.93,0,0,0-4-4.25,4,4,0,0,0-3.95,4.25,4,4,0,0,0,4,4.28A4,4,0,0,0,10.39,11.43Z"></path><path class="cls-1" d="M27,5.25V16c0,3.71-2.42,6.18-6.51,6.18-3.27,0-5.22-1.46-6-3.74l2.12-.82A3.81,3.81,0,0,0,20.5,20c2.58,0,4.18-1.51,4.18-3.88v-1a5.1,5.1,0,0,1-4.37,2.26,6,6,0,0,1-6.11-6.21A6.07,6.07,0,0,1,20.31,5a5.08,5.08,0,0,1,4.37,2.24v-2Zm-2.44,6.09a3.9,3.9,0,0,0-3.93-4.16,4,4,0,0,0-3.95,4.16,3.95,3.95,0,1,0,7.88,0Z"></path><path class="cls-1" d="M51.81,11.26a6.2,6.2,0,1,1,12.39,0,6.2,6.2,0,1,1-12.39,0Zm11.77,0a5.58,5.58,0,1,0-11.14,0,5.58,5.58,0,1,0,11.14,0Z"></path><path class="cls-1" d="M67.49,4v1h3.8v.59h-3.8v11.8h-.64V5.64H64.27V5.05h2.58v-1c0-2.61,1.46-4,3.74-4h.77V.58h-.8C68.71.58,67.49,1.81,67.49,4Z"></path><path class="cls-1" d="M74.16,13.7V5.64h-2.4V5.05h1.51c.68,0,.94-.28.94-1V2h.58V5.05H79.1v.59H74.79v8c0,2,1.06,3.17,3,3.17h1.55v.59h-1.6C75.45,17.44,74.16,16.05,74.16,13.7Z"></path><path class="cls-1" d="M44.05,9.78l-.22.55c2.29,1.26,6.29,1.17,6.29,4.05,0,1.76-1.53,2.75-3.81,2.75s-3.62-.89-4.11-2.44l-.07,0-.28.73c.71,1.42,2.29,2.23,4.48,2.23,2.59,0,4.4-1.17,4.4-3.36C50.73,10.86,46.24,11.12,44.05,9.78Z"></path><path class="cls-1" d="M46,4.82l-.21.55h.41a3.26,3.26,0,0,1,3.41,2l.58-.21c-.58-1.58-2-2.38-4-2.38Z"></path><path class="cls-1" d="M35.68,17.87l.87-2.25a4.73,4.73,0,0,1-1.76.3,4,4,0,0,1-4.09-3.78h7.21l1.74-4.5A5.89,5.89,0,0,0,34.57,5a6.3,6.3,0,0,0-6.22,6.47,6.16,6.16,0,0,0,6.36,6.46C35.05,17.92,35.37,17.9,35.68,17.87Zm-1-11c2.14,0,3.55,1.48,3.79,3.71H30.7A3.91,3.91,0,0,1,34.64,6.83Z"></path><path class="cls-2" d="M35.23,21.56,42.79,2.11H46L38.48,21.56Z"></path><path class="cls-1" d="M87.66.44a3.14,3.14,0,0,1,1.2,1.2,3.35,3.35,0,0,1,.44,1.69A3.36,3.36,0,0,1,88.85,5a3.29,3.29,0,0,1-1.21,1.22,3.5,3.5,0,0,1-3.4,0A3.27,3.27,0,0,1,83,5a3.26,3.26,0,0,1-.44-1.69A3.28,3.28,0,0,1,83,1.66,3.2,3.2,0,0,1,84.25.45,3.31,3.31,0,0,1,86,0,3.36,3.36,0,0,1,87.66.44ZM87.46,6a3,3,0,0,0,1.48-2.62,3,3,0,0,0-.39-1.51A3,3,0,0,0,86,.35a3,3,0,0,0-1.54.4,3,3,0,0,0-1.08,1.09A3,3,0,0,0,83,3.35a3,3,0,0,0,.39,1.52A3,3,0,0,0,87.46,6Zm0-2.5a1.21,1.21,0,0,1-.64.45l.9,1.37h-.52L86.34,4H85.13V5.27h-.49V1.43h1.48a1.66,1.66,0,0,1,1.11.35,1.14,1.14,0,0,1,.41.93A1.27,1.27,0,0,1,87.42,3.45Zm-.55-.1a.77.77,0,0,0,.28-.64.76.76,0,0,0-.28-.64,1.25,1.25,0,0,0-.78-.22h-1V3.58h1A1.19,1.19,0,0,0,86.87,3.35Z"></path></g></g></svg></span></a></div></section></body></html>

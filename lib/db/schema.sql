@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS cards (
+  id SERIAL PRIMARY KEY,
+  seller_name VARCHAR(255) NOT NULL,
+  game VARCHAR(255) NOT NULL,
+  name VARCHAR(255) NOT NULL,
+  price DECIMAL(10, 2),
+  currency VARCHAR(3) DEFAULT 'TRY',
+  image_url TEXT,
+  product_url TEXT UNIQUE NOT NULL,
+  last_updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

@@ -23,29 +23,42 @@ export default function SellerCard({ seller }: SellerCardProps) {
     ].filter(Boolean) as string[];
 
     return (
-        <div className="card">
-            <h3 className="card-title">{seller.name}</h3>
-            <div className="card-location">
-                <MapPin size={16} />
-                <span>{seller.location}</span>
+        <div className="group relative flex flex-col overflow-hidden rounded-xl border border-white/10 bg-card transition-all hover:-translate-y-1 hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/10">
+            <div className="p-6 flex-1">
+                <div className="flex items-start justify-between mb-4">
+                    <div>
+                        <h3 className="text-xl font-bold text-white group-hover:text-primary transition-colors">
+                            {seller.name}
+                        </h3>
+                        {seller.location && (
+                            <div className="flex items-center gap-1.5 mt-1 text-sm text-muted-foreground">
+                                <MapPin className="w-4 h-4" />
+                                <span>{seller.location}</span>
+                            </div>
+                        )}
+                    </div>
+                </div>
+
+                <div className="flex flex-wrap gap-2 mt-4">
+                    {tags.map((tag) => (
+                        <span key={tag} className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary/10 text-primary border border-primary/20">
+                            {tag}
+                        </span>
+                    ))}
+                </div>
             </div>
 
-            <div className="tags">
-                {tags.map((tag) => (
-                    <span key={tag} className="tag">
-                        {tag}
-                    </span>
-                ))}
+            <div className="p-4 border-t border-white/5 bg-white/5">
+                <a
+                    href={seller.website || '#'}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-2 w-full px-4 py-2.5 rounded-lg bg-primary text-white font-medium transition-all hover:bg-primary-hover active:scale-95"
+                >
+                    <span>Satıcıyı Ziyaret Et</span>
+                    <ExternalLink className="w-4 h-4" />
+                </a>
             </div>
-
-            <a
-                href={seller.website}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="visit-btn"
-            >
-                Siteye Git <ExternalLink size={16} style={{ display: 'inline', marginLeft: '4px' }} />
-            </a>
         </div>
     );
 }
