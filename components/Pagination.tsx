@@ -13,7 +13,7 @@ export default function Pagination({ currentPage, totalPages }: PaginationProps)
     const pathname = usePathname();
 
     const createPageURL = (pageNumber: number | string) => {
-        const params = new URLSearchParams(searchParams);
+        const params = new URLSearchParams(searchParams.toString());
         params.set('page', pageNumber.toString());
         return `${pathname}?${params.toString()}`;
     };
@@ -39,8 +39,8 @@ export default function Pagination({ currentPage, totalPages }: PaginationProps)
                 <button
                     onClick={() => handlePageChange(1)}
                     className={`w-10 h-10 rounded-lg border flex items-center justify-center transition-colors ${currentPage === 1
-                            ? 'bg-primary border-primary text-white'
-                            : 'bg-white/5 border-white/10 text-white hover:bg-white/10'
+                        ? 'bg-primary border-primary text-white'
+                        : 'bg-white/5 border-white/10 text-white hover:bg-white/10'
                         }`}
                 >
                     1
@@ -57,8 +57,8 @@ export default function Pagination({ currentPage, totalPages }: PaginationProps)
                             key={page}
                             onClick={() => handlePageChange(page)}
                             className={`w-10 h-10 rounded-lg border flex items-center justify-center transition-colors ${currentPage === page
-                                    ? 'bg-primary border-primary text-white'
-                                    : 'bg-white/5 border-white/10 text-white hover:bg-white/10'
+                                ? 'bg-primary border-primary text-white'
+                                : 'bg-white/5 border-white/10 text-white hover:bg-white/10'
                                 }`}
                         >
                             {page}
@@ -72,8 +72,8 @@ export default function Pagination({ currentPage, totalPages }: PaginationProps)
                 <button
                     onClick={() => handlePageChange(totalPages)}
                     className={`w-10 h-10 rounded-lg border flex items-center justify-center transition-colors ${currentPage === totalPages
-                            ? 'bg-primary border-primary text-white'
-                            : 'bg-white/5 border-white/10 text-white hover:bg-white/10'
+                        ? 'bg-primary border-primary text-white'
+                        : 'bg-white/5 border-white/10 text-white hover:bg-white/10'
                         }`}
                 >
                     {totalPages}

@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@vercel/postgres": "^0.10.0",
-    "cheerio": "^1.1.2",
+    "cheerio": "^1.0.0-rc.12",
     "clsx": "^2.1.0",
     "dotenv": "^17.2.3",
     "lucide-react": "^0.344.0",

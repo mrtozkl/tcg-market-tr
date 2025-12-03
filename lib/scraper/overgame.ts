@@ -1,4 +1,4 @@
-import { Card, Scraper } from '../types';
+import { Card, Scraper } from './types';
 import * as cheerio from 'cheerio';
 
 export class OvergameScraper implements Scraper {
