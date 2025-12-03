@@ -1,0 +1,3189 @@
+{
+  "data": {
+    "searchProducts": {
+      "count": 4486,
+      "results": [
+        {
+          "name": "Mega Evolution Mini Tin (Random Art)",
+          "id": "6e66f0b5-f5ed-471c-afee-6497e8da342e",
+          "metaData": {
+            "slug": "mega-evolution-mini-tin-random-art"
+          },
+          "variants": [
+            {
+              "id": "87684dc6-0fcc-4319-8385-cbb06f1ce31e",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 2999,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "ce6a3664-ec67-4a68-9867-22b2409b0160",
+                  "fileName": "image",
+                  "isMain": true
+                },
+                {
+                  "id": "de8cae6f-a6c6-47c0-9ba2-70866d06d93d",
+                  "fileName": "image",
+                  "isMain": false
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "Tin Box"
+            }
+          ]
+        },
+        {
+          "name": "Pokémon Center - Crown Zenith Elite Trainer Box Plus",
+          "id": "b4cfb294-12ac-447f-bdaa-a802ef05f7bc",
+          "metaData": {
+            "slug": "pokemon-center-crown-zenith-elite-trainer-box-plus"
+          },
+          "variants": [
+            {
+              "id": "f67a30c9-3032-4743-8fe3-bed76ae83f21",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 79999,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "71319883-a978-4fac-b41b-c731591a6d52",
+                  "fileName": "image",
+                  "isMain": true
+                },
+                {
+                  "id": "84523fea-5a42-455c-b8d0-c591e8498987",
+                  "fileName": "image",
+                  "isMain": false
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "Elite Trainer Box"
+            }
+          ]
+        },
+        {
+          "name": "Pokémon Center - Paldea Evolved Elite Trainer Box",
+          "id": "748bd2d1-824f-4332-a6a9-52c9f5708f31",
+          "metaData": {
+            "slug": "pokemon-center-paldea-evolved-elite-trainer-box"
+          },
+          "variants": [
+            {
+              "id": "f9b0297a-8b82-4e29-85ab-78e088dd6f87",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 99999,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "1dbdd2ca-5b65-44b2-9414-2c26d4ffae41",
+                  "fileName": "image",
+                  "isMain": true
+                },
+                {
+                  "id": "d78e2b4a-f250-472d-84df-2631aa8c5e18",
+                  "fileName": "image",
+                  "isMain": false
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "Elite Trainer Box"
+            }
+          ]
+        },
+        {
+          "name": "Zekrom Ex - 169/086 - Japanese Black Bolt",
+          "id": "5765998c-656d-495c-94bf-435035fc3fa1",
+          "metaData": {
+            "slug": "zekrom-ex-169-086-japanese-black-bolt"
+          },
+          "variants": [
+            {
+              "id": "2613627b-4645-4278-bd06-e42f7ea92a6b",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 10500,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "517d84a9-c6e5-48d2-ace2-0bb1048d4510",
+                  "fileName": "1600",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "Japonca Single Kartlar"
+            }
+          ]
+        },
+        {
+          "name": "Pokémon Center - Fusion Strike Elite Trainer Box",
+          "id": "68ba6019-ac1f-4aba-8f5d-4e037bcb99ba",
+          "metaData": {
+            "slug": "pokemon-center-fusion-strike-elite-trainer-box"
+          },
+          "variants": [
+            {
+              "id": "d8c034f6-21cd-44ed-9864-eeb3b6f25141",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 54999,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "9dcb6165-8349-4409-b71c-9e8af276a4a2",
+                  "fileName": "image",
+                  "isMain": true
+                },
+                {
+                  "id": "eca4b5ff-6a21-49e5-849a-c86a884a1bd6",
+                  "fileName": "image",
+                  "isMain": false
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "Elite Trainer Box"
+            }
+          ]
+        },
+        {
+          "name": "Pokémon Center - Obsidian Flames Elite Trainer Box",
+          "id": "df006403-1a14-4ca1-a87f-42a6d3579262",
+          "metaData": {
+            "slug": "pokemon-center-obsidian-flames-elite-trainer-box"
+          },
+          "variants": [
+            {
+              "id": "6f1bc98a-0b4a-4589-be92-e32fbe99cf91",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 79999,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "942d2f80-92bb-4264-a689-0f5d747a181a",
+                  "fileName": "image",
+                  "isMain": true
+                },
+                {
+                  "id": "92ed2b82-01bf-464f-82bc-9aa852e4e1e6",
+                  "fileName": "image",
+                  "isMain": false
+                },
+                {
+                  "id": "c7591ddc-ed2e-40c6-9807-9c5807d814ff",
+                  "fileName": "image",
+                  "isMain": false
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "Elite Trainer Box"
+            }
+          ]
+        },
+        {
+          "name": "Pokémon Center - Silver Tempest Elite Trainer Box",
+          "id": "f63ba7af-de1e-4885-acbe-6596cb94513d",
+          "metaData": {
+            "slug": "pokemon-center-silver-tempest-elite-trainer-box"
+          },
+          "variants": [
+            {
+              "id": "9f1da16d-b3ab-4c7d-9b42-7538a73a7455",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 35999,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "7d24f189-d331-4a95-a640-14a001c3f867",
+                  "fileName": "image",
+                  "isMain": true
+                },
+                {
+                  "id": "178bd73c-4dd2-4974-b559-e78ac0ba0f47",
+                  "fileName": "image",
+                  "isMain": false
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "Elite Trainer Box"
+            }
+          ]
+        },
+        {
+          "name": "Pikachu #008 - 2024 Pokemon CLL Japanese - PSA 10",
+          "id": "010b4cbd-c54b-46b5-9e1b-ff6a07f79830",
+          "metaData": {
+            "slug": "pikachu-008-2024-pokemon-cll-japanese-psa-10"
+          },
+          "variants": [
+            {
+              "id": "cd16d698-bc00-4cf1-ae8c-d1fcdbd323c5",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 10299,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "a9ece053-ab4c-4db0-b4ed-da4b39d973a0",
+                  "fileName": "k82rcoawaemd7ajw0rfvca",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "PSA"
+            }
+          ]
+        },
+        {
+          "name": "Mega Tokyo's Pikachu #098 - XY Promo - PSA 10",
+          "id": "a73e2f2b-172d-43a8-8c04-2bab3672c41b",
+          "metaData": {
+            "slug": "mega-tokyos-pikachu-098-xy-promo-psa-10"
+          },
+          "variants": [
+            {
+              "id": "a5e9086b-d1b2-4277-961a-b171f7f8b875",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 130999,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "9be21870-9f9b-445c-8ac7-be4f456c1a65",
+                  "fileName": "fpqalci-quu2asv9rjcvmg",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "PSA"
+            }
+          ]
+        },
+        {
+          "name": "Pikachu V #001 - 25TH Anniv. Golden Box - PSA 10",
+          "id": "5944b2bc-6609-4f96-9e81-5bcc51a424d8",
+          "metaData": {
+            "slug": "pikachu-v-001-25th-anniv-golden-box-psa-10"
+          },
+          "variants": [
+            {
+              "id": "4d05ec6a-5192-4c76-8ce6-8b88f6ea54e3",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 41499,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "94c9e5ac-433e-4120-bf0a-2c3e19960acf",
+                  "fileName": "7rnokdtmre6n-tixh2-xdg",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "PSA"
+            }
+          ]
+        },
+        {
+          "name": "Heatran LV.X #DP31",
+          "id": "78e9bad7-e464-4847-9a57-2c41d1f6254d",
+          "metaData": {
+            "slug": "heatran-lvx-dp31"
+          },
+          "variants": [
+            {
+              "id": "a17f6480-5e42-4b05-8589-5826a20f8f39",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 800,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "4755bef7-e1ac-4ea7-b470-fd081f136751",
+                  "fileName": "1600",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "İngilizce Single Kartlar"
+            }
+          ]
+        },
+        {
+          "name": "Regigigas LV.X #DP30",
+          "id": "c2245e52-1fb6-4ead-847b-75ac0c99cce0",
+          "metaData": {
+            "slug": "regigigas-lvx-dp30"
+          },
+          "variants": [
+            {
+              "id": "9aa1f612-8bcb-4ec7-abb9-7448b88ad8c9",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 800,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "68f36bc5-67c3-4605-808e-c1edc03cb128",
+                  "fileName": "1600",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "İngilizce Single Kartlar"
+            }
+          ]
+        },
+        {
+          "name": "Feraligatr #8 Mysterious Treasures",
+          "id": "7126bf1d-8fa8-4baf-aacb-721d422a9164",
+          "metaData": {
+            "slug": "feraligatr-8-mysterious-treasures"
+          },
+          "variants": [
+            {
+              "id": "73f77c1f-c183-475d-8792-0965893a84c0",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 1200,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "aa99690b-0b1f-4f15-bbeb-fed8073b4626",
+                  "fileName": "1600",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "İngilizce Single Kartlar"
+            }
+          ]
+        },
+        {
+          "name": "Exeggcute [Stamped] #65 Holon Phantoms",
+          "id": "3ba2d902-97d9-40ba-9a9a-459d5a827567",
+          "metaData": {
+            "slug": "exeggcute-stamped-65-holon-phantoms"
+          },
+          "variants": [
+            {
+              "id": "a3d612ed-0ec7-461c-9a55-aa2cb90eb64a",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 900,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "6fde4e61-4ba6-4795-af1a-c221040672a6",
+                  "fileName": "1600",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "İngilizce Single Kartlar"
+            }
+          ]
+        },
+        {
+          "name": "Jolteon EX #28 Generations ",
+          "id": "4b9f0bc7-68e5-459c-bfac-b9268fb20356",
+          "metaData": {
+            "slug": "jolteon-ex-28-generations"
+          },
+          "variants": [
+            {
+              "id": "ccf2b37a-993e-4982-9d47-433441251130",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 1700,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "900281d7-9302-438f-a2e3-afa5f8886fc1",
+                  "fileName": "1600",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "İngilizce Single Kartlar"
+            }
+          ]
+        },
+        {
+          "name": "Professor Birch's Observations #159  Primal Clash ",
+          "id": "10b24131-3471-48f5-b0d5-3875ee48aaac",
+          "metaData": {
+            "slug": "professor-birchs-observations-159-primal-clash"
+          },
+          "variants": [
+            {
+              "id": "26578bb0-a6b9-4019-a21b-fdd3118a0460",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 1300,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "45bef0b0-15e1-4b0d-b921-fed9e3340e2b",
+                  "fileName": "1600",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "İngilizce Single Kartlar"
+            }
+          ]
+        },
+        {
+          "name": "Charmander #SV6 Hidden Fates ",
+          "id": "4142f228-3711-4829-b631-3877670fbb78",
+          "metaData": {
+            "slug": "charmander-sv6-hidden-fates"
+          },
+          "variants": [
+            {
+              "id": "e62b9ac6-be38-4809-a193-5bd654316e7e",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 1300,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "1b515420-dc8b-42a6-9a69-65698cacda86",
+                  "fileName": "1600",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "İngilizce Single Kartlar"
+            }
+          ]
+        },
+        {
+          "name": "Crobat [Reverse Holo] #23 Mysterious Treasures ",
+          "id": "ddac4786-6d81-4303-a199-6c338d0d07e6",
+          "metaData": {
+            "slug": "crobat-reverse-holo-23-mysterious-treasures"
+          },
+          "variants": [
+            {
+              "id": "f963d456-c674-4a3d-add1-851b62bcdd09",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 450,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "e8f5d8aa-ada4-465e-a766-6549b6365d77",
+                  "fileName": "1600",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "İngilizce Single Kartlar"
+            }
+          ]
+        },
+        {
+          "name": "Mewtwo #24 Holon Phantoms (High Condition)",
+          "id": "a1b4af93-c380-45b5-a4df-5bb4fd420456",
+          "metaData": {
+            "slug": "mewtwo-24-holon-phantoms-high-condition"
+          },
+          "variants": [
+            {
+              "id": "858bb235-9b1d-4739-be72-78631af7d37c",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 2000,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "6bea3aa3-a441-475a-8d6f-2c1bbd3e07f1",
+                  "fileName": "1600",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "İngilizce Single Kartlar"
+            }
+          ]
+        },
+        {
+          "name": "Tornadus 210 ",
+          "id": "2b891fbf-b183-4310-8f93-d0e6a5934524",
+          "metaData": {
+            "slug": "tornadus-210"
+          },
+          "variants": [
+            {
+              "id": "0d9b00dd-3c00-4d4e-8935-6be50c964d61",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 300,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "a25441b0-1db2-4bab-a35c-2b6fb489cbc4",
+                  "fileName": "1600",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "SV Black Star Promo"
+            }
+          ]
+        },
+        {
+          "name": "Inteleon #2 [Mega Evolutions Stamped]",
+          "id": "2e026356-c6e1-4ed8-a975-9fe721fe446e",
+          "metaData": {
+            "slug": "inteleon-2-mega-evolutions-stamped"
+          },
+          "variants": [
+            {
+              "id": "32156053-d6f4-49f8-9f70-f9a37fa2a0e8",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 800,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "8470540d-07db-421b-9d19-7a186e6e881d",
+                  "fileName": "1600",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "Mega Evolution Era"
+            }
+          ]
+        },
+        {
+          "name": "Team Rocket's Raticate - 108/098 - Japanese Glory of Team Rocket ",
+          "id": "d250293e-6c82-4af5-a3e3-d59937ea5c33",
+          "metaData": {
+            "slug": "team-rockets-raticate-108-098-japanese-glory-of-team-rocket"
+          },
+          "variants": [
+            {
+              "id": "ee135699-2f7b-4bca-9da3-00f4bfce397e",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 400,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "4a4413d7-b04f-4a7c-8622-64b659ccf6cd",
+                  "fileName": "1600",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "Japonca Single Kartlar"
+            }
+          ]
+        },
+        {
+          "name": "Team Rocket's Spidops - 099/098 - Japanese Glory of Team Rocket ",
+          "id": "c783ec35-4ca1-4a2f-994c-579b4e3e48bf",
+          "metaData": {
+            "slug": "team-rockets-spidops-099-098-japanese-glory-of-team-rocket"
+          },
+          "variants": [
+            {
+              "id": "ca70cf8c-d67b-48d6-89ac-47bafe4e9a1c",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 300,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "ac65d13d-1c4b-44af-a2e2-85704e09d8c3",
+                  "fileName": "1600",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "Japonca Single Kartlar"
+            }
+          ]
+        },
+        {
+          "name": "Team Rocket's Wobbuffet - 103/098 - Japanese Glory of Team Rocket ",
+          "id": "d7582b9f-40b7-47b0-b8b4-09bda117d2fc",
+          "metaData": {
+            "slug": "team-rockets-wobbuffet-103-098-japanese-glory-of-team-rocket"
+          },
+          "variants": [
+            {
+              "id": "97e07c5a-fde9-44b6-b630-ca546b24c873",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 500,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "f1c51c6e-a20a-41f8-911e-5cfe7ea9caef",
+                  "fileName": "1600",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "Japonca Single Kartlar"
+            }
+          ]
+        },
+        {
+          "name": "Mega Charizard X Ex - 094/080 - Japanese Inferno X ",
+          "id": "199581a8-1504-4dad-a81e-4a96ed6df7ac",
+          "metaData": {
+            "slug": "mega-charizard-x-ex-094-080-japanese-inferno-x"
+          },
+          "variants": [
+            {
+              "id": "9456accf-6c5f-4e49-9617-3bb99d962eb9",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 4600,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "c9ef97c6-77e5-41ae-b75c-a9ad909c6ee4",
+                  "fileName": "1600",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "Japonca Single Kartlar"
+            }
+          ]
+        },
+        {
+          "name": "Team Rocket's Persian ex - 118/098 - Japanese Glory of Team Rocket ",
+          "id": "649b08f9-efe8-47a7-b056-60223f86ead3",
+          "metaData": {
+            "slug": "team-rockets-persian-ex-118-098-japanese-glory-of-team-rocket"
+          },
+          "variants": [
+            {
+              "id": "7f0989be-bae6-425f-98a6-ae44d1056b79",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 600,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "e08a4c91-a816-4d0c-a443-b81fe2fca7d5",
+                  "fileName": "1600",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "Japonca Single Kartlar"
+            }
+          ]
+        },
+        {
+          "name": "Chinese Gem Pack Vol. 3 Booster Box",
+          "id": "b11489a3-083a-4ce9-a7ab-7eb42ab51572",
+          "metaData": {
+            "slug": "chinese-gem-pack-vol-3-booster-box"
+          },
+          "variants": [
+            {
+              "id": "921ff3bd-d79f-4436-9c91-3fda0c3ec57b",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 9999,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "ba61604b-bb78-4dd7-82bb-f0a4e853d9c6",
+                  "fileName": "image",
+                  "isMain": true
+                },
+                {
+                  "id": "c7b671c5-26ad-4950-9e62-1be294bc6075",
+                  "fileName": "image",
+                  "isMain": false
+                },
+                {
+                  "id": "511908ca-b5b6-4397-a4aa-976c0e5ee485",
+                  "fileName": "image",
+                  "isMain": false
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "Booster Box"
+            }
+          ]
+        },
+        {
+          "name": "Rebel Clash Elite Trainer Box",
+          "id": "02064f98-b73e-493a-986d-69c8fa4dfa6a",
+          "metaData": {
+            "slug": "rebel-clash-elite-trainer-box"
+          },
+          "variants": [
+            {
+              "id": "d5ab0cdf-6f7e-4261-a394-dffbe75e7cdb",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 39999,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "a14a4d5b-ca6f-4ec8-9e95-c9decceb3dce",
+                  "fileName": "image",
+                  "isMain": true
+                },
+                {
+                  "id": "991175c2-a519-429e-9b9b-dd6fafde114d",
+                  "fileName": "image",
+                  "isMain": false
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "Elite Trainer Box"
+            }
+          ]
+        },
+        {
+          "name": "Unova Mini Tin Display",
+          "id": "7bf6909b-2f91-4b64-a5f4-7ebde02e7076",
+          "metaData": {
+            "slug": "unova-mini-tin-display"
+          },
+          "variants": [
+            {
+              "id": "362705bd-f2a8-4996-9772-93a0122d9b5b",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 17999,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "1f5bbd38-e23c-4cf8-8299-e59b0d2695ed",
+                  "fileName": "image",
+                  "isMain": true
+                },
+                {
+                  "id": "f16cf545-af1a-46d0-af6c-bedb1a2f534c",
+                  "fileName": "image",
+                  "isMain": false
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "Tin Box"
+            }
+          ]
+        },
+        {
+          "name": "Shrouded Fable Greninja EX - Special Illustration Collection Box ",
+          "id": "7456c448-9f3b-4eb5-8d1a-45cb101562dc",
+          "metaData": {
+            "slug": "shrouded-fable-greninja-ex-special-illustration-collection-box"
+          },
+          "variants": [
+            {
+              "id": "abb77cbd-7128-4e4b-a070-25c08d4bd88f",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 10999,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "a0e780e8-91cd-4ae1-b3b0-e38e0c6640bf",
+                  "fileName": "image",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "Collection Box"
+            }
+          ]
+        },
+        {
+          "name": "Cyclizar Ex Box",
+          "id": "0b3868c3-79d7-4f0e-9700-55a79565aaf5",
+          "metaData": {
+            "slug": "cyclizar-ex-box"
+          },
+          "variants": [
+            {
+              "id": "f23f19e1-363a-4836-b1cd-30624a30ae22",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 3499,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "ef57abf6-ad5f-496d-a263-fd573b651629",
+                  "fileName": "image",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "Collection Box"
+            }
+          ]
+        },
+        {
+          "name": "Crown Zenith Tin Box - Galarian Articuno (USA Version)",
+          "id": "cf26c241-088d-429f-89aa-5d71a3534240",
+          "metaData": {
+            "slug": "crown-zenith-tin-box-galarian-articuno"
+          },
+          "variants": [
+            {
+              "id": "cab00bd3-c4cd-4c0c-bb91-9e7643171ea0",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 10999,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "11ebc885-ca3a-4722-b8af-71b2f88603f3",
+                  "fileName": "image",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "Tin Box"
+            }
+          ]
+        },
+        {
+          "name": "Celebi & Venusaur GX - TAG TEAM Tin",
+          "id": "fc7657a6-4a62-4341-9885-39806d097db2",
+          "metaData": {
+            "slug": "celebi-venusaur-gx---tag-team-tin"
+          },
+          "variants": [
+            {
+              "id": "6e51c756-1688-4aa3-aa4b-f7637b856b86",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 84999,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "8be75dc9-1399-45fb-889c-36eb4a01a027",
+                  "fileName": "image",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "Tin Box"
+            }
+          ]
+        },
+        {
+          "name": "V Forces Tin - Mew V ",
+          "id": "a6ed4ad3-01fc-4d2c-8642-51c7583ab21d",
+          "metaData": {
+            "slug": "v-forces-tin-mew-v"
+          },
+          "variants": [
+            {
+              "id": "1a483123-78cf-4ec2-9216-ad208626b5b0",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 5999,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "f59ec6e4-7626-4bd3-ad18-35f2ffd943a9",
+                  "fileName": "image",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "Tin Box"
+            }
+          ]
+        },
+        {
+          "name": "Tohoku Pokémon Center Special Box",
+          "id": "68f29365-df18-4a3d-b38a-1cfb8207d627",
+          "metaData": {
+            "slug": "tohoku-pokemon-center-special-box"
+          },
+          "variants": [
+            {
+              "id": "6974ef40-566e-4dc3-bd54-c686a7823da1",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 41999,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "d7fd23e2-2b86-47f9-ae4a-179ccbbc0e65",
+                  "fileName": "image",
+                  "isMain": true
+                },
+                {
+                  "id": "6cad0594-465b-400f-ba68-fd24f5da9c98",
+                  "fileName": "special-box-pokemon-card-game-pokemon-center-tohoku-r",
+                  "isMain": false
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "Diğer Ürünler"
+            }
+          ]
+        },
+        {
+          "name": "Ignition Energy - 109/080 - Japanese Inferno X",
+          "id": "fc5fae32-4189-48ee-97e5-3c6c59e2f1e9",
+          "metaData": {
+            "slug": "gnition-energy-109-080-japanese-inferno-x"
+          },
+          "variants": [
+            {
+              "id": "6cd55008-cc2b-4ac2-8647-577e206bdcc7",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 250,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "74427ef4-596b-4ada-827f-2c2a7ff4d334",
+                  "fileName": "1600",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "Japonca Single Kartlar"
+            }
+          ]
+        },
+        {
+          "name": "Mega Gardevoir Ex - 073/063 - Japanese Mega Symphonia",
+          "id": "048db3a6-c9b8-4e1e-a8db-b85f88b4cba2",
+          "metaData": {
+            "slug": "mega-gardevoir-ex-073-063-japanese-mega-symphonia"
+          },
+          "variants": [
+            {
+              "id": "1034b42a-3554-4743-a7b9-6262ce5fa035",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 700,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "f116af7b-15ec-4aad-857c-f4df54bb68b5",
+                  "fileName": "1600",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "Japonca Single Kartlar"
+            }
+          ]
+        },
+        {
+          "name": "Hilda - 166/086 - Japanese White Flare",
+          "id": "bd51c597-b662-4197-bb7c-fa558a805844",
+          "metaData": {
+            "slug": "hilda-166-086-japanese-white-flare"
+          },
+          "variants": [
+            {
+              "id": "7821008a-3d69-4ae4-beb3-05d3747f734a",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 1000,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "ca16cf8e-6e26-4a80-8cdd-550753cf0348",
+                  "fileName": "1600",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "Japonca Single Kartlar"
+            }
+          ]
+        },
+        {
+          "name": "Twilight Masquerade Booster Box Case",
+          "id": "279983c7-d11e-423c-8a94-eb2b4b1a5fe2",
+          "metaData": {
+            "slug": "twilight-masquerade-booster-box-case"
+          },
+          "variants": [
+            {
+              "id": "163bc3a5-d35d-4dda-812a-11dfd852f4f7",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 189999,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "86df8b7b-5f74-463f-afed-29954efd1c10",
+                  "fileName": "twilightmasqueradeboosterboxcase",
+                  "isMain": true
+                },
+                {
+                  "id": "6fff6c24-e55c-48e7-a598-10b42e6c751f",
+                  "fileName": "twilight-masquerade-booster-box-case",
+                  "isMain": false
+                },
+                {
+                  "id": "bf484ae0-00ee-40cc-96d8-25bc5f2a5243",
+                  "fileName": "543846-in-1000x1000",
+                  "isMain": false
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "Booster Box"
+            }
+          ]
+        },
+        {
+          "name": "Team Up Single Pack Blister - Mimikyu",
+          "id": "3c1edd5d-d7df-4de0-97b4-471d21863f5e",
+          "metaData": {
+            "slug": "team-up-single-pack-blister-mimikyu"
+          },
+          "variants": [
+            {
+              "id": "bf10503a-64d2-46b0-8b0a-82cebcfe3a1a",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 49999,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "9d611695-becb-4ac1-89f9-c5a9e79f4975",
+                  "fileName": "181702-in-1000x1000",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "Diğer Ürünler"
+            }
+          ]
+        },
+        {
+          "name": "Unbroken Bonds 3 Pack Blister - Typhlosion",
+          "id": "77778e34-249b-4b16-8fa0-062ca7a34deb",
+          "metaData": {
+            "slug": "unbroken-bonds-3-pack-blister-typhlosion"
+          },
+          "variants": [
+            {
+              "id": "7326134a-f800-4dfb-9bf7-0b20920d8c6f",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 35999,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "1bf0f02d-d7bf-4c6a-8bb1-c8f4875bd550",
+                  "fileName": "188411-in-1000x1000",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "Diğer Ürünler"
+            }
+          ]
+        },
+        {
+          "name": "Unbroken Bonds 3 Pack Blister - Sceptile",
+          "id": "1014f31a-c20e-43e3-a7d2-b9f9d98ecff7",
+          "metaData": {
+            "slug": "unbroken-bonds-3-pack-blister-sceptile"
+          },
+          "variants": [
+            {
+              "id": "4ae08b60-15e7-4ac6-8a00-8b3511192033",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 35999,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "d05a2eb1-2c8f-47b0-a839-06ca7d30b1d0",
+                  "fileName": "188410-in-1000x1000",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "Diğer Ürünler"
+            }
+          ]
+        },
+        {
+          "name": "Cosmic Eclipse 3 Pack Blister - Victini",
+          "id": "99b1c0d3-ecf6-4613-abc1-593ba1d9146a",
+          "metaData": {
+            "slug": "cosmic-eclipse-3-pack-blister-victini"
+          },
+          "variants": [
+            {
+              "id": "7fa6e1e6-2c69-41e1-83a4-fb5adb6cc051",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 29999,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "ea1fe85e-d174-45b3-bc95-77bbbd5e03a1",
+                  "fileName": "199766-in-1000x1000",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "Diğer Ürünler"
+            }
+          ]
+        },
+        {
+          "name": "Evolving Skies Premium Checklane Blister - Emboar",
+          "id": "8403ea4e-e8a0-4d58-9f3a-7aa13c845dc2",
+          "metaData": {
+            "slug": "evolving-skies-premium-checklane-blister-emboar"
+          },
+          "variants": [
+            {
+              "id": "d4fdd032-d416-4dee-8214-e159830a2d33",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 9999,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "f163c1a0-24c0-40fa-8c18-441be1221aa9",
+                  "fileName": "242445-in-1000x1000",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "Diğer Ürünler"
+            }
+          ]
+        },
+        {
+          "name": "Evolving Skies Premium Checklane Blister - Luxray",
+          "id": "15930330-a679-410c-a1b7-20a237a0abe4",
+          "metaData": {
+            "slug": "evolving-skies-premium-checklane-blister-luxray"
+          },
+          "variants": [
+            {
+              "id": "a5d0f276-b05d-4ae9-895f-d0db2d53b7d8",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 9999,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "3983f428-d1c5-493a-b728-84a0c7b6c33c",
+                  "fileName": "pokemon-evolving-skies-premium-checklane-blister-luxray",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "Diğer Ürünler"
+            }
+          ]
+        },
+        {
+          "name": "Pokémon Center - Evolving Skies Elite Trainer Box (SEGV)",
+          "id": "cfcdd9f1-003b-4850-93c6-54f2852cc888",
+          "metaData": {
+            "slug": "pokemon-center-evolving-skies-elite-trainer-box-segv"
+          },
+          "variants": [
+            {
+              "id": "6c77b727-8b03-425c-b7db-3f0a05cc06d0",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 119999,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "9d0484e5-157b-46bf-97b5-2b620dbad543",
+                  "fileName": "s-l1600",
+                  "isMain": true
+                },
+                {
+                  "id": "8f8de5df-ae77-4109-851e-f12e998ef268",
+                  "fileName": "p7370-178-80981-02",
+                  "isMain": false
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "Elite Trainer Box"
+            }
+          ]
+        },
+        {
+          "name": "Umbreon Ex - 217/187 - Japanese Terastal Festival",
+          "id": "6446f714-8a27-4d96-8765-0a749aa51675",
+          "metaData": {
+            "slug": "umbreon-ex-217-187-japanese-terastal-festival"
+          },
+          "variants": [
+            {
+              "id": "06ec5672-3b38-47b5-8dc6-fcb0ab25f60f",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 26999,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "7a00856b-a59b-4273-9ad4-cd90c5bab40a",
+                  "fileName": "1600",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "Japonca Single Kartlar"
+            }
+          ]
+        },
+        {
+          "name": "Falkner - 094/073 - Japanese Triplet Beat ",
+          "id": "bdc97c69-9349-4b0a-bbff-a9ec5221a83f",
+          "metaData": {
+            "slug": "falkner-094-073-japanese-triplet-beat"
+          },
+          "variants": [
+            {
+              "id": "d895e4eb-72e1-4b5e-ac8c-bc495f24e377",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 200,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "1c418434-e2b1-4570-b628-64d1da75b1d9",
+                  "fileName": "1600",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "Japonca Single Kartlar"
+            }
+          ]
+        },
+        {
+          "name": "Tropius - 074/073 - Japanese Triplet Beat ",
+          "id": "680f60bc-82fe-4628-a035-14b43ea42e87",
+          "metaData": {
+            "slug": "tropius-074-073-japanese-triplet-beat"
+          },
+          "variants": [
+            {
+              "id": "d50cf847-b552-4610-8aab-8113eacf53a9",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 250,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "ebeeb547-f059-43c3-a161-a33565641682",
+                  "fileName": "1600",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "Japonca Single Kartlar"
+            }
+          ]
+        },
+        {
+          "name": "Bellibolt - 112/108 - Japanese Ruler of the Black Flame ",
+          "id": "feb64bc6-cb9b-4a1c-8253-ef79b0825986",
+          "metaData": {
+            "slug": "bellibolt-112-108-japanese-ruler-of-the-black-flame"
+          },
+          "variants": [
+            {
+              "id": "6482b79e-141d-4876-aab7-133f2ca6e442",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 300,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "514ef7d3-59f9-4274-ba08-7f7801715e8e",
+                  "fileName": "1600",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "Japonca Single Kartlar"
+            }
+          ]
+        },
+        {
+          "name": "Wingull - 311/190 - Japanese Shiny Treasure ex ",
+          "id": "f0000b77-47e8-4a91-8f4b-cb45e1de7eac",
+          "metaData": {
+            "slug": "wingull-311-190-japanese-shiny-treasure-ex"
+          },
+          "variants": [
+            {
+              "id": "294ae992-2fbc-4747-bbbb-26bc58d7b6bb",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 200,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "3e970ada-dab3-4863-8e5d-8541b8d94ece",
+                  "fileName": "s-l1200",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "Japonca Single Kartlar"
+            }
+          ]
+        },
+        {
+          "name": "Poliwhirl - 176/165 - Japanese Scarlet & Violet 151 ",
+          "id": "b8806aca-a84c-4415-afe3-7f5c83d09a4f",
+          "metaData": {
+            "slug": "poliwhirl-176-165-japanese-scarlet-violet-151"
+          },
+          "variants": [
+            {
+              "id": "191af06c-fb00-4c26-903d-5dd59275ded9",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 600,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "703b7539-cc70-414a-b53c-d4af571b1f42",
+                  "fileName": "1600",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "Japonca Single Kartlar"
+            }
+          ]
+        },
+        {
+          "name": "Blastoise EX - 186/165 - Japanese Scarlet & Violet 151",
+          "id": "fefd8cd8-5709-4447-896d-1da803ba6358",
+          "metaData": {
+            "slug": "blastoise-ex-186-165-japanese-scarlet-violet-151"
+          },
+          "variants": [
+            {
+              "id": "50f1edcb-bafe-4588-a077-6c9dc21aecb5",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 700,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "4f8c4925-9cc5-4637-b5e8-98ab35043c96",
+                  "fileName": "s-l1200",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "Japonca Single Kartlar"
+            }
+          ]
+        },
+        {
+          "name": "Fukuoka Pokémon Center Special Box",
+          "id": "2f030e88-b666-48f5-b6ae-935e03c79c4e",
+          "metaData": {
+            "slug": "fukuoka-pokemon-center-special-box"
+          },
+          "variants": [
+            {
+              "id": "8a7a6329-2181-4e07-9700-50f2d239cabb",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 41999,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "567a6e8c-2926-4dda-bfa8-99dfe2f2ceeb",
+                  "fileName": "fukuoka-box-cardbot-pokemon-center",
+                  "isMain": true
+                },
+                {
+                  "id": "214c9ef2-2aa0-4f09-9639-1b3ace5204e3",
+                  "fileName": "fukuoko",
+                  "isMain": false
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "Diğer Ürünler"
+            }
+          ]
+        },
+        {
+          "name": "XY Roaring Skies Booster Pack ",
+          "id": "f941a2f7-e52b-4535-b9e6-a38a0721466a",
+          "metaData": {
+            "slug": "xy-roaring-skies-booster-pack"
+          },
+          "variants": [
+            {
+              "id": "ca6d6052-e5a7-42ce-a1c4-89c21bd32f92",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 11999,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "a382bbe2-402d-431b-af52-74c20795bf01",
+                  "fileName": "image",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "Booster Pack"
+            }
+          ]
+        },
+        {
+          "name": "XY Sleeved Booster Pack",
+          "id": "08a5f37e-6301-4757-88b7-7012f9c9fcf0",
+          "metaData": {
+            "slug": "xy-sleeved-booster-pack"
+          },
+          "variants": [
+            {
+              "id": "f865839b-fc6c-4f4d-85cd-6bc4b0d56c38",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 11999,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "e45afc98-dfa5-45ca-bb00-50177edfa456",
+                  "fileName": "p1414-144-10875-02",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "Booster Pack"
+            }
+          ]
+        },
+        {
+          "name": "Lost Origin Booster Bundle",
+          "id": "c86666bb-255d-4d25-b095-6ef9b7cf198f",
+          "metaData": {
+            "slug": "lost-origin"
+          },
+          "variants": [
+            {
+              "id": "08ca7112-fac8-44a3-aecd-482f45c0c86b",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 15999,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "72c2cdc6-dc73-47af-8a15-464b8be3ff73",
+                  "fileName": "lost-origin-booster-bundle",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "Booster Bundle"
+            }
+          ]
+        },
+        {
+          "name": "Pikachu V #TG16 - Lost Origin - PSA 9",
+          "id": "fd2e8782-d534-4f49-99c1-a89792efc39c",
+          "metaData": {
+            "slug": "pikachu-v--tg16---lost-origin---psa-9"
+          },
+          "variants": [
+            {
+              "id": "8deb7ce4-8c08-4987-85cc-48876c694d4f",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 7999,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "92f9a645-3342-4b59-aaea-d431410d9303",
+                  "fileName": "",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "PSA"
+            }
+          ]
+        },
+        {
+          "name": "Pikachu (KFC) #016/S-P - Indonesian Chiaki Kids Meal Promo - PSA 10",
+          "id": "71a39e90-60a9-4549-89b8-59bcb8e6a6f0",
+          "metaData": {
+            "slug": "pikachu--kfc---016-s-p---indonesian-chiaki-kids-meal-promo---psa-10"
+          },
+          "variants": [
+            {
+              "id": "b288d928-5af9-46ec-a79c-2167c9f7ebc4",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 49999,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "1b1da422-9a0e-40b8-a27e-5b256c853633",
+                  "fileName": "",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "PSA"
+            }
+          ]
+        },
+        {
+          "name": "Charizard V #079 - Champions Path - PSA 10",
+          "id": "8bc8d005-41ef-465d-8073-2e4a0719176e",
+          "metaData": {
+            "slug": "charizard-v--079---champions-path---psa-10"
+          },
+          "variants": [
+            {
+              "id": "7ad2a903-3055-4d82-8b7f-09a635f4b429",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 41999,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "7dd8f74f-8885-472a-8c9d-8d371625baf9",
+                  "fileName": "",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "PSA"
+            }
+          ]
+        },
+        {
+          "name": "Zapdos EX #202 - 151 - PSA 9",
+          "id": "fb6d0237-def7-47e8-ad07-ba6f2686d7ee",
+          "metaData": {
+            "slug": "zapdos-ex--202---151---psa-9"
+          },
+          "variants": [
+            {
+              "id": "be1c5090-ddff-4261-8396-55dc41d1999a",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 7499,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "8ceaa52a-f6e0-47b6-966c-3b1223386f5f",
+                  "fileName": "",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "PSA"
+            }
+          ]
+        },
+        {
+          "name": "Gastly #50 - Base Set Shadowless 1st Edition - PSA 7",
+          "id": "277bfd27-8204-449d-a2d8-1336ff5e97ad",
+          "metaData": {
+            "slug": "gastly--50---base-set-shadowless-1st-edition---psa-7"
+          },
+          "variants": [
+            {
+              "id": "51f6eafc-e6b7-410d-8dd4-585c49534383",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 2499,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "ea58ad99-3580-4f46-ace5-bfcbcb4dc825",
+                  "fileName": "",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "PSA"
+            }
+          ]
+        },
+        {
+          "name": "Lugia Ex #017 - TCG Classic: Venusaur - PSA 9",
+          "id": "dcd3ecd5-0f3d-447f-9a5d-2ff578cd88c5",
+          "metaData": {
+            "slug": "lugia-ex--017---tcg-classic--venusaur---psa-9"
+          },
+          "variants": [
+            {
+              "id": "6010cf2b-1fd1-4fe2-991e-77253120bc22",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 1999,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "ebc9f185-420a-4123-a3da-55b0bf517548",
+                  "fileName": "",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "PSA"
+            }
+          ]
+        },
+        {
+          "name": "Magneton #159 - Surging Sparks  ETB Promo - PSA 9",
+          "id": "6ee5ffd9-de9e-45dd-ba20-615b24e86e68",
+          "metaData": {
+            "slug": "magneton--159---surging-sparks--etb-promo---psa-9"
+          },
+          "variants": [
+            {
+              "id": "4fd582e8-3298-499e-b511-21a750c0c25f",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 2499,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "8197a4b8-076d-4377-bbe9-90c8e27efab8",
+                  "fileName": "",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "PSA"
+            }
+          ]
+        },
+        {
+          "name": "Gengar Reverse Holo #27 - Diamond & Pearl - PSA 7",
+          "id": "abcf208e-7ed8-4a58-8f9b-ff2a19592585",
+          "metaData": {
+            "slug": "gengar-reverse-holo--27---diamond---pearl---psa-7"
+          },
+          "variants": [
+            {
+              "id": "0c0d47d6-eab9-49ad-92e4-fd4c945cc7d6",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 7999,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "cd3852fa-22ab-4712-83ed-e2cd6b89b893",
+                  "fileName": "",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "PSA"
+            }
+          ]
+        },
+        {
+          "name": "Arceus LV.X Holo #95 - Arceus - PSA 9",
+          "id": "096d8147-d2dd-4f47-902a-874183247f61",
+          "metaData": {
+            "slug": "arceus-lv-x-holo--95---arceus---psa-9"
+          },
+          "variants": [
+            {
+              "id": "8529e471-848c-4e68-8799-479d92b1f767",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 41999,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "26dcd439-a92d-4d70-8ea4-bcab402617b2",
+                  "fileName": "arceus",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "PSA"
+            }
+          ]
+        },
+        {
+          "name": "Tapu Koko Ex #247 - Paradox Rift - PSA 10",
+          "id": "73a40a2e-5627-45bd-9759-ef84a2dfa62a",
+          "metaData": {
+            "slug": "tapu-koko-ex--247---paradox-rift---psa-10"
+          },
+          "variants": [
+            {
+              "id": "016e783d-2a08-4412-8651-c2ca8681b8f2",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 8999,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "70e5a83c-224e-4cf9-a0f6-849bb4c2ad54",
+                  "fileName": "",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "PSA"
+            }
+          ]
+        },
+        {
+          "name": "Umbreon V #TG22 - Brilliant Star - PSA 9",
+          "id": "1743d0ef-f852-4013-8434-0f4c38276b15",
+          "metaData": {
+            "slug": "umbreon-v--tg22---brilliant-star---psa-9"
+          },
+          "variants": [
+            {
+              "id": "1003ce7a-7f10-4edb-b547-f2c920849950",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 5499,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "ee4afb5a-b096-46a0-a9bb-d4e3ad259e24",
+                  "fileName": "",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "PSA"
+            }
+          ]
+        },
+        {
+          "name": "Starmie V #TG13 - Astral Radiance - PSA 9",
+          "id": "21ca5deb-cce8-452e-8e2d-6bf56ef1c28a",
+          "metaData": {
+            "slug": "starmie-v--tg13---astral-radiance---psa-9"
+          },
+          "variants": [
+            {
+              "id": "a55f05c5-c04a-4d96-b8b6-735302b0aa84",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 10999,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "a7b8f3bb-0f30-43f3-b318-503d87493d04",
+                  "fileName": "",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "PSA"
+            }
+          ]
+        },
+        {
+          "name": "Chansey #187 - Twilight Masquarede - PSA 10",
+          "id": "fe30e723-7387-4c0a-b11c-9c43e5a6b9be",
+          "metaData": {
+            "slug": "chansey--187---twilight-masquarede---psa-10"
+          },
+          "variants": [
+            {
+              "id": "15597bd4-fc1f-4fc4-a9b0-633cee2fb657",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 16999,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "052750b7-763b-404b-9c54-45cd6fa6febc",
+                  "fileName": "",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "PSA"
+            }
+          ]
+        },
+        {
+          "name": "Nidoran #55 - Base Set Shadowless 1st Edition - PSA 8",
+          "id": "fd99b875-1ba4-454f-ab26-326ea71f23ac",
+          "metaData": {
+            "slug": "nidoran--55---base-set-shadowless-1st-edition---psa-8"
+          },
+          "variants": [
+            {
+              "id": "ce60aa5b-14b7-43d0-9650-c25fbe48736b",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 2999,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "8ee372eb-2f95-418d-9c87-5652a355fd58",
+                  "fileName": "",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "PSA"
+            }
+          ]
+        },
+        {
+          "name": "Jolteon # TG04 - Brilliant Stars - PSA 10",
+          "id": "146d70d9-05cb-473b-a997-ed0026b81b02",
+          "metaData": {
+            "slug": "jolteon---tg04---brilliant-stars---psa-10"
+          },
+          "variants": [
+            {
+              "id": "251990cc-74f7-437a-b5e1-7e68979019f2",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 19999,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "ecd058ea-1b45-4a91-a0ab-1a866639bb98",
+                  "fileName": "",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "PSA"
+            }
+          ]
+        },
+        {
+          "name": "Lugia Holo #14 - Secret Wonders - PSA 7",
+          "id": "c2095cbb-ea09-4b2f-8eb7-d81e9bf5fd4d",
+          "metaData": {
+            "slug": "lugia-holo--14---secret-wonders---psa-7"
+          },
+          "variants": [
+            {
+              "id": "27db6522-358b-49e2-bd75-ca66ceffe272",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 5999,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "1a195a12-02de-4323-b0bc-ac39b1c47b9e",
+                  "fileName": "",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "PSA"
+            }
+          ]
+        },
+        {
+          "name": "Jigglypuff #8 - Southern Islands - PSA 9",
+          "id": "0ffe5a47-4c46-43d7-a898-3094358fd6dc",
+          "metaData": {
+            "slug": "jigglypuff--8---southern-islands---psa-9"
+          },
+          "variants": [
+            {
+              "id": "bd5ef5b8-d27f-45be-b355-b507aef0f2ab",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 4499,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "a2fb1656-81c7-4be8-ba01-9207ea59f149",
+                  "fileName": "jggluyy",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "PSA"
+            }
+          ]
+        },
+        {
+          "name": "Mew Ex #053 - 151 - PSA 9",
+          "id": "799edb37-ff3f-4cc0-9d2c-1c5efc55f1aa",
+          "metaData": {
+            "slug": "mew-ex--053---151---psa-9"
+          },
+          "variants": [
+            {
+              "id": "8e495431-54ec-4f96-9e93-e395b289f2a3",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 9999,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "0bd64d26-6643-45e7-beb5-d106da06fcec",
+                  "fileName": "",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "PSA"
+            }
+          ]
+        },
+        {
+          "name": "Team Rocket’s Meowth #18 - Black Star Promo - PSA 10",
+          "id": "80ac716b-fe43-4be1-ac52-783b25a76c8f",
+          "metaData": {
+            "slug": "team-rocket-s-meowth--18---black-star-promo---psa-10"
+          },
+          "variants": [
+            {
+              "id": "88d4eebb-d629-4371-afac-2e22aeec492e",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 12999,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "861a38d3-34b9-4c6e-a27b-5f94cdf021f2",
+                  "fileName": "meowthpromo",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "PSA"
+            }
+          ]
+        },
+        {
+          "name": "Jolteon V #183 - Sword & Shield Promo - PSA 9",
+          "id": "710858cb-33a3-4d26-87bd-4b58c151f94f",
+          "metaData": {
+            "slug": "jolteon-v--183---sword---shield-promo---psa-9"
+          },
+          "variants": [
+            {
+              "id": "16d13d0e-2a6d-4da7-860f-c2f291b1ce98",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 4999,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "4ecea365-56d6-49a0-91e0-0d05b7d17395",
+                  "fileName": "",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "PSA"
+            }
+          ]
+        },
+        {
+          "name": "Unown T #88 - Neo Destiny - First Edition - PSA 10",
+          "id": "7ef37842-28f7-4060-9fe0-7d4cfd2ef3fd",
+          "metaData": {
+            "slug": "unown-t--88---neo-destiny---first-edition---psa-10"
+          },
+          "variants": [
+            {
+              "id": "500fb502-1a60-470d-b25a-a89e9c468681",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 4999,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "be28e6c0-f0e1-4ec6-9398-08ad043e3ce4",
+                  "fileName": "2002-pokemon-neo-destiny-88-unown-t-1st-edition-gem-mt-10-69119",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "PSA"
+            }
+          ]
+        },
+        {
+          "name": "Mr. Mime Ex - Holo #111 -  Fire Red & Leaf Green - PSA 8",
+          "id": "8cb5a3be-bb1e-457b-886c-7a7fd8367d55",
+          "metaData": {
+            "slug": "mr--mime-ex---holo--111----fire-red---leaf-green---psa-8"
+          },
+          "variants": [
+            {
+              "id": "3b366d85-a1e9-4ea7-88bf-658c258f7526",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 5499,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "03765502-01e0-44b2-828d-4d147af44ec9",
+                  "fileName": "",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "PSA"
+            }
+          ]
+        },
+        {
+          "name": "Lapras Holo #10 - Fossil - PSA 10",
+          "id": "6a63c732-4e8f-4365-829f-4ebedecc02f0",
+          "metaData": {
+            "slug": "lapras-holo--10---fossil---psa-10"
+          },
+          "variants": [
+            {
+              "id": "e03c64b0-6477-4c5a-aa45-37f0f4591ff5",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 3999,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "ee911600-77f8-4502-b048-f629a4af6269",
+                  "fileName": "lapras",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "PSA"
+            }
+          ]
+        },
+        {
+          "name": "Lacey #172 - Stellar Crown - PSA10",
+          "id": "1a01d3c9-3e80-40d2-88f4-fea920f92507",
+          "metaData": {
+            "slug": "lacey--172---stellar-crown---psa10"
+          },
+          "variants": [
+            {
+              "id": "39b3b079-939d-4125-ad63-22d44a86f00c",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 5499,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "8fed091b-44f9-458d-8d16-121cbbc1c202",
+                  "fileName": "",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "PSA"
+            }
+          ]
+        },
+        {
+          "name": "Charizard VStar #262 - Sword & Shield UPC Promo - PSA 9",
+          "id": "e0348262-a4d1-4853-9edd-761f460d552c",
+          "metaData": {
+            "slug": "charizard-vstar--262---sword---shield-upc-promo---psa-9"
+          },
+          "variants": [
+            {
+              "id": "6d80ba4d-7f85-490f-a14a-018cd1f9cb47",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 7499,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "8d7e7c63-db52-4383-a1df-6c1daa8b1d5c",
+                  "fileName": "",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "PSA"
+            }
+          ]
+        },
+        {
+          "name": "Jessie & James #68 - Hidden Fates - PSA 10",
+          "id": "2b10e5c4-6436-4970-beab-b82ff8ddf7b5",
+          "metaData": {
+            "slug": "jessie---james--68---hidden-fates---psa-10"
+          },
+          "variants": [
+            {
+              "id": "2a817302-d240-4d9b-81fa-c2c29ac83e2a",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 14999,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "37755dcb-2385-480e-a345-255a1edf95bb",
+                  "fileName": "",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "PSA"
+            }
+          ]
+        },
+        {
+          "name": "Poliwrath Holo #13 - Base Set Unimited - PSA 6",
+          "id": "e50fe126-d923-4be3-9947-e99dd719d47b",
+          "metaData": {
+            "slug": "poliwrath-holo--13---base-set-unimited---psa-6"
+          },
+          "variants": [
+            {
+              "id": "5492ad1f-8724-463d-9734-d6adb1e00f14",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 2499,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "65f71d7d-8135-4a2b-9a8a-8a58a08aab14",
+                  "fileName": "s-l1600",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "PSA"
+            }
+          ]
+        },
+        {
+          "name": "Radiant Blastoise #018 - Pokemon Go - PSA 9",
+          "id": "1dcac652-191d-4f6b-bb8f-77e011157902",
+          "metaData": {
+            "slug": "radiant-blastoise--018---pokemon-go---psa-9"
+          },
+          "variants": [
+            {
+              "id": "d7ead7b0-9a6b-4f64-abae-3ab571ff6e93",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 2200,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "6fbbc74d-ccb0-4d88-9db7-d50440ad0eaa",
+                  "fileName": "",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "PSA"
+            }
+          ]
+        },
+        {
+          "name": "Zapdos Holo #16 - Base Set Unlimited - PSA 9",
+          "id": "639d78c8-fea2-4bd5-bea3-a028076b0b3f",
+          "metaData": {
+            "slug": "zapdos-holo--16---base-set-unlimited---psa-9"
+          },
+          "variants": [
+            {
+              "id": "a4d11f5e-1772-47de-9556-98119c60a6f4",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 9999,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "78cda877-ce34-43bc-ab7d-a8edefc4640f",
+                  "fileName": "",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "PSA"
+            }
+          ]
+        },
+        {
+          "name": "Detective Pikachu #098 SV/P - Japanese Promo - PSA 10",
+          "id": "80a2a718-4d3f-4c6d-a455-ca769b829029",
+          "metaData": {
+            "slug": "detective-pikachu--098-sv-p---japanese-promo---psa-10"
+          },
+          "variants": [
+            {
+              "id": "8248823a-d2c3-4d30-907f-1fc9ab478e66",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 29999,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "49903b1d-465a-4b89-bdf0-4f21b3d5305b",
+                  "fileName": "",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "PSA"
+            }
+          ]
+        },
+        {
+          "name": "Professor Oak #027 - Japanese Classic: Charizard",
+          "id": "87bb002a-5179-440f-ab5e-f600e7eececd",
+          "metaData": {
+            "slug": "professor-oak--027---japanese-classic--charizard"
+          },
+          "variants": [
+            {
+              "id": "43bee9ef-45b0-46a0-9193-7254ce825e24",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 2499,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "d4f8fbed-ac1e-4471-8298-65f69d757010",
+                  "fileName": "",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "PSA"
+            }
+          ]
+        },
+        {
+          "name": "Team Rocket’s Meowth #109 - Japanese Glory of Team Rocket - PSA 10",
+          "id": "3ba30786-32fa-4084-84e8-c78c84a5318f",
+          "metaData": {
+            "slug": "team-rocket-s-meowth--109---japanese-glory-of-team-rocket---psa-10"
+          },
+          "variants": [
+            {
+              "id": "cf81996c-072f-429b-87ff-ec8d2a8fdfd6",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 5499,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "b781b24c-a9b2-4913-a93b-dbca58c137d3",
+                  "fileName": "",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "PSA"
+            }
+          ]
+        },
+        {
+          "name": "Mimikyu Vmax #234 - Japanese Vmax Climax - PSA 10",
+          "id": "c20b893e-d394-47e2-b2c9-fec869ae9dc7",
+          "metaData": {
+            "slug": "mimikyu-vmax--234---japanese-vmax-climax---psa-10"
+          },
+          "variants": [
+            {
+              "id": "fbc5cf55-03f8-488c-be77-c1e06d9cf04f",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 8499,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "d7919f56-1b41-45dc-b7ba-186af5aa8dec",
+                  "fileName": "",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "PSA"
+            }
+          ]
+        },
+        {
+          "name": "Mew Ex #195 - Japanese 151 - PSA 10",
+          "id": "2088bbcf-b717-4f13-8385-6a990775ca56",
+          "metaData": {
+            "slug": "mew-ex--195---japanese-151---psa-10"
+          },
+          "variants": [
+            {
+              "id": "8d4a8b95-4c61-4961-b129-66170c840b25",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 4999,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "a419bd8f-b6fb-4daa-ae79-6473267e80e5",
+                  "fileName": "",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "PSA"
+            }
+          ]
+        },
+        {
+          "name": "Quaquaval ex - 103/073 - Japanese Triplet Beat",
+          "id": "4dc5ee2d-820c-4da3-80ac-36aef94b36fe",
+          "metaData": {
+            "slug": "quaquaval-ex-103-073-japanese-triplet-beat"
+          },
+          "variants": [
+            {
+              "id": "e7cefc03-6110-48e5-bf41-c398ff5b3959",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 400,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "2602ed8f-f49d-4314-ab43-6af5128dbaa4",
+                  "fileName": "images",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "Japonca Single Kartlar"
+            }
+          ]
+        },
+        {
+          "name": "Sylveon V - 40/069 -Japanese Eevee Heroes",
+          "id": "c0288867-6a01-4b19-a123-20fc363c3a1b",
+          "metaData": {
+            "slug": "sylveon-v-40-069-japanese-eevee-heroes"
+          },
+          "variants": [
+            {
+              "id": "54d2c079-7ae1-4762-af1f-c746935af438",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 300,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "434ada8d-a53c-47cf-a261-817640efefa5",
+                  "fileName": "1600",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "Japonca Single Kartlar"
+            }
+          ]
+        },
+        {
+          "name": "Toxtricity VMAX - 315/190 - Japanese Shiny Star V ",
+          "id": "d284a29e-a0f8-4a64-8acb-542d294f95ea",
+          "metaData": {
+            "slug": "toxtricity-vmax-315-190-japanese-shiny-star-v"
+          },
+          "variants": [
+            {
+              "id": "00da2f29-3d4b-4471-b5b5-28d541b25069",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 400,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "27fbe37b-3a76-4596-9c3c-2a3fbd4f9ddf",
+                  "fileName": "1600",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "Japonca Single Kartlar"
+            }
+          ]
+        },
+        {
+          "name": "Rillaboom VMAX - 010/190 - Japanese Shiny Star V ",
+          "id": "1c949e4a-ddb8-439a-89dc-aff54d934a1f",
+          "metaData": {
+            "slug": "rillaboom-vmax-010-190-japanese-shiny-star-v"
+          },
+          "variants": [
+            {
+              "id": "7904a7e0-7640-47dc-9b78-bebdef3ee6b6",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 150,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "2a10bbb6-aa99-4e25-967d-3558258258ce",
+                  "fileName": "1600",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "Japonca Single Kartlar"
+            }
+          ]
+        },
+        {
+          "name": "Giratina V - 080/100 - Japanese Lost Abyss ",
+          "id": "609fdc24-63cc-4d46-b010-768bc3954e67",
+          "metaData": {
+            "slug": "giratina-v-080-100-japanese-lost-abyss"
+          },
+          "variants": [
+            {
+              "id": "45274281-86b5-455f-95d3-b4227fa5f8a6",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 150,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "061da6ff-2d81-4408-83f0-47d0a1301c10",
+                  "fileName": "1600",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "Japonca Single Kartlar"
+            }
+          ]
+        },
+        {
+          "name": "Lugia V - 079/098 - Japanese Paradigm Trigger ",
+          "id": "faacb9dd-2f96-4172-965a-a27f03157d77",
+          "metaData": {
+            "slug": "lugia-v-079-098-japanese-paradigm-trigger"
+          },
+          "variants": [
+            {
+              "id": "55f68ada-5e22-43ec-b464-2999bf6ac5e7",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 500,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "4ab5a540-f15f-40d8-a9c6-94ba57fdd948",
+                  "fileName": "1600",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "Japonca Single Kartlar"
+            }
+          ]
+        },
+        {
+          "name": "Lapras VMAX - 312/190 - Japanese Shiny Star V",
+          "id": "67b14ce5-c49b-4101-aaa3-b60547e2afae",
+          "metaData": {
+            "slug": "lapras-vmax-312-190-japanese-shiny-star-v"
+          },
+          "variants": [
+            {
+              "id": "fec2874d-de95-4ba8-a89e-232b8bbf9972",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 500,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "c4cd3987-872a-4416-b998-300f8cd06494",
+                  "fileName": "1600",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "Japonca Single Kartlar"
+            }
+          ]
+        },
+        {
+          "name": "Chandelure VMAX - 116/100 - Japanese Fusion Arts",
+          "id": "eeac7070-f229-473a-b7f1-741d087562b5",
+          "metaData": {
+            "slug": "chandelure-vmax-116-100-japanese-fusion-arts"
+          },
+          "variants": [
+            {
+              "id": "c4f7f515-15ae-4504-96a9-4121105246b4",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 500,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "f1ca2884-4445-4612-a017-f5c5549cdf19",
+                  "fileName": "1600",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "Japonca Single Kartlar"
+            }
+          ]
+        },
+        {
+          "name": "Coalossal VMAX - 087/076 - Japanese Legendary Heartbeat ",
+          "id": "3b412fb7-772a-439d-986c-b8c58825b74f",
+          "metaData": {
+            "slug": "coalossal-vmax-087-076-japanese-legendary-heartbeat"
+          },
+          "variants": [
+            {
+              "id": "d96a8820-42dc-4dcb-909b-d1b8702c97a5",
+              "attributes": null,
+              "prices": [
+                {
+                  "sellPrice": 600,
+                  "currencyCode": "TRY"
+                }
+              ],
+              "images": [
+                {
+                  "id": "b76f56ce-588a-4813-b312-2a10c0413903",
+                  "fileName": "1600",
+                  "isMain": true
+                }
+              ]
+            }
+          ],
+          "categories": [
+            {
+              "name": "Japonca Single Kartlar"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,59 @@
+
+> tcg-market-tr@0.1.0 dev
+> next dev
+
+   ▲ Next.js 14.1.0
+   - Local:        http://localhost:3000
+   - Environments: .env.local
+
+ ✓ Ready in 1166ms
+ ○ Compiling /cards ...
+ ✓ Compiled /cards in 880ms (440 modules)
+ ✓ Compiled in 130ms (437 modules)
+ ✓ Compiled in 38ms (226 modules)
+ ✓ Compiled in 29ms (226 modules)
+ ✓ Compiled in 105ms (451 modules)
+ ✓ Compiled in 57ms (226 modules)
+ ✓ Compiled in 66ms (437 modules)
+ ✓ Compiled in 36ms (437 modules)
+ ✓ Compiled in 22ms (226 modules)
+ ⨯ ./app/cards/page.tsx
+Error: 
+  [31mx[0m Unexpected eof
+    ,-[[36;1;4m/Users/mrtozkl/.gemini/antigravity/scratch/tcg-market-tr/app/cards/page.tsx[0m:82:1]
+ [2m82[0m |     );
+ [2m83[0m | }
+ [2m84[0m | ```
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/cards/page.tsx
+ ⨯ ./app/cards/page.tsx
+Error: 
+  [31mx[0m Expression expected
+    ,-[[36;1;4m/Users/mrtozkl/.gemini/antigravity/scratch/tcg-market-tr/app/cards/page.tsx[0m:80:1]
+ [2m80[0m |             <Footer metadata={metadata} />
+ [2m81[0m |         </main>
+ [2m82[0m |     );
+ [2m83[0m |     );
+    : [31;1m    ^[0m
+ [2m84[0m | }
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/cards/page.tsx
+ ✓ Compiled in 84ms (437 modules)
+ ✓ Compiled in 151ms (451 modules)
+ ✓ Compiled in 40ms (226 modules)
+ ✓ Compiled in 45ms (437 modules)
+ ✓ Compiled in 36ms (437 modules)
+ ✓ Compiled /not-found in 133ms (442 modules)
+ ✓ Compiled in 75ms (451 modules)
+ ○ Compiling / ...
+[?25h

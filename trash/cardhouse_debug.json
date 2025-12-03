@@ -1,0 +1,123 @@
+{
+  "data": {
+    "searchProducts": {
+      "results": [
+        {
+          "name": "Lorcana The First Chapter Gift Set",
+          "metaData": {
+            "slug": "lorcana-the-first-chapter-gift-set"
+          },
+          "variants": [
+            {
+              "id": "df13d746-42bd-485d-9038-b1846d573e54",
+              "attributes": null,
+              "images": [
+                {
+                  "id": "af1dbd65-665d-452b-a13b-2e0470136ad2",
+                  "fileName": null,
+                  "isMain": true
+                },
+                {
+                  "id": "e3d9f97f-e901-40c0-ac85-2b0882280466",
+                  "fileName": null,
+                  "isMain": false
+                },
+                {
+                  "id": "b8b87c7f-c1bd-4509-92c3-838cdd7fd914",
+                  "fileName": null,
+                  "isMain": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Lorcana Archazias Booster Pack",
+          "metaData": {
+            "slug": "lorcana-archazias-booster-pack"
+          },
+          "variants": [
+            {
+              "id": "dec8eee5-5c17-4375-9478-21b880d57ace",
+              "attributes": null,
+              "images": [
+                {
+                  "id": "2f7692f4-e7b0-4ff0-b7f4-feb28239f959",
+                  "fileName": null,
+                  "isMain": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Lorcana Shimmering Skies Booster Pack",
+          "metaData": {
+            "slug": "lorcana-shimmering-skies-booster-pack"
+          },
+          "variants": [
+            {
+              "id": "e46ac244-39de-4bb7-a1dc-320a993a94b9",
+              "attributes": null,
+              "images": [
+                {
+                  "id": "902019ec-83f6-42c2-9a21-6755b8a581be",
+                  "fileName": null,
+                  "isMain": true
+                },
+                {
+                  "id": "734d0c56-fcd8-43a7-82bb-ff91059d1bf9",
+                  "fileName": null,
+                  "isMain": false
+                },
+                {
+                  "id": "231fa3a2-8fcc-4d2d-b110-831d810785ae",
+                  "fileName": null,
+                  "isMain": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Mufasa - RESPECTED KING",
+          "metaData": {
+            "slug": "mufasa-respected-king"
+          },
+          "variants": [
+            {
+              "id": "d78c4af7-1e43-4e77-8a59-fc97416f9e4b",
+              "attributes": null,
+              "images": [
+                {
+                  "id": "aaddcd30-ddcf-4b5d-9576-4f0e3b53f6be",
+                  "fileName": "1600",
+                  "isMain": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Cinderella - Ballroom Sensation #205",
+          "metaData": {
+            "slug": "cinderella-ballroom-sensation-205"
+          },
+          "variants": [
+            {
+              "id": "5969104f-8edf-45cd-998a-316eabee13f7",
+              "attributes": null,
+              "images": [
+                {
+                  "id": "69978f39-8b56-407c-a8bb-65a7a8d1d5ce",
+                  "fileName": "1600",
+                  "isMain": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
