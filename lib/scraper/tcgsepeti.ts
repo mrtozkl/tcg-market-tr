@@ -113,7 +113,7 @@ export class TcgSepetiScraper implements Scraper {
                     });
 
                     // Check if we should continue
-                    const nextLink = $('.wc-block-pagination-page--next, .woocommerce-pagination a.next, .pagination a.next');
+                    const nextLink = $('.wc-block-pagination-page--next, .woocommerce-pagination a.next, .pagination a.next, .wp-block-query-pagination-next');
                     if (nextLink.length === 0) {
                         hasNextPage = false;
                     } else {
