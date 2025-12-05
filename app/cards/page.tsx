@@ -6,6 +6,7 @@ import { getSellers } from '@/lib/data';
 import SearchInput from '@/components/SearchInput';
 import CardFilterSidebar from '@/components/CardFilterSidebar';
 import Pagination from '@/components/Pagination';
+import SortSelect from '@/components/SortSelect';
 import { Suspense } from 'react';
 
 export const dynamic = 'force-dynamic';
@@ -21,6 +22,7 @@ export default async function CardsPage({
     const sellerFilter = searchParams.seller as string;
     const minPrice = searchParams.minPrice as string;
     const maxPrice = searchParams.maxPrice as string;
+    const sort = searchParams.sort as string || 'newest';
     const page = Number(searchParams.page) || 1;
     const pageSize = 24;
     const offset = (page - 1) * pageSize;
@@ -75,7 +77,25 @@ export default async function CardsPage({
         countQuery += whereClause;
     }
 
-    sqlQuery += ` ORDER BY last_updated DESC LIMIT ${pageSize} OFFSET ${offset}`;
+    let orderBy = 'last_updated DESC';
+    switch (sort) {
+        case 'price-asc':
+            orderBy = 'price ASC';
+            break;
+        case 'price-desc':
+            orderBy = 'price DESC';
+            break;
+        case 'name-asc':
+            orderBy = 'name ASC';
+            break;
+        case 'name-desc':
+            orderBy = 'name DESC';
+            break;
+        default:
+            orderBy = 'last_updated DESC';
+    }
+
+    sqlQuery += ` ORDER BY ${orderBy} LIMIT ${pageSize} OFFSET ${offset}`;
 
     let cards: any[] = [];
     let totalItems = 0;
@@ -134,7 +154,7 @@ export default async function CardsPage({
                                     <span className="text-white font-bold">{totalItems}</span> kart listeleniyor
                                 </span>
                             </div>
-                            {/* Future: Add Sort/Filter dropdowns here */}
+                            <SortSelect />
                         </div>
 
                         {cards.length > 0 ? (
