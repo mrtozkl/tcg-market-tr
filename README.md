@@ -1,6 +1,6 @@
 # TCG Market Türkiye
 
-![TCG Market Türkiye Banner](https://via.placeholder.com/1200x300/0f172a/8b5cf6?text=TCG+Market+T%C3%BCrkiye)
+![TCG Market Türkiye Banner](./public/banner.png)
 
 [![Vercel Deploy](https://deploy-badge.vercel.app/vercel/tcg-market-tr)](https://tcg-market-tr.vercel.app/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
