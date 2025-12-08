@@ -6,3 +6,4 @@ node_modules
 .next
 server.log
 server_prod.log
+package-lock.json
